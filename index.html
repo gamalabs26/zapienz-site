@@ -472,39 +472,78 @@
 </section>
 
 <!-- ============ §7 Lo que un Zap es y no es ============ -->
-<section class="seccion" data-superficie="papel">
-  <div class="envoltura">
-    <h2 class="serif rev" style="font-size:clamp(2rem,5vw,3.2rem);max-width:18ch">
-      Para que no te lleves una sorpresa.</h2>
+<!-- El acordeon era el ejemplo mas claro de «esto se pudo hacer en Wix»: una lista de
+     seis renglones grises, todos cerrados, a todo el ancho. Ahora la seccion se arma
+     como una ficha editorial: la columna izquierda se queda fija con la advertencia
+     que de verdad importa (esto NO es el libro), y la derecha es un indice numerado
+     01-06 donde la pregunta abierta se vuelve tarjeta con riel verde. La primera
+     abre sola: una seccion que arranca toda cerrada no tiene nada que mirar. -->
+<section class="seccion seccion--faq" data-superficie="papel">
+  <div class="envoltura faq__rejilla">
+    <aside class="faq__lado">
+      <p class="mono">Antes de pagar</p>
+      <h2 class="serif faq__h">Para que no te lleves una sorpresa.</h2>
+      <p class="faq__nota">Un Zap no es el libro. Son sus ideas clave contadas en unos 20
+        minutos, en seis secciones, con ejercicios al final. Si te queda una duda que no
+        está aquí, <a href="mailto:contactozapienz@gmail.com">escríbenos</a>.</p>
+    </aside>
 
     <div class="faq">
-      <div class="faq__item" data-abierto="no">
-        <button class="faq__b" aria-expanded="false">¿Es el libro completo?</button>
+      <div class="faq__item" data-abierto="si">
+        <button class="faq__b" aria-expanded="true">
+          <span class="faq__n" aria-hidden="true">01</span>
+          <span class="faq__q">¿Es el libro completo?</span>
+          <span class="faq__mas" aria-hidden="true"></span>
+        </button>
         <div class="faq__panel"><div><p>No. Es un Zap de unos 20 minutos con las ideas clave,
           contado con apoyo de inteligencia artificial y revisión editorial. Sirve para
           aprender de un libro en 20 minutos, pero
           <span class="subrayado">no sustituye la obra original</span> ni reproduce obras completas.</p></div></div>
       </div>
       <div class="faq__item" data-abierto="no">
-        <button class="faq__b" aria-expanded="false">¿Está en español?</button>
-        <div class="faq__panel"><div><p>Sí, los 303.</p></div></div>
+        <button class="faq__b" aria-expanded="false">
+          <span class="faq__n" aria-hidden="true">02</span>
+          <span class="faq__q">¿Está en español?</span>
+          <span class="faq__mas" aria-hidden="true"></span>
+        </button>
+        <div class="faq__panel"><div><p>Sí, los 303. Locución en español, no doblaje ni
+          traducción automática leída en voz alta.</p></div></div>
       </div>
       <div class="faq__item" data-abierto="no">
-        <button class="faq__b" aria-expanded="false">¿Necesito suscripción?</button>
-        <div class="faq__panel"><div><p>No; 1 crédito, 1 Zap.</p></div></div>
+        <button class="faq__b" aria-expanded="false">
+          <span class="faq__n" aria-hidden="true">03</span>
+          <span class="faq__q">¿Necesito suscripción?</span>
+          <span class="faq__mas" aria-hidden="true"></span>
+        </button>
+        <div class="faq__panel"><div><p>No. 1 crédito, 1 Zap, y el Zap se queda en tu cuenta.
+          Premium existe si quieres los 303 de una vez, pero no es la única puerta.</p></div></div>
       </div>
       <div class="faq__item" data-abierto="no">
-        <button class="faq__b" aria-expanded="false">¿Puedo leer en vez de escuchar?</button>
-        <div class="faq__panel"><div><p>Sí, texto y audio en cada sección.</p></div></div>
+        <button class="faq__b" aria-expanded="false">
+          <span class="faq__n" aria-hidden="true">04</span>
+          <span class="faq__q">¿Puedo leer en vez de escuchar?</span>
+          <span class="faq__mas" aria-hidden="true"></span>
+        </button>
+        <div class="faq__panel"><div><p>Sí. Las seis secciones vienen en texto y en audio;
+          eliges por sección, no de una vez para todo el Zap.</p></div></div>
       </div>
       <div class="faq__item" data-abierto="no">
-        <button class="faq__b" aria-expanded="false">¿Android?</button>
+        <button class="faq__b" aria-expanded="false">
+          <span class="faq__n" aria-hidden="true">05</span>
+          <span class="faq__q">¿Android?</span>
+          <span class="faq__mas" aria-hidden="true"></span>
+        </button>
         <div class="faq__panel"><div><p>Todavía no; escríbenos a
           <a href="mailto:contactozapienz@gmail.com">contactozapienz@gmail.com</a> y te avisamos.</p></div></div>
       </div>
       <div class="faq__item" data-abierto="no">
-        <button class="faq__b" aria-expanded="false">¿Y si dejo un Zap a la mitad?</button>
-        <div class="faq__panel"><div><p>Se retoma donde lo dejaste.</p></div></div>
+        <button class="faq__b" aria-expanded="false">
+          <span class="faq__n" aria-hidden="true">06</span>
+          <span class="faq__q">¿Y si dejo un Zap a la mitad?</span>
+          <span class="faq__mas" aria-hidden="true"></span>
+        </button>
+        <div class="faq__panel"><div><p>Se retoma donde lo dejaste, en la sección donde te
+          quedaste.</p></div></div>
       </div>
     </div>
   </div>

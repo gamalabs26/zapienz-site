@@ -89,7 +89,10 @@ button{ font:inherit; color:inherit; background:none; border:0; cursor:pointer; 
 
 .seccion{
   background:var(--bg); color:var(--texto);
-  padding:clamp(72px,10vw,140px) clamp(20px,5vw,64px);
+  /* Era clamp(72px,10vw,140px): a 1440 daba 140 px arriba y 140 abajo, o sea 280 px
+     de nada entre dos secciones. Medido en captura, ese hueco es lo que hace que cada
+     bloque se lea como una diapositiva suelta en vez de una pagina que avanza. */
+  padding:clamp(62px,8vw,116px) clamp(20px,5vw,64px);
   position:relative; z-index:1;
 }
 .envoltura{ max-width:1200px; margin-inline:auto; }
@@ -731,20 +734,73 @@ blockquote.linterna__texto{ margin:0; }
 .nota{ margin-top:26px; }
 
 /* ---------- 17. ACORDEON ------------------------------------------------- */
-.faq{ margin-top:44px; border-top:1px solid var(--linea); }
-.faq__item{ border-bottom:1px solid var(--linea); }
-.faq__b{ width:100%; text-align:left; display:flex; gap:16px; align-items:center;
-         min-height:56px; padding:18px 0; font-size:1.06rem; font-weight:500; }
-.faq__b::after{ content:"+"; margin-left:auto; font-family:var(--mono); font-size:1.3rem;
-                color:var(--texto2); transition:transform var(--dur-panel) var(--ease-out); }
-.faq__b[aria-expanded="true"]::after{ transform:rotate(45deg); }
+/* Era una lista de seis renglones grises a todo el ancho, todos cerrados: la FAQ
+   de cualquier plantilla. Ahora son dos columnas. La izquierda se queda FIJA con
+   la advertencia que de verdad cambia una compra (esto no es el libro) y la
+   derecha corre como un indice numerado, donde la pregunta abierta se vuelve
+   tarjeta con riel verde: el mismo gesto de «esto esta activo» que usan las
+   tarjetas de la §2, para que el sitio tenga una sola forma de decirlo. */
+.seccion--faq{ padding-block:clamp(84px,10vh,132px); }
+.faq__rejilla{ display:grid; grid-template-columns:minmax(0,.86fr) minmax(0,1.14fr);
+               gap:clamp(34px,6vw,90px); align-items:start; }
+.faq__lado{ position:sticky; top:118px; }
+.faq__h{ font-size:clamp(2rem,4vw,3rem); line-height:1.04; margin-top:14px; max-width:14ch; }
+.faq__nota{ margin-top:22px; color:var(--texto2); max-width:36ch; font-size:.98rem;
+            line-height:1.62; }
+.faq__nota a{ color:var(--texto); text-decoration:none;
+              box-shadow:inset 0 -1px 0 color-mix(in srgb,var(--verde) 70%,transparent);
+              transition:box-shadow var(--dur-ui) var(--ease-out); }
+.faq__nota a:hover{ box-shadow:inset 0 -2px 0 var(--verde); }
+
+.faq{ border-top:1px solid var(--linea); }
+.faq__item{ position:relative; border-bottom:1px solid var(--linea);
+            transition:background var(--dur-panel) var(--ease-out); }
+.faq__item::before{ content:""; position:absolute; left:0; top:0; bottom:0; width:2px;
+                    background:var(--verde); transform:scaleY(0); transform-origin:0 0;
+                    transition:transform var(--dur-panel) var(--ease-drawer); }
+.faq__item[data-abierto="si"]{ background:var(--sup); }
+.faq__item[data-abierto="si"]::before{ transform:scaleY(1); }
+
+.faq__b{ width:100%; text-align:left; display:flex; gap:clamp(14px,2vw,26px);
+         align-items:baseline; min-height:64px; padding:22px 20px 22px 22px;
+         transition:padding-left var(--dur-panel) var(--ease-out); }
+.faq__item:hover .faq__b{ padding-left:30px; }
+.faq__n{ font-family:var(--mono); font-size:.74rem; letter-spacing:.12em; flex:none;
+         width:2.4em; color:var(--texto2);
+         transition:color var(--dur-panel) var(--ease-out); }
+.faq__q{ font-family:var(--display); font-size:clamp(1.08rem,1.9vw,1.42rem);
+         line-height:1.25; color:var(--texto); }
+.faq__item[data-abierto="si"] .faq__n{ color:var(--verde); }
+
+/* El «+» era el caracter de texto, y se leia como un signo suelto, no como un
+   control. Son dos barras: al abrir giran 90 grados y la vertical se encoge. */
+.faq__mas{ position:relative; margin-left:auto; align-self:center;
+           width:18px; height:18px; flex:none;
+           transition:transform var(--dur-panel) var(--ease-out); }
+.faq__mas::before, .faq__mas::after{
+  content:""; position:absolute; left:50%; top:50%; background:var(--texto2);
+  border-radius:1px;
+  transition:transform var(--dur-panel) var(--ease-out),
+             background var(--dur-panel) var(--ease-out); }
+.faq__mas::before{ width:14px; height:2px; transform:translate(-50%,-50%); }
+.faq__mas::after{ width:2px; height:14px; transform:translate(-50%,-50%); }
+/* Medido en captura: con rotate(90deg) la barra horizontal se pone VERTICAL justo
+   cuando la vertical se encoge, y el control abierto se veia como un palito verde.
+   180 grados da el mismo giro corto y termina en un menos de verdad. */
+.faq__item[data-abierto="si"] .faq__mas{ transform:rotate(180deg); }
+.faq__item[data-abierto="si"] .faq__mas::before{ background:var(--verde); }
+.faq__item[data-abierto="si"] .faq__mas::after{ transform:translate(-50%,-50%) scaleY(0); }
+
 /* grid-template-rows 0fr -> 1fr: se anima sin tocar height. */
 .faq__panel{ display:grid; grid-template-rows:0fr;
              transition:grid-template-rows var(--dur-panel) var(--ease-out); }
 .faq__item[data-abierto="si"] .faq__panel{ grid-template-rows:1fr; }
 .faq__panel > div{ overflow:hidden; }
-.faq__panel p{ padding-bottom:22px; color:var(--texto2); max-width:var(--medida);
-               font-family:var(--display); }
+/* La respuesta arranca bajo la PREGUNTA, no bajo el numero: la sangria de la
+   izquierda es el ancho del numero mas el hueco, medido, no a ojo. */
+.faq__panel p{ margin:0; padding:0 24px 26px clamp(48px,6vw,74px);
+               color:var(--texto2); max-width:var(--medida);
+               font-family:var(--display); line-height:1.6; }
 
 /* ---------- 18. CORTINA (curtain-palette-swap) --------------------------- */
 .cortina{
@@ -811,6 +867,11 @@ blockquote.linterna__texto{ margin:0; }
 
 /* ---------- 22. MOVIL ---------------------------------------------------- */
 @media (max-width:860px){
+  /* En una columna la advertencia deja de ser columna fija: se queda arriba, que
+     es donde tiene que leerse antes de abrir la primera pregunta. */
+  .faq__rejilla{ grid-template-columns:1fr; gap:30px; }
+  .faq__lado{ position:static; }
+  .faq__h{ max-width:20ch; }
   /* En una columna el telefono va PRIMERO: es la prueba de producto, y mandarlo
      abajo del indice dejaba el movil abriendo con una lista de titulos. */
   .saga__rejilla{ grid-template-columns:1fr; gap:26px; justify-items:center; }
