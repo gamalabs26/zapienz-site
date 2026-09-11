@@ -1,0 +1,9 @@
+# Masters de Higgsfield y pasos intermedios de ffmpeg: 83 MB que no se publican.
+_raw/
+# Acta, Brand DNA, PRD y direccion de arte: documentacion interna, no sitio.
+_brief/
+# Transcripciones de imagenes (biblioteca del Cerebro), no contenido publico.
+*.webp.md
+*.png.md
+.scratch-path
+_servidor-local.js

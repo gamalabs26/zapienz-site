@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 84" role="img"
+     aria-label="Zapienz">
+  <title>Zapienz</title>
+  <!-- Wordmark. Outfit 700 en mayusculas con tracking abierto, retrazado del arte de marca
+       zapienz_logo_full_temp.png (medido: todo lo opaco de ese archivo es blanco).
+       Se usa INLINE en el HTML, donde Outfit ya viene cargada desde Google Fonts; por eso
+       va como <text> y no como paths. Abierto suelto como archivo cae al fallback sans y
+       pierde el caracter de la fuente: para ese caso (favicon, OG) se usa zapienz-mark.svg,
+       que es geometria pura y no depende de ninguna fuente.
+       El color lo hereda del contexto (currentColor): blanco #FFFFFF sobre azul noche. -->
+  <text x="0" y="62"
+        font-family="Outfit, ui-sans-serif, system-ui, sans-serif"
+        font-size="64" font-weight="700" letter-spacing="6"
+        fill="currentColor">ZAPIENZ</text>
+</svg>

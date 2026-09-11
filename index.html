@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="es-MX" data-tema="noche">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Zapienz — Ideas clave de libros en audio, en español</title>
+<meta name="description" content="Las ideas clave de 303 libros de no ficción, en audio y en español. Cada Zap dura unos 20 minutos, termina con ejercicios y se queda en tu cuenta.">
+<link rel="canonical" href="https://gamalabs26.github.io/zapienz-site/">
+<meta name="theme-color" content="#0E2453">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Zapienz">
+<meta property="og:locale" content="es_MX">
+<meta property="og:title" content="Zapienz — Ideas clave de libros en audio, en español">
+<meta property="og:description" content="Las ideas clave de 303 libros de no ficción, en audio y en español. Cada Zap dura unos 20 minutos, termina con ejercicios y se queda en tu cuenta.">
+<meta property="og:url" content="https://gamalabs26.github.io/zapienz-site/">
+<meta property="og:image" content="https://gamalabs26.github.io/zapienz-site/assets/og.webp">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Zapienz — Ideas clave de libros en audio, en español">
+<meta name="twitter:description" content="Las ideas clave de 303 libros de no ficción, en audio y en español. Cada Zap dura unos 20 minutos y se queda en tu cuenta.">
+<meta name="twitter:image" content="https://gamalabs26.github.io/zapienz-site/assets/og.webp">
+
+<link rel="icon" href="assets/brand/zapienz-mark.svg" type="image/svg+xml">
+<link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Outfit:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="assets/css/site.css">
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"SoftwareApplication",
+  "name":"Zapienz",
+  "applicationCategory":"EducationApplication",
+  "operatingSystem":"iOS",
+  "inLanguage":"es",
+  "url":"https://apps.apple.com/mx/app/id6762142820",
+  "description":"Las ideas clave de 303 libros de no ficción, en audio y en español. Cada Zap dura unos 20 minutos y termina con ejercicios.",
+  "author":{"@type":"Person","name":"Gustavo Mier"},
+  "offers":[
+    {"@type":"Offer","name":"5 créditos","price":"59","priceCurrency":"MXN"},
+    {"@type":"Offer","name":"10 créditos","price":"99","priceCurrency":"MXN"},
+    {"@type":"Offer","name":"20 créditos","price":"179","priceCurrency":"MXN"},
+    {"@type":"Offer","name":"Premium mensual","price":"129","priceCurrency":"MXN"},
+    {"@type":"Offer","name":"Premium anual","price":"999","priceCurrency":"MXN"}
+  ]
+}
+</script>
+</head>
+<body>
+
+<!-- GRANO: feTurbulence sobre todo el fondo. Mecanica `grain`. -->
+<svg class="grano" aria-hidden="true" focusable="false">
+  <filter id="granoZap">
+    <feTurbulence type="fractalNoise" baseFrequency="0.82" numOctaves="3" stitchTiles="stitch"/>
+    <feColorMatrix type="saturate" values="0"/>
+  </filter>
+  <rect width="100%" height="100%" filter="url(#granoZap)"/>
+</svg>
+
+<div class="cortina" aria-hidden="true"></div>
+
+<a href="#contenido" class="sr-only">Saltar al contenido</a>
+
+<!-- ============ §0 NAV — pill de vidrio ============ -->
+<nav class="nav" data-encogido="no" aria-label="Principal">
+  <a class="nav__marca" href="#contenido" aria-label="Zapienz, inicio">
+    <svg class="nav__mark" viewBox="0 0 120 120" width="26" height="26"
+         aria-hidden="true" focusable="false" fill="currentColor">
+        <rect class="zbar" data-col="0" x="7" y="10" width="10" height="18" rx="5"/>
+        <rect class="zbar" data-col="0" x="7" y="92" width="10" height="18" rx="5"/>
+        <rect class="zbar" data-col="1" x="23" y="10" width="10" height="18" rx="5"/>
+        <rect class="zbar" data-col="1" x="23" y="78.33" width="10" height="31.67" rx="5"/>
+        <rect class="zbar" data-col="2" x="39" y="10" width="10" height="18" rx="5"/>
+        <rect class="zbar" data-col="2" x="39" y="64.67" width="10" height="18" rx="5"/>
+        <rect class="zbar" data-col="2" x="39" y="92" width="10" height="18" rx="5"/>
+        <rect class="zbar" data-col="3" x="55" y="10" width="10" height="18" rx="5"/>
+        <rect class="zbar" data-col="3" x="55" y="51" width="10" height="18" rx="5"/>
+        <rect class="zbar" data-col="3" x="55" y="92" width="10" height="18" rx="5"/>
+        <rect class="zbar" data-col="4" x="71" y="10" width="10" height="18" rx="5"/>
+        <rect class="zbar" data-col="4" x="71" y="37.33" width="10" height="18" rx="5"/>
+        <rect class="zbar" data-col="4" x="71" y="92" width="10" height="18" rx="5"/>
+        <rect class="zbar" data-col="5" x="87" y="10" width="10" height="31.67" rx="5"/>
+        <rect class="zbar" data-col="5" x="87" y="92" width="10" height="18" rx="5"/>
+        <rect class="zbar" data-col="6" x="103" y="10" width="10" height="18" rx="5"/>
+        <rect class="zbar" data-col="6" x="103" y="92" width="10" height="18" rx="5"/>
+    </svg>
+    <!-- El imagotipo va INLINE, no como imagen suelta: en un archivo aparte pierde Outfit
+         (que se carga en esta pagina) y el currentColor del tema. -->
+    <svg class="nav__wordmark" viewBox="0 0 420 84" width="96" height="19"
+         role="img" aria-label="Zapienz">
+      <text x="0" y="62" font-family="Outfit, ui-sans-serif, system-ui, sans-serif"
+            font-size="64" font-weight="700" letter-spacing="6"
+            fill="currentColor">ZAPIENZ</text>
+    </svg>
+  </a>
+  <div class="nav__enlaces">
+    <a href="#zap">Así es un Zap</a>
+    <a href="#catalogo-sec">Catálogo</a>
+    <a href="#resenas">Reseñas</a>
+    <a href="#precios">Precios</a>
+  </div>
+  <a class="cta" data-magnetic href="https://apps.apple.com/mx/app/id6762142820">Ir al App Store</a>
+</nav>
+
+<main id="contenido">
+
+<!-- ============ §1 HERO — «De lomo a onda» ============ -->
+<section class="seccion hero" data-superficie="noche" id="inicio">
+  <div class="hero__poster" aria-hidden="true"></div>
+  <!-- El clip del hero. En reposo se reproduce solo (silencioso, en bucle sin costura
+       por ping-pong hecho en ffmpeg, no por `loop` a secas); al primer scroll cede el
+       cuadro al canvas de `canvas-frame-scrub`, que es la mecanica protagonista del PRD.
+       Dos fuentes reales, no un recorte: 16:9 para escritorio y 9:16 encuadrado aparte
+       para telefono. -->
+  <video class="hero__video" autoplay muted loop playsinline preload="metadata"
+         poster="assets/hero-poster.webp" aria-hidden="true" tabindex="-1">
+    <source src="assets/video/hero-169.mp4" type="video/mp4" media="(min-width: 768px)">
+    <source src="assets/video/hero-916.mp4" type="video/mp4">
+  </video>
+  <div class="hero__lienzo" aria-hidden="true">
+    <canvas role="img" aria-label="Una repisa de libros cuyos lomos se convierten en barras de sonido que forman la Z de Zapienz"></canvas>
+  </div>
+  <div class="hero__velo" aria-hidden="true"></div>
+
+  <div class="hero__contenido">
+    <p class="mono">303 libros · 230 autores · en español</p>
+    <h1 data-blur-words>Ideas clave de libros en audio, en 20 minutos.</h1>
+    <p class="hero__sub">Un Zap son las ideas clave de un libro de no ficción, contadas en audio
+      en unos 20 minutos y cerradas con ejercicios para aplicarlas. Lo desbloqueas una vez y es
+      tuyo para siempre.</p>
+    <div class="hero__acciones">
+      <a class="cta" data-magnetic href="https://apps.apple.com/mx/app/id6762142820">Descargar en el App Store</a>
+      <!-- CTA secundario del PRD. El PRD lo escribe «Escucha un Zap ▶» porque su version
+           preferida reproduce 30 s reales de la intro de «Ego es el Enemigo»; esa pieza
+           todavia no esta autorizada, asi que el boton reproduce la OTRA pieza real que ya
+           existe -- la cortinilla de marca -- y se llama por su nombre. Prometer «un Zap»
+           mientras suena la cortinilla seria una linea falsa. El mecanismo es el mismo: en
+           cuanto exista `muestra-ego.mp3` se cambian el `src` y el rotulo, nada mas. -->
+      <button class="cta cta--fantasma cta--audio" id="btn-muestra" type="button"
+              aria-expanded="false" aria-controls="muestra">
+        <span class="cta--audio__icono" aria-hidden="true"></span>
+        <span class="cta--audio__texto">Escucha cómo suena Zapienz</span>
+      </button>
+    </div>
+
+    <!-- `preload="none"`: son 156 KB que no entran en la primera carga (presupuesto del PRD).
+         El archivo se pide en el primer clic, no antes. -->
+    <audio id="au-muestra" preload="none" src="assets/audio/outro.mp3"></audio>
+    <div class="muestra" id="muestra" hidden>
+      <div class="muestra__fila">
+        <canvas class="muestra__onda" aria-hidden="true"></canvas>
+        <p class="mono muestra__t">0:00 / 0:13</p>
+      </div>
+      <p class="muestra__pie">Es la cortinilla con la que cierra cada Zap, trece segundos.</p>
+    </div>
+    <p class="mono hero__precio">Desde $8.95 MXN por Zap · sin suscripción · para iPhone, iPad y Mac con Apple&nbsp;Silicon</p>
+    
+  </div>
+</section>
+
+<!-- ============ §2 El libro que no terminaste ============ -->
+<section class="seccion" data-superficie="papel">
+  <div class="envoltura">
+    <h2 class="serif rev" style="font-size:clamp(2rem,5vw,3.4rem);line-height:1.1;max-width:18ch">
+      Compraste el libro. Lo empezaste. Está en el buró.</h2>
+    <p class="rev" data-stagger="1" data-char-reveal
+       style="font-family:var(--display);font-size:clamp(1.1rem,2.3vw,1.5rem);max-width:var(--medida);margin-top:26px">No
+      te faltó interés: te faltaron veinte minutos seguidos. Un Zap te da lo que te ibas a llevar de
+      ese libro —sus ideas clave, con sus ejemplos y un ejercicio para aplicarlas— en el tiempo que
+      dura un trayecto. Y si te quedas a la mitad, la app retoma donde lo dejaste.</p>
+    <p class="rev" data-stagger="2" style="margin-top:22px;color:var(--texto2)">Lo que te faltó fue
+      <span class="subrayado">veinte minutos seguidos</span>.</p>
+
+    <!-- Las tres tarjetas llevan la cifra REAL de lo que cuentan: dos formas de
+         consumirlo, seis secciones por Zap, un credito por Zap. Antes eran tres
+         rectangulos grises con titulo y parrafo, que es literalmente la diapositiva
+         de tres columnas que Gus señalo. -->
+    <div class="rejilla-3">
+      <article class="tarjeta rev" data-stagger="1">
+        <span class="tarjeta__n" aria-hidden="true">2</span>
+        <h3>Escúchalo o léelo</h3>
+        <p>Cada sección tiene texto y audio: es lo más cerca que hay de un
+           podcast de libros en español, pero sin relleno.</p>
+      </article>
+      <article class="tarjeta rev" data-stagger="2">
+        <span class="tarjeta__n" aria-hidden="true">6</span>
+        <h3>Seis secciones</h3>
+        <p>Introducción, tres capítulos, conclusión y ejercicios.</p>
+      </article>
+      <article class="tarjeta rev" data-stagger="3">
+        <span class="tarjeta__n" aria-hidden="true">1</span>
+        <h3>Tuyo para siempre</h3>
+        <p>1 crédito desbloquea el Zap y se queda en tu cuenta.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ §3 Así es un Zap — pinned-saga ============ -->
+<!-- El protagonista de esta seccion es un Zap DE VERDAD abierto en la app, no una
+     tarjeta con el titulo escrito. La pantalla se reconstruye en HTML a partir de la
+     captura real (`assets/app/lectura.webp`): misma barra, misma ficha, mismo boton
+     verde, mismo mini-reproductor con «Seccion N de 6». Al bajar, el telefono avanza
+     de seccion: cambia el rotulo, se mueve la barra y la onda sigue sonando. Eso es
+     lo que compra el visitante, y hasta ahora no se veia por ningun lado.
+     La cubierta del libro va en TIPOGRAFIA, no en ilustracion: ninguna de las 28
+     portadas propias corresponde a «Ego es el Enemigo», y aparearlas seria inventar
+     la asociacion (regla §10.4 del PRD: los titulos van en tipografia). -->
+<section class="seccion saga" data-superficie="papel" id="zap" style="padding-block:0">
+  <div class="saga__pin">
+    <div class="saga__aura" aria-hidden="true"></div>
+    <div class="envoltura saga__rejilla">
+
+      <!-- El telefono. `aria-hidden`: todo lo que dice ya esta en la columna de al
+           lado, en texto de verdad; leerlo dos veces solo estorba. -->
+      <div class="fono" aria-hidden="true">
+        <div class="fono__pantalla">
+          <div class="fono__barra">
+            <span class="fono__icono fono__icono--atras"></span>
+            <span class="fono__icono fono__icono--marca"></span>
+          </div>
+
+          <div class="fono__ficha">
+            <div class="fono__tapa"><b>Ego</b><span>es el</span><span>Enemigo</span></div>
+            <div class="fono__meta">
+              <span class="fono__chip">Desarrollo personal</span>
+              <p class="fono__libro">Ego es el Enemigo</p>
+              <p class="fono__autor">Ryan Holiday</p>
+              <div class="fono__chips">
+                <span class="fono__chip">22 min</span>
+                <span class="fono__chip">7 aprendizajes</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="fono__cta">Escuchar ahora</div>
+
+          <div class="fono__seccion">
+            <span class="fono__vivo">Reproduciendo</span>
+            <p class="fono__titulo" data-fono-titulo>Introducción al concepto del ego como enemigo</p>
+            <canvas class="fono__onda"></canvas>
+          </div>
+
+          <div class="fono__player">
+            <div class="fono__mini"></div>
+            <div class="fono__minitexto">
+              <p class="fono__minilibro">Ego es el Enemigo</p>
+              <p class="fono__minipaso" data-fono-paso>Sección 1 de 6</p>
+            </div>
+            <div class="fono__play"></div>
+          </div>
+          <div class="fono__barrita"><i data-fono-barra></i></div>
+        </div>
+      </div>
+
+      <!-- La columna de texto: el indice REAL de las seis secciones del Zap. -->
+      <div class="saga__col">
+        <p class="mono">Un Zap real</p>
+        <h2 class="saga__h">Seis secciones, todas con audio.<br>Esta es la de Ryan Holiday.</h2>
+        <div class="saga__caja">
+          <svg class="saga__haz" aria-hidden="true" focusable="false" preserveAspectRatio="none"></svg>
+          <ol class="saga__lista">
+            <li data-n="1" data-activo="si">Introducción al concepto del ego como enemigo</li>
+            <li data-n="2">Identificando el ego en nuestras vidas</li>
+            <li data-n="3">Estrategias para mantener el ego bajo control</li>
+            <li data-n="4">El papel de la humildad en el éxito personal</li>
+            <li data-n="5">Reflexiones finales sobre el impacto del ego</li>
+            <li data-n="6">Ejercicios prácticos para gestionar el ego</li>
+          </ol>
+        </div>
+        <p class="serif saga__pie">Cada Zap termina con ejercicios. Para eso lo escuchaste.</p>
+      </div>
+
+    </div>
+  </div>
+  <div style="height:240vh" aria-hidden="true"></div>
+</section>
+
+<!-- ============ §4 Todo con audio — spotlight-reveal ============ -->
+<section class="seccion" data-superficie="noche" data-cortina="si">
+  <div class="envoltura">
+    <h2 class="rev" style="font-weight:600;font-size:clamp(1.9rem,4.6vw,3.1rem);letter-spacing:-.02em;max-width:20ch">
+      Lo que hay dentro, contado con números de verdad.</h2>
+
+    <div class="linterna rev" data-stagger="1" style="margin-top:40px;border:1px solid var(--linea)">
+      <blockquote class="linterna__capa linterna__texto"
+                  cite="https://apps.apple.com/mx/app/id6762142820">
+        «El ego es el enemigo de lo que quieres y de lo que tienes. De dominar un oficio.
+        De la creatividad de verdad. De trabajar bien con otros. De construir lealtad y apoyo.
+        Es el enemigo de conseguirlo, y de conservarlo cuando ya lo tienes.»
+        <cite>Del Zap de <b>Ego es el Enemigo</b>, de Ryan Holiday</cite>
+      </blockquote>
+      <div class="linterna__capa linterna__onda" aria-hidden="true"
+           style="background:linear-gradient(90deg,var(--verde) 0 2px,transparent 2px) 0 50%/8px 62% repeat-x,
+                  linear-gradient(90deg,var(--verde-brillo) 0 2px,transparent 2px) 4px 50%/16px 34% repeat-x,
+                  var(--noche-hondo)"></div>
+      <p class="mono linterna__pista">desliza el dedo</p>
+    </div>
+    <p class="mono rev" data-stagger="2" style="margin-top:12px">Lo mismo, leído y escuchado. Descúbrelo con el puntero o el dedo.</p>
+
+    <div class="cifras">
+      <div class="rev" data-stagger="1"><div class="cifra__n" data-scramble>303</div><p class="cifra__t">libros publicados</p></div>
+      <div class="rev" data-stagger="2"><div class="cifra__n" data-scramble>1,734</div><p class="cifra__t">secciones, todas con audio</p></div>
+      <div class="rev" data-stagger="3"><div class="cifra__n" data-scramble>2,161</div><p class="cifra__t">aprendizajes clave con audio</p></div>
+      <div class="rev" data-stagger="4"><div class="cifra__n" data-scramble>230</div><p class="cifra__t">autores</p></div>
+      <div class="rev" data-stagger="5"><div class="cifra__n" data-scramble>20</div><p class="cifra__t">minutos por Zap, en promedio</p><p class="cifra__pie">entre 14 y 24</p></div>
+    </div>
+
+    <p class="serif rev" style="margin-top:34px;font-style:italic;font-size:1.3rem">
+      Escritos y narrados en español. Los 303.</p>
+  </div>
+</section>
+
+<!-- ============ §5 Diez estantes — catalog-waveform ============ -->
+<section class="seccion" data-superficie="papel" id="catalogo-sec">
+  <div class="envoltura">
+    <h2 class="serif rev" style="font-size:clamp(2rem,5vw,3.2rem);max-width:16ch">Diez estantes.</h2>
+    <p class="rev" data-stagger="1" style="margin-top:14px;color:var(--texto2);max-width:var(--medida)">
+      Cada barra es un Zap publicado: su altura son sus minutos y cada bloque, un estante.</p>
+
+    <div class="estante__lienzo rev" data-stagger="2" style="margin-top:34px">
+      <canvas role="img" aria-label="Onda formada por 303 barras, una por cada libro publicado en Zapienz"></canvas>
+      <p class="estante__tooltip" data-ver="no" aria-live="polite"></p>
+    </div>
+
+    <div class="estantes">
+      <a class="estanteria rev" data-stagger="1" href="c/desarrollo-personal/"><span class="estanteria__n">109 libros</span><h3>Desarrollo personal</h3><p class="estanteria__t">Hábitos Atómicos · Los 7 Hábitos de la Gente Altamente Efectiva</p></a>
+      <a class="estanteria rev" data-stagger="2" href="c/negocios/"><span class="estanteria__n">34 libros</span><h3>Negocios</h3><p class="estanteria__t">Innovación Abierta · El Futuro es más Rápido de lo que Piensas</p></a>
+      <a class="estanteria rev" data-stagger="3" href="c/psicologia/"><span class="estanteria__n">33 libros</span><h3>Psicología</h3><p class="estanteria__t">Pensar Rápido, Pensar Despacio · El Hombre en Busca de Sentido</p></a>
+      <a class="estanteria rev" data-stagger="4" href="c/filosofia/"><span class="estanteria__n">31 libros</span><h3>Filosofía</h3><p class="estanteria__t">Sapiens: De Animales a Dioses · El Arte de la Guerra</p></a>
+      <a class="estanteria rev" data-stagger="5" href="c/finanzas/"><span class="estanteria__n">26 libros</span><h3>Finanzas</h3><p class="estanteria__t">Padre Rico Padre Pobre · Pequeño Cerdo Capitalista</p></a>
+      <a class="estanteria rev" data-stagger="6" href="c/marketing-y-ventas/"><span class="estanteria__n">17 libros</span><h3>Marketing y ventas</h3><p class="estanteria__t">Leads de $100M · Enganchado</p></a>
+      <a class="estanteria rev" data-stagger="7" href="c/salud-y-bienestar/"><span class="estanteria__n">17 libros</span><h3>Salud y bienestar</h3><p class="estanteria__t">El Milagro de la Atención Plena · La Solución Mindfulness</p></a>
+      <a class="estanteria rev" data-stagger="8" href="c/relaciones/"><span class="estanteria__n">15 libros</span><h3>Relaciones</h3><p class="estanteria__t">Háblame Bonito · Los 5 Lenguajes del Amor</p></a>
+      <a class="estanteria rev" data-stagger="9" href="c/biografias/"><span class="estanteria__n">11 libros</span><h3>Biografías</h3><p class="estanteria__t">Shoe Dog · Steve Jobs</p></a>
+      <a class="estanteria rev" data-stagger="10" href="c/productividad/"><span class="estanteria__n">10 libros</span><h3>Productividad</h3><p class="estanteria__t">Sprint · La Única Cosa</p></a>
+    </div>
+
+    <!-- bento-bleed: 8 ilustraciones PROPIAS del catalogo. No son portadas de editorial. -->
+    <div class="bento rev">
+      <figure><img src="assets/portadas/00.webp" srcset="assets/portadas/00-200.webp 200w, assets/portadas/00.webp 400w" sizes="(max-width:600px) 44vw, (max-width:860px) 30vw, 22vw" alt="Ilustración de Zapienz para El Arte de Pensar Claramente" width="400" height="600" loading="lazy" decoding="async"></figure>
+      <figure><img src="assets/portadas/02.webp" srcset="assets/portadas/02-200.webp 200w, assets/portadas/02.webp 400w" sizes="(max-width:600px) 44vw, (max-width:860px) 30vw, 22vw" alt="Ilustración de Zapienz para Quiet: El Poder de los Introvertidos" width="400" height="600" loading="lazy" decoding="async"></figure>
+      <figure><img src="assets/portadas/04.webp" srcset="assets/portadas/04-200.webp 200w, assets/portadas/04.webp 400w" sizes="(max-width:600px) 44vw, (max-width:860px) 30vw, 22vw" alt="Ilustración de Zapienz para Factfulness" width="400" height="600" loading="lazy" decoding="async"></figure>
+      <figure><img src="assets/portadas/07.webp" srcset="assets/portadas/07-200.webp 200w, assets/portadas/07.webp 400w" sizes="(max-width:600px) 44vw, (max-width:860px) 30vw, 22vw" alt="Ilustración de Zapienz para Atrévete a No Gustar" width="400" height="600" loading="lazy" decoding="async"></figure>
+      <figure><img src="assets/portadas/08.webp" srcset="assets/portadas/08-200.webp 200w, assets/portadas/08.webp 400w" sizes="(max-width:600px) 44vw, (max-width:860px) 30vw, 22vw" alt="Ilustración de Zapienz para El Poder de los 5 Segundos" width="400" height="600" loading="lazy" decoding="async"></figure>
+      <figure><img src="assets/portadas/17.webp" srcset="assets/portadas/17-200.webp 200w, assets/portadas/17.webp 400w" sizes="(max-width:600px) 44vw, (max-width:860px) 30vw, 22vw" alt="Ilustración de Zapienz para Pensamiento Lateral" width="400" height="600" loading="lazy" decoding="async"></figure>
+      <figure><img src="assets/portadas/18.webp" srcset="assets/portadas/18-200.webp 200w, assets/portadas/18.webp 400w" sizes="(max-width:600px) 44vw, (max-width:860px) 30vw, 22vw" alt="Ilustración de Zapienz para 12 Reglas para Vivir" width="400" height="600" loading="lazy" decoding="async"></figure>
+      <figure class="sangra sangra--app">
+        <img src="assets/app/home.webp" srcset="assets/app/home-376.webp 376w, assets/app/home.webp 752w" sizes="(max-width:600px) 40vw, 260px" alt="Pantalla de inicio de la app Zapienz con las filas Continuar y Populares" width="752" height="1311" loading="lazy" decoding="async">
+        <img src="assets/app/lectura.webp" srcset="assets/app/lectura-323.webp 323w, assets/app/lectura.webp 646w" sizes="(max-width:600px) 40vw, 260px" alt="Pantalla de lectura de un Zap, con el texto de la seccion y su reproductor de audio" width="646" height="1255" loading="lazy" decoding="async">
+      </figure>
+    </div>
+
+    <!-- La ultima frase cambia con el aparato: en tactil no hay cursor que pasar, y
+         prometer un gesto que no existe es una linea falsa. El gesto tampoco se
+         quita en tactil -- se cambia por el suyo (tocar). -->
+    <p class="mono rev" style="margin-top:16px">Ilustraciones propias de Zapienz, una por Zap.
+      No son portadas de editorial. <span class="solo-fino">Pasa el cursor para ver el
+      color original.</span><span class="solo-tacto">Tócalas para ver el color original.</span></p>
+
+    <p style="margin-top:34px"><a class="cta" data-magnetic href="https://apps.apple.com/mx/app/id6762142820">Ver los 303 en la app</a></p>
+  </div>
+</section>
+
+<!-- ============ §5b Reseñas reales ============
+     Las DOS unicas reseñas con texto que existen hoy en el App Store de Mexico
+     (3 calificaciones en total, promedio 5). Se citan LITERAL y recortadas: no se
+     edito ni una palabra dentro del fragmento, y la pagina dice que son fragmentos
+     en vez de fingir que son la reseña entera. Fuente y fecha verificadas contra el
+     feed publico de Apple el 11-sep-2026. -->
+<section class="seccion" data-superficie="papel" style="padding-top:0" id="resenas">
+  <div class="envoltura">
+    <p class="mono rev">Lo que dicen quienes ya escuchan</p>
+    <h2 class="serif rev" data-stagger="1"
+        style="font-size:clamp(1.9rem,4.4vw,2.9rem);margin-top:10px;max-width:20ch">
+      Dos reseñas. Las dos que hay.</h2>
+    <p class="rev" data-stagger="2" style="margin-top:14px;color:var(--texto2);max-width:var(--medida)">
+      Zapienz tiene 3 calificaciones en el App Store de México, promedio 5 estrellas, y
+      dos de ellas traen texto. Están aquí las dos, citadas literal. No hay una tercera
+      que enseñarte y no vamos a inventarla.</p>
+
+    <div class="resenas">
+      <figure class="resena rev" data-stagger="1">
+        <p class="resena__estrellas" aria-label="5 de 5 estrellas">★★★★★</p>
+        <blockquote class="resena__cita">
+          <p class="resena__titulo">«Lo recomiendo !»</p>
+          <p>“Hoy en día los podcast me ayudado a aprender de una manera más rápida y
+             diferente y sin duda esta aplicación lo ha hecho aún mejor…”</p>
+        </blockquote>
+        <figcaption class="resena__pie">
+          Cborbog · App&nbsp;Store México · fragmento literal
+        </figcaption>
+      </figure>
+
+      <figure class="resena rev" data-stagger="2">
+        <p class="resena__estrellas" aria-label="5 de 5 estrellas">★★★★★</p>
+        <blockquote class="resena__cita">
+          <p class="resena__titulo">«Me encantó la app»</p>
+          <p>“Es muy práctico escuchar el audio mientras voy manejado y los libros que
+             tienen están muy interesantes ✨”</p>
+        </blockquote>
+        <figcaption class="resena__pie">
+          alemndza98 · App&nbsp;Store México · fragmento literal
+        </figcaption>
+      </figure>
+    </div>
+
+    <p class="rev" data-stagger="3" style="margin-top:26px">
+      <a class="cta cta--fantasma" href="https://apps.apple.com/mx/app/id6762142820?action=write-review">
+        Escribir la tercera</a></p>
+  </div>
+</section>
+
+<!-- ============ §6 Cómo se paga ============ -->
+<section class="seccion seccion--muro" data-superficie="noche" id="precios">
+  <!-- El muro: las 28 ilustraciones REALES del catalogo, en tres profundidades que
+       derivan a distinta velocidad. Vivia en el hero y ahi tapaba el clip de la
+       libreria, que es la mecanica protagonista del PRD. Su sitio es este: cuando
+       alguien lee «1 credito = 1 Zap para siempre», detras pasa despacio lo que
+       esta comprando. -->
+  <div class="muro" aria-hidden="true">
+    <div class="muro__capa" data-depth="0.06">
+      <div class="muro__fila muro__fila--a"><img src="assets/portadas/00.webp" alt="" width="400" height="600" decoding="async"><img src="assets/portadas/01.webp" alt="" width="400" height="600" decoding="async"><img src="assets/portadas/02.webp" alt="" width="400" height="600" decoding="async"><img src="assets/portadas/03.webp" alt="" width="400" height="600" decoding="async"><img src="assets/portadas/04.webp" alt="" width="400" height="600" decoding="async"><img src="assets/portadas/05.webp" alt="" width="400" height="600" decoding="async"><img src="assets/portadas/06.webp" alt="" width="400" height="600" decoding="async"><img src="assets/portadas/07.webp" alt="" width="400" height="600" decoding="async"><img src="assets/portadas/08.webp" alt="" width="400" height="600" decoding="async"><img src="assets/portadas/00.webp" alt="" width="400" height="600" decoding="async"><img src="assets/portadas/01.webp" alt="" width="400" height="600" decoding="async"><img src="assets/portadas/02.webp" alt="" width="400" height="600" decoding="async"><img src="assets/portadas/03.webp" alt="" width="400" height="600" decoding="async"><img src="assets/portadas/04.webp" alt="" width="400" height="600" decoding="async"><img src="assets/portadas/05.webp" alt="" width="400" height="600" decoding="async"><img src="assets/portadas/06.webp" alt="" width="400" height="600" decoding="async"><img src="assets/portadas/07.webp" alt="" width="400" height="600" decoding="async"><img src="assets/portadas/08.webp" alt="" width="400" height="600" decoding="async"></div>
+    </div>
+    <div class="muro__capa" data-depth="0.14">
+      <div class="muro__fila muro__fila--b"><img src="assets/portadas/09.webp" alt="" width="400" height="600" decoding="async"><img src="assets/portadas/10.webp" alt="" width="400" height="600" decoding="async"><img src="assets/portadas/11.webp" alt="" width="400" height="600" decoding="async"><img src="assets/portadas/12.webp" alt="" width="400" height="600" decoding="async"><img src="assets/portadas/13.webp" alt="" width="400" height="600" decoding="async"><img src="assets/portadas/14.webp" alt="" width="400" height="600" decoding="async"><img src="assets/portadas/15.webp" alt="" width="400" height="600" decoding="async"><img src="assets/portadas/16.webp" alt="" width="400" height="600" decoding="async"><img src="assets/portadas/17.webp" alt="" width="400" height="600" decoding="async"><img src="assets/portadas/09.webp" alt="" width="400" height="600" decoding="async"><img src="assets/portadas/10.webp" alt="" width="400" height="600" decoding="async"><img src="assets/portadas/11.webp" alt="" width="400" height="600" decoding="async"><img src="assets/portadas/12.webp" alt="" width="400" height="600" decoding="async"><img src="assets/portadas/13.webp" alt="" width="400" height="600" decoding="async"><img src="assets/portadas/14.webp" alt="" width="400" height="600" decoding="async"><img src="assets/portadas/15.webp" alt="" width="400" height="600" decoding="async"><img src="assets/portadas/16.webp" alt="" width="400" height="600" decoding="async"><img src="assets/portadas/17.webp" alt="" width="400" height="600" decoding="async"></div>
+    </div>
+    <div class="muro__capa" data-depth="0.24">
+      <div class="muro__fila muro__fila--c"><img src="assets/portadas/18.webp" alt="" width="400" height="600" decoding="async"><img src="assets/portadas/19.webp" alt="" width="400" height="600" decoding="async"><img src="assets/portadas/20.webp" alt="" width="400" height="600" decoding="async"><img src="assets/portadas/21.webp" alt="" width="400" height="600" decoding="async"><img src="assets/portadas/22.webp" alt="" width="400" height="600" decoding="async"><img src="assets/portadas/23.webp" alt="" width="400" height="600" decoding="async"><img src="assets/portadas/24.webp" alt="" width="400" height="600" decoding="async"><img src="assets/portadas/25.webp" alt="" width="400" height="600" decoding="async"><img src="assets/portadas/26.webp" alt="" width="400" height="600" decoding="async"><img src="assets/portadas/27.webp" alt="" width="400" height="600" decoding="async"><img src="assets/portadas/18.webp" alt="" width="400" height="600" decoding="async"><img src="assets/portadas/19.webp" alt="" width="400" height="600" decoding="async"><img src="assets/portadas/20.webp" alt="" width="400" height="600" decoding="async"><img src="assets/portadas/21.webp" alt="" width="400" height="600" decoding="async"><img src="assets/portadas/22.webp" alt="" width="400" height="600" decoding="async"><img src="assets/portadas/23.webp" alt="" width="400" height="600" decoding="async"><img src="assets/portadas/24.webp" alt="" width="400" height="600" decoding="async"><img src="assets/portadas/25.webp" alt="" width="400" height="600" decoding="async"><img src="assets/portadas/26.webp" alt="" width="400" height="600" decoding="async"><img src="assets/portadas/27.webp" alt="" width="400" height="600" decoding="async"></div>
+    </div>
+  </div>
+  <div class="muro__velo" aria-hidden="true"></div>
+  <div class="envoltura">
+    <h2 class="rev" style="font-weight:600;font-size:clamp(1.9rem,4.6vw,3.1rem);letter-spacing:-.02em">
+      Paga por Zap o por todo. Tú decides.</h2>
+
+    <div class="precios">
+      <article class="plan rev" data-stagger="1">
+        <h3>Créditos</h3>
+        <p class="plan__precio" data-scramble>$59 · $99 · $179</p>
+        <p style="color:var(--texto2)">1 crédito = 1 Zap para siempre. 5 créditos $59, 10 por $99, 20 por $179.</p>
+        <ul class="plan__lista">
+          <li>Desbloquea Zaps de forma permanente.</li>
+          <li>Los créditos se guardan en tu cuenta.</li>
+          <li>Buena opción si usas Zapienz de forma ocasional.</li>
+        </ul>
+        <a class="cta cta--ancho" data-magnetic href="https://apps.apple.com/mx/app/id6762142820">Empezar con créditos</a>
+      </article>
+      <article class="plan plan--todo rev" data-stagger="2">
+        <span class="plan__sello">Los 303</span>
+        <h3>Premium</h3>
+        <p class="plan__precio" data-scramble>$129 al mes · $999 al año</p>
+        <p style="color:var(--texto2)">Acceso completo a todo el catálogo sin gastar créditos.</p>
+        <ul class="plan__lista">
+          <li>Se renueva automáticamente.</li>
+          <li>Cancela cuando quieras.</li>
+        </ul>
+        <a class="cta cta--ancho" data-magnetic href="https://apps.apple.com/mx/app/id6762142820">Probar Premium</a>
+      </article>
+    </div>
+
+    <p class="mono nota">Precios en pesos mexicanos, en App Store. La cuenta es gratis; los Zaps se
+      desbloquean con créditos o Premium.</p>
+  </div>
+</section>
+
+<!-- ============ §7 Lo que un Zap es y no es ============ -->
+<section class="seccion" data-superficie="papel">
+  <div class="envoltura">
+    <h2 class="serif rev" style="font-size:clamp(2rem,5vw,3.2rem);max-width:18ch">
+      Para que no te lleves una sorpresa.</h2>
+
+    <div class="faq">
+      <div class="faq__item" data-abierto="no">
+        <button class="faq__b" aria-expanded="false">¿Es el libro completo?</button>
+        <div class="faq__panel"><div><p>No. Es un Zap de unos 20 minutos con las ideas clave,
+          contado con apoyo de inteligencia artificial y revisión editorial. Sirve para
+          aprender de un libro en 20 minutos, pero
+          <span class="subrayado">no sustituye la obra original</span> ni reproduce obras completas.</p></div></div>
+      </div>
+      <div class="faq__item" data-abierto="no">
+        <button class="faq__b" aria-expanded="false">¿Está en español?</button>
+        <div class="faq__panel"><div><p>Sí, los 303.</p></div></div>
+      </div>
+      <div class="faq__item" data-abierto="no">
+        <button class="faq__b" aria-expanded="false">¿Necesito suscripción?</button>
+        <div class="faq__panel"><div><p>No; 1 crédito, 1 Zap.</p></div></div>
+      </div>
+      <div class="faq__item" data-abierto="no">
+        <button class="faq__b" aria-expanded="false">¿Puedo leer en vez de escuchar?</button>
+        <div class="faq__panel"><div><p>Sí, texto y audio en cada sección.</p></div></div>
+      </div>
+      <div class="faq__item" data-abierto="no">
+        <button class="faq__b" aria-expanded="false">¿Android?</button>
+        <div class="faq__panel"><div><p>Todavía no; escríbenos a
+          <a href="mailto:contactozapienz@gmail.com">contactozapienz@gmail.com</a> y te avisamos.</p></div></div>
+      </div>
+      <div class="faq__item" data-abierto="no">
+        <button class="faq__b" aria-expanded="false">¿Y si dejo un Zap a la mitad?</button>
+        <div class="faq__panel"><div><p>Se retoma donde lo dejaste.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ §8 Cierre ============ -->
+<section class="seccion seccion--ambiente" data-superficie="noche">
+  <!-- El loop de ambiente: polvo suspendido en un haz de luz, al 18 % de opacidad
+       detras del cierre. Ping-pong en ffmpeg para que el bucle no de tirones. -->
+  <div class="ambiente" aria-hidden="true">
+    <video data-pingpong autoplay muted loop playsinline preload="none"
+           poster="assets/hero-poster.webp">
+      <source src="assets/video/ambiente-polvo.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="envoltura" style="text-align:center">
+    <h2 class="rev" data-blur-words style="font-weight:600;font-size:clamp(2rem,5.4vw,3.6rem);letter-spacing:-.025em">
+      El próximo trayecto ya tiene libro.</h2>
+    <p style="margin-top:26px">
+      <a class="cta" data-magnetic href="https://apps.apple.com/mx/app/id6762142820">Descargar en el App Store</a>
+    </p>
+    <p class="mono" style="margin-top:20px">
+      <a href="mailto:contactozapienz@gmail.com?subject=Hola%20Zapienz">contactozapienz@gmail.com</a></p>
+  </div>
+</section>
+
+</main>
+
+<footer class="pie">
+  <div class="pie__fila">
+    <svg class="pie__mark" viewBox="0 0 120 120" width="24" height="24"
+         aria-hidden="true" focusable="false" fill="currentColor">
+        <rect class="zbar" data-col="0" x="7" y="10" width="10" height="18" rx="5"/>
+        <rect class="zbar" data-col="0" x="7" y="92" width="10" height="18" rx="5"/>
+        <rect class="zbar" data-col="1" x="23" y="10" width="10" height="18" rx="5"/>
+        <rect class="zbar" data-col="1" x="23" y="78.33" width="10" height="31.67" rx="5"/>
+        <rect class="zbar" data-col="2" x="39" y="10" width="10" height="18" rx="5"/>
+        <rect class="zbar" data-col="2" x="39" y="64.67" width="10" height="18" rx="5"/>
+        <rect class="zbar" data-col="2" x="39" y="92" width="10" height="18" rx="5"/>
+        <rect class="zbar" data-col="3" x="55" y="10" width="10" height="18" rx="5"/>
+        <rect class="zbar" data-col="3" x="55" y="51" width="10" height="18" rx="5"/>
+        <rect class="zbar" data-col="3" x="55" y="92" width="10" height="18" rx="5"/>
+        <rect class="zbar" data-col="4" x="71" y="10" width="10" height="18" rx="5"/>
+        <rect class="zbar" data-col="4" x="71" y="37.33" width="10" height="18" rx="5"/>
+        <rect class="zbar" data-col="4" x="71" y="92" width="10" height="18" rx="5"/>
+        <rect class="zbar" data-col="5" x="87" y="10" width="10" height="31.67" rx="5"/>
+        <rect class="zbar" data-col="5" x="87" y="92" width="10" height="18" rx="5"/>
+        <rect class="zbar" data-col="6" x="103" y="10" width="10" height="18" rx="5"/>
+        <rect class="zbar" data-col="6" x="103" y="92" width="10" height="18" rx="5"/>
+    </svg>
+    <span>Zapienz, app de Gustavo Mier, México · <span id="anio">2026</span></span>
+    <!-- Las rutas REALES que Apple tiene registradas como sellerUrl del app. La raiz
+         zapienz-dot.github.io/ es una pagina vacia de 167 bytes: enlazarla prometia un
+         aviso que no existia. Verificado 11-sep-2026 (200 y con texto las dos). -->
+    <a href="https://zapienz-dot.github.io/legal/privacy-policy.html" rel="noopener">Aviso de privacidad</a>
+    <a href="https://zapienz-dot.github.io/legal/terms.html" rel="noopener">Términos</a>
+    <a href="mailto:contactozapienz@gmail.com">Soporte</a>
+  </div>
+</footer>
+
+<script type="application/json" id="catalogo">[{"titulo":"¿Por Qué Amamos?","autor":"Helen Fisher","categoria":"Psicología","minutos":22},{"titulo":"¿Por Qué Nadie me Dijo Esto Antes?","autor":"Julie Smith","categoria":"Psicología","minutos":19},{"titulo":"¿Quién se ha Llevado mi Queso?","autor":"Spencer Johnson","categoria":"Desarrollo personal","minutos":24},{"titulo":"10x es más Fácil que 2x","autor":"Dan Sullivan","categoria":"Desarrollo personal","minutos":23},{"titulo":"12 Reglas para Vivir","autor":"Jordan B. Peterson","categoria":"Desarrollo personal","minutos":22},{"titulo":"21 Lecciones para el Siglo XXI","autor":"Yuval Noah Harari","categoria":"Filosofía","minutos":21},{"titulo":"Abundancia","autor":"Peter Diamandis","categoria":"Negocios","minutos":23},{"titulo":"Agotamiento","autor":"Emily Nagoski","categoria":"Salud y bienestar","minutos":22},{"titulo":"Amar o Depender","autor":"Walter Riso","categoria":"Relaciones","minutos":19},{"titulo":"Ámate a Ti Mismo como si tu Vida Dependiera de Ello","autor":"Kamal Ravikant","categoria":"Desarrollo personal","minutos":23},{"titulo":"Ansiedad","autor":"Enric Corbera","categoria":"Salud y bienestar","minutos":22},{"titulo":"Antifrágil","autor":"Nassim Nicholas Taleb","categoria":"Filosofía","minutos":22},{"titulo":"Apegos y Cómo Sanarlos","autor":"Milan Yerkovich","categoria":"Psicología","minutos":22},{"titulo":"Aprende más Rápido","autor":"Ulrich Boser","categoria":"Desarrollo personal","minutos":15},{"titulo":"Aprendiendo a Quererse a Sí Mismo","autor":"Walter Riso","categoria":"Desarrollo personal","minutos":20},{"titulo":"Así Habló Zaratustra","autor":"Friedrich Nietzsche","categoria":"Filosofía","minutos":22},{"titulo":"Atreverse a la Grandeza","autor":"Brené Brown","categoria":"Desarrollo personal","minutos":19},{"titulo":"Atrévete a Liderar","autor":"Brené Brown","categoria":"Desarrollo personal","minutos":23},{"titulo":"Atrévete a No Gustar","autor":"Ichiro Kishimi","categoria":"Desarrollo personal","minutos":21},{"titulo":"Attached: Los Estilos de Apego en el Amor","autor":"Amir Levine","categoria":"Psicología","minutos":22},{"titulo":"Ayuno Intermitente","autor":"Jason Fung","categoria":"Salud y bienestar","minutos":18},{"titulo":"Benjamin Franklin: Una Vida Americana","autor":"Walter Isaacson","categoria":"Biografías","minutos":18},{"titulo":"Blink","autor":"Malcolm Gladwell","categoria":"Psicología","minutos":22},{"titulo":"Bola de Nieve: Warren Buffett y el Negocio de la Vida","autor":"Alice Schroeder","categoria":"Biografías","minutos":20},{"titulo":"Bullshit Jobs","autor":"David Graeber","categoria":"Filosofía","minutos":22},{"titulo":"Buyology","autor":"Martin Lindstrom","categoria":"Marketing y ventas","minutos":23},{"titulo":"Cartas a Lucilio","autor":"Séneca","categoria":"Filosofía","minutos":17},{"titulo":"Come, Reza, Ama","autor":"Elizabeth Gilbert","categoria":"Desarrollo personal","minutos":21},{"titulo":"Cómo Ganar Amigos e Influir sobre las Personas","autor":"Dale Carnegie","categoria":"Desarrollo personal","minutos":19},{"titulo":"Cómo Hablar para que los Niños Escuchen y Escuchar para que los Niños Hablen","autor":"Adele Faber","categoria":"Relaciones","minutos":21},{"titulo":"Cómo Hacer que te Pasen Cosas Buenas","autor":"Marian Rojas Estapé","categoria":"Desarrollo personal","minutos":18},{"titulo":"Cómo Mandar a la Mierda de Forma Educada","autor":"Alba Cardalda","categoria":"Desarrollo personal","minutos":23},{"titulo":"Cómo Ser un Estoico","autor":"Massimo Pigliucci","categoria":"Filosofía","minutos":19},{"titulo":"Comunicación No Violenta","autor":"Marshall B. Rosenberg","categoria":"Relaciones","minutos":20},{"titulo":"Contagioso","autor":"Jonah Berger","categoria":"Marketing y ventas","minutos":23},{"titulo":"Conversaciones Cruciales","autor":"Kerry Patterson","categoria":"Relaciones","minutos":19},{"titulo":"Cosmos","autor":"Carl Sagan","categoria":"Filosofía","minutos":24},{"titulo":"Creatividad S.A.","autor":"Ed Catmull","categoria":"Negocios","minutos":21},{"titulo":"Cree en Ti","autor":"Rut Nieves","categoria":"Desarrollo personal","minutos":22},{"titulo":"Cuando el Cuerpo Dice No","autor":"Gabor Maté","categoria":"Salud y bienestar","minutos":23},{"titulo":"Cuatro Mil Semanas","autor":"Oliver Burkeman","categoria":"Desarrollo personal","minutos":18},{"titulo":"Dar y Recibir","autor":"Adam Grant","categoria":"Negocios","minutos":20},{"titulo":"David y Goliat","autor":"Malcolm Gladwell","categoria":"Psicología","minutos":24},{"titulo":"De Bueno a Excelente","autor":"Jim Collins","categoria":"Negocios","minutos":20},{"titulo":"De Cero a Uno","autor":"Peter Thiel","categoria":"Negocios","minutos":23},{"titulo":"Deja de Ser Tú","autor":"Joe Dispenza","categoria":"Desarrollo personal","minutos":22},{"titulo":"Dejar Ir","autor":"David R. Hawkins","categoria":"Desarrollo personal","minutos":22},{"titulo":"Dejar Ir el Apego","autor":"Deepak Chopra","categoria":"Desarrollo personal","minutos":23},{"titulo":"Delivering Happiness","autor":"Tony Hsieh","categoria":"Negocios","minutos":21},{"titulo":"Despertando al Gigante Interior","autor":"Anthony Robbins","categoria":"Desarrollo personal","minutos":22},{"titulo":"Despierta tu Héroe Interior","autor":"Victor Hugo Manzanilla","categoria":"Desarrollo personal","minutos":23},{"titulo":"Diario de una Joven","autor":"Ana Frank","categoria":"Biografías","minutos":14},{"titulo":"Digital Minimalism","autor":"Cal Newport","categoria":"Productividad","minutos":23},{"titulo":"Dinero Feliz","autor":"Ken Honda","categoria":"Finanzas","minutos":23},{"titulo":"Dinero: Domina el Juego","autor":"Tony Robbins","categoria":"Finanzas","minutos":20},{"titulo":"Dopamina Detox","autor":"Thibaut Meurisse","categoria":"Desarrollo personal","minutos":23},{"titulo":"Drive: La Sorprendente Verdad sobre lo que nos Motiva","autor":"Daniel H. Pink","categoria":"Desarrollo personal","minutos":19},{"titulo":"Eat That Frog","autor":"Brian Tracy","categoria":"Productividad","minutos":21},{"titulo":"Economía en una Lección","autor":"Henry Hazlitt","categoria":"Finanzas","minutos":19},{"titulo":"Ego es el Enemigo","autor":"Ryan Holiday","categoria":"Desarrollo personal","minutos":22},{"titulo":"Einstein: Su Vida y Su Universo","autor":"Walter Isaacson","categoria":"Biografías","minutos":22},{"titulo":"El Alquimista","autor":"Paulo Coelho","categoria":"Filosofía","minutos":18},{"titulo":"El Arte de Amar","autor":"Erich Fromm","categoria":"Psicología","minutos":23},{"titulo":"El Arte de la Buena Vida","autor":"Rolf Dobelli","categoria":"Desarrollo personal","minutos":23},{"titulo":"El Arte de la Felicidad","autor":"Dalai Lama","categoria":"Salud y bienestar","minutos":21},{"titulo":"El Arte de la Guerra","autor":"Sun Tzu","categoria":"Filosofía","minutos":18},{"titulo":"El Arte de Pensar Claramente","autor":"Rolf Dobelli","categoria":"Desarrollo personal","minutos":22},{"titulo":"El Caballero de la Armadura Oxidada","autor":"Robert Fisher","categoria":"Desarrollo personal","minutos":22},{"titulo":"El Camino a la Libertad","autor":"Nelson Mandela","categoria":"Biografías","minutos":18},{"titulo":"El Camino del Artista","autor":"Julia Cameron","categoria":"Desarrollo personal","minutos":23},{"titulo":"El Camino del Hombre Superior","autor":"David Deida","categoria":"Desarrollo personal","minutos":21},{"titulo":"El Cerebro de Buda","autor":"Rick Hanson","categoria":"Psicología","minutos":15},{"titulo":"El Cerebro del Niño","autor":"Daniel J. Siegel","categoria":"Psicología","minutos":19},{"titulo":"El Cerebro Emocional","autor":"Joseph LeDoux","categoria":"Psicología","minutos":22},{"titulo":"El Cerebro en Forma","autor":"John J. Ratey","categoria":"Salud y bienestar","minutos":19},{"titulo":"El Cisne Negro","autor":"Nassim Nicholas Taleb","categoria":"Filosofía","minutos":21},{"titulo":"El Club de las 5 AM","autor":"Robin Sharma","categoria":"Desarrollo personal","minutos":24},{"titulo":"El Código de la Longevidad","autor":"Valter Longo","categoria":"Salud y bienestar","minutos":23},{"titulo":"El Código de la Obesidad","autor":"Jason Fung","categoria":"Salud y bienestar","minutos":19},{"titulo":"El Código del Dinero","autor":"Raimon Samsó","categoria":"Finanzas","minutos":24},{"titulo":"El Código del Talento","autor":"Daniel Coyle","categoria":"Desarrollo personal","minutos":21},{"titulo":"El Cuadrante del Flujo de Dinero","autor":"Robert T. Kiyosaki","categoria":"Finanzas","minutos":18},{"titulo":"El Cuerpo Lleva la Cuenta","autor":"Bessel van der Kolk","categoria":"Psicología","minutos":18},{"titulo":"El Curso Fénix","autor":"Brian Tracy","categoria":"Desarrollo personal","minutos":15},{"titulo":"El Derecho a Decir No","autor":"Walter Riso","categoria":"Desarrollo personal","minutos":18},{"titulo":"El Dilema del Innovador","autor":"Clayton M. Christensen","categoria":"Negocios","minutos":19},{"titulo":"El Efecto Compuesto","autor":"Darren Hardy","categoria":"Desarrollo personal","minutos":23},{"titulo":"El Ejecutivo al Minuto","autor":"Ken Blanchard","categoria":"Negocios","minutos":24},{"titulo":"El Error de Descartes","autor":"Antonio Damasio","categoria":"Psicología","minutos":22},{"titulo":"El Extranjero","autor":"Albert Camus","categoria":"Filosofía","minutos":23},{"titulo":"El Futuro es más Rápido de lo que Piensas","autor":"Peter Diamandis","categoria":"Negocios","minutos":22},{"titulo":"El Gen Egoísta","autor":"Richard Dawkins","categoria":"Filosofía","minutos":20},{"titulo":"El Gran Diseño","autor":"Stephen Hawking","categoria":"Filosofía","minutos":23},{"titulo":"El Guerrero Pacífico","autor":"Dan Millman","categoria":"Desarrollo personal","minutos":22},{"titulo":"El Hombre en Busca de Sentido","autor":"Viktor Frankl","categoria":"Psicología","minutos":19},{"titulo":"El Hombre más Rico de Babilonia","autor":"George S. Clason","categoria":"Finanzas","minutos":24},{"titulo":"El Inversor Inteligente","autor":"Benjamin Graham","categoria":"Finanzas","minutos":19},{"titulo":"El Juego Infinito","autor":"Simon Sinek","categoria":"Negocios","minutos":18},{"titulo":"El Lenguaje del Cuerpo","autor":"Allan Pease","categoria":"Psicología","minutos":22},{"titulo":"El Método Lean Startup","autor":"Eric Ries","categoria":"Negocios","minutos":19},{"titulo":"El Milagro de la Atención Plena","autor":"Thich Nhat Hanh","categoria":"Salud y bienestar","minutos":24},{"titulo":"El Milagro de las Mañanas","autor":"Hal Elrod","categoria":"Desarrollo personal","minutos":22},{"titulo":"El Millonario Automático","autor":"David Bach","categoria":"Finanzas","minutos":22},{"titulo":"El Millonario de la Puerta de al Lado","autor":"Thomas J. Stanley","categoria":"Finanzas","minutos":19},{"titulo":"El Mito de Sísifo","autor":"Albert Camus","categoria":"Filosofía","minutos":22},{"titulo":"El Mito del Emprendedor","autor":"Michael E. Gerber","categoria":"Negocios","minutos":22},{"titulo":"El Monje que Vendió su Ferrari","autor":"Robin Sharma","categoria":"Desarrollo personal","minutos":23},{"titulo":"El Mundo de Sofía","autor":"Jostein Gaarder","categoria":"Filosofía","minutos":22},{"titulo":"El Obstáculo es el Camino","autor":"Ryan Holiday","categoria":"Desarrollo personal","minutos":23},{"titulo":"El Pequeño Libro del Talento","autor":"Daniel Coyle","categoria":"Desarrollo personal","minutos":21},{"titulo":"El Placebo Eres Tú","autor":"Joe Dispenza","categoria":"Salud y bienestar","minutos":23},{"titulo":"El Poder de la Autodisciplina","autor":"Brian Tracy","categoria":"Desarrollo personal","minutos":18},{"titulo":"El Poder de la Intención","autor":"Wayne W. Dyer","categoria":"Desarrollo personal","minutos":18},{"titulo":"El Poder de la Mente Subconsciente","autor":"Joseph Murphy","categoria":"Desarrollo personal","minutos":24},{"titulo":"El Poder de la Resiliencia","autor":"Robert Brooks","categoria":"Desarrollo personal","minutos":22},{"titulo":"El Poder de la Vulnerabilidad","autor":"Brené Brown","categoria":"Desarrollo personal","minutos":15},{"titulo":"El Poder de los 5 Segundos","autor":"Mel Robbins","categoria":"Desarrollo personal","minutos":22},{"titulo":"El Poder de los Hábitos","autor":"Charles Duhigg","categoria":"Desarrollo personal","minutos":19},{"titulo":"El Poder del Ahora","autor":"Eckhart Tolle","categoria":"Desarrollo personal","minutos":18},{"titulo":"El Poder del Apego","autor":"Diane Poole Heller","categoria":"Psicología","minutos":21},{"titulo":"El Poder del Hábito","autor":"Charles Duhigg","categoria":"Desarrollo personal","minutos":23},{"titulo":"El Principio 80/20","autor":"Richard Koch","categoria":"Productividad","minutos":22},{"titulo":"El Principito","autor":"Antoine de Saint-Exupéry","categoria":"Filosofía","minutos":23},{"titulo":"El Punto Clave","autor":"Malcolm Gladwell","categoria":"Negocios","minutos":23},{"titulo":"El Secreto","autor":"Rhonda Byrne","categoria":"Desarrollo personal","minutos":23},{"titulo":"El Sutil Arte de que (casi todo) te Importe una Mierda","autor":"Mark Manson","categoria":"Desarrollo personal","minutos":18},{"titulo":"El Trauma y el Cuerpo","autor":"Pat Ogden","categoria":"Psicología","minutos":15},{"titulo":"El Universo en una Cáscara de Nuez","autor":"Stephen Hawking","categoria":"Filosofía","minutos":20},{"titulo":"El Vendedor más Grande del Mundo","autor":"Og Mandino","categoria":"Marketing y ventas","minutos":23},{"titulo":"Elon Musk","autor":"Walter Isaacson","categoria":"Biografías","minutos":19},{"titulo":"Emociones Tóxicas","autor":"Bernardo Stamateas","categoria":"Desarrollo personal","minutos":20},{"titulo":"Empieza con el Porqué","autor":"Simon Sinek","categoria":"Negocios","minutos":19},{"titulo":"Empresa de Uno","autor":"Paul Jarvis","categoria":"Negocios","minutos":18},{"titulo":"Enamórate de Ti","autor":"Walter Riso","categoria":"Desarrollo personal","minutos":20},{"titulo":"Encuentra tu Persona Vitamina","autor":"Marian Rojas Estapé","categoria":"Relaciones","minutos":19},{"titulo":"Enganchado","autor":"Nir Eyal","categoria":"Marketing y ventas","minutos":20},{"titulo":"Eres un Chingón","autor":"Jen Sincero","categoria":"Desarrollo personal","minutos":18},{"titulo":"Eres un Chingón en Hacer Dinero","autor":"Jen Sincero","categoria":"Finanzas","minutos":19},{"titulo":"Esencialismo","autor":"Greg McKeown","categoria":"Desarrollo personal","minutos":20},{"titulo":"Estás Hecho para Amar","autor":"Marcela Lechuga","categoria":"Relaciones","minutos":22},{"titulo":"Este Dolor no es Mío","autor":"Mark Wolynn","categoria":"Psicología","minutos":19},{"titulo":"Esto es Marketing","autor":"Seth Godin","categoria":"Marketing y ventas","minutos":20},{"titulo":"Factfulness","autor":"Hans Rosling","categoria":"Desarrollo personal","minutos":22},{"titulo":"Fluir","autor":"Mihaly Csikszentmihalyi","categoria":"Psicología","minutos":19},{"titulo":"Freakonomics","autor":"Steven D. Levitt","categoria":"Negocios","minutos":19},{"titulo":"Gente Tóxica","autor":"Bernardo Stamateas","categoria":"Relaciones","minutos":19},{"titulo":"Good to Great","autor":"Jim Collins","categoria":"Negocios","minutos":22},{"titulo":"Grit: El Poder de la Pasión y la Perseverancia","autor":"Angela Duckworth","categoria":"Desarrollo personal","minutos":23},{"titulo":"Gung Ho","autor":"Ken Blanchard","categoria":"Negocios","minutos":18},{"titulo":"Hábitos Atómicos","autor":"James Clear","categoria":"Desarrollo personal","minutos":23},{"titulo":"Háblame Bonito","autor":"Vanessa Van Edwards","categoria":"Relaciones","minutos":22},{"titulo":"Hacking Growth","autor":"Sean Ellis","categoria":"Marketing y ventas","minutos":20},{"titulo":"Haz Tiempo","autor":"Jake Knapp","categoria":"Productividad","minutos":16},{"titulo":"Hazlo Ahora","autor":"Brian Tracy","categoria":"Productividad","minutos":23},{"titulo":"Hombres son de Marte, Mujeres son de Venus","autor":"John Gray","categoria":"Relaciones","minutos":23},{"titulo":"Homo Deus","autor":"Yuval Noah Harari","categoria":"Filosofía","minutos":22},{"titulo":"Ikigai","autor":"Héctor García","categoria":"Desarrollo personal","minutos":18},{"titulo":"Indistractable","autor":"Nir Eyal","categoria":"Productividad","minutos":19},{"titulo":"Influencia: La Psicología de la Persuasión","autor":"Robert B. Cialdini","categoria":"Psicología","minutos":23},{"titulo":"Inner Excellence","autor":"Jim Afremow","categoria":"Desarrollo personal","minutos":15},{"titulo":"Innovación Abierta","autor":"Henry Chesbrough","categoria":"Negocios","minutos":21},{"titulo":"Inspired","autor":"Marty Cagan","categoria":"Negocios","minutos":24},{"titulo":"Inteligencia Emocional","autor":"Daniel Goleman","categoria":"Psicología","minutos":18},{"titulo":"Inteligencia Social","autor":"Daniel Goleman","categoria":"Psicología","minutos":18},{"titulo":"Inversión Inteligente para Principiantes","autor":"Samuel Rees","categoria":"Finanzas","minutos":22},{"titulo":"La Biología de la Creencia","autor":"Bruce H. Lipton","categoria":"Desarrollo personal","minutos":22},{"titulo":"La Bolsa o la Vida","autor":"Joe Domínguez","categoria":"Finanzas","minutos":24},{"titulo":"La Buena Economía","autor":"Abhijit V. Banerjee","categoria":"Finanzas","minutos":19},{"titulo":"La Buena Suerte","autor":"Alex Rovira","categoria":"Desarrollo personal","minutos":15},{"titulo":"La Ciencia de Hacerse Rico","autor":"Wallace D. Wattles","categoria":"Finanzas","minutos":23},{"titulo":"La Empresa Consciente","autor":"Fred Kofman","categoria":"Negocios","minutos":19},{"titulo":"La Estrategia del Océano Azul","autor":"W. Chan Kim","categoria":"Negocios","minutos":21},{"titulo":"La Filosofía como Forma de Vida","autor":"Pierre Hadot","categoria":"Filosofía","minutos":23},{"titulo":"La Fórmula de Lanzamiento","autor":"Jeff Walker","categoria":"Marketing y ventas","minutos":22},{"titulo":"La Ganancia es Primero","autor":"Mike Michalowicz","categoria":"Finanzas","minutos":22},{"titulo":"La Generación Ansiosa","autor":"Jonathan Haidt","categoria":"Psicología","minutos":19},{"titulo":"La Guerra del Arte","autor":"Steven Pressfield","categoria":"Desarrollo personal","minutos":17},{"titulo":"La Historia de mis Experimentos con la Verdad","autor":"Mahatma Gandhi","categoria":"Biografías","minutos":18},{"titulo":"La Maestría del Amor","autor":"Miguel Ruiz","categoria":"Relaciones","minutos":22},{"titulo":"La Magia del Orden","autor":"Marie Kondo","categoria":"Desarrollo personal","minutos":17},{"titulo":"La Meta","autor":"Eliyahu M. Goldratt","categoria":"Negocios","minutos":19},{"titulo":"La Montaña Eres Tú","autor":"Brianna Wiest","categoria":"Desarrollo personal","minutos":17},{"titulo":"La Nación de la Dopamina","autor":"Anna Lembke","categoria":"Psicología","minutos":20},{"titulo":"La Psicología de las Ventas","autor":"Brian Tracy","categoria":"Marketing y ventas","minutos":21},{"titulo":"La Psicología del Dinero","autor":"Morgan Housel","categoria":"Finanzas","minutos":19},{"titulo":"La Riqueza de las Naciones","autor":"Adam Smith","categoria":"Filosofía","minutos":18},{"titulo":"La Sabiduría de la Inseguridad","autor":"Alan Watts","categoria":"Filosofía","minutos":22},{"titulo":"La Sabiduría del Enneagrama","autor":"Don Richard Riso","categoria":"Psicología","minutos":23},{"titulo":"La Sanación de las 5 Heridas","autor":"Lise Bourbeau","categoria":"Desarrollo personal","minutos":23},{"titulo":"La Semana Laboral de 4 Horas","autor":"Timothy Ferriss","categoria":"Desarrollo personal","minutos":22},{"titulo":"La Singularidad está Cerca","autor":"Ray Kurzweil","categoria":"Filosofía","minutos":24},{"titulo":"La Sociedad del Cansancio","autor":"Byung-Chul Han","categoria":"Filosofía","minutos":21},{"titulo":"La Solución del Azúcar en la Sangre","autor":"Mark Hyman","categoria":"Salud y bienestar","minutos":21},{"titulo":"La Solución Mindfulness","autor":"Ronald Siegel","categoria":"Salud y bienestar","minutos":22},{"titulo":"La Startup de 100 Dólares","autor":"Chris Guillebeau","categoria":"Negocios","minutos":19},{"titulo":"La Teoría Let Them","autor":"Mel Robbins","categoria":"Desarrollo personal","minutos":21},{"titulo":"La Tercera Ola","autor":"Steve Case","categoria":"Negocios","minutos":15},{"titulo":"La Trampa de la Felicidad","autor":"Russ Harris","categoria":"Desarrollo personal","minutos":23},{"titulo":"La Trampa del Perfeccionismo","autor":"Tal Ben-Shahar","categoria":"Desarrollo personal","minutos":18},{"titulo":"La Transformación Total de su Dinero","autor":"Dave Ramsey","categoria":"Finanzas","minutos":22},{"titulo":"La Única Cosa","autor":"Gary Keller","categoria":"Productividad","minutos":19},{"titulo":"La Vaca Púrpura","autor":"Seth Godin","categoria":"Marketing y ventas","minutos":19},{"titulo":"La Venta Challenger","autor":"Matthew Dixon","categoria":"Marketing y ventas","minutos":20},{"titulo":"La Ventaja de la Felicidad","autor":"Shawn Achor","categoria":"Desarrollo personal","minutos":19},{"titulo":"Las 21 Leyes Irrefutables del Liderazgo","autor":"John C. Maxwell","categoria":"Desarrollo personal","minutos":19},{"titulo":"Las 48 Leyes del Poder","autor":"Robert Greene","categoria":"Negocios","minutos":18},{"titulo":"Las 5 Heridas que Impiden ser Uno Mismo","autor":"Lise Bourbeau","categoria":"Desarrollo personal","minutos":15},{"titulo":"Las Leyes de la Naturaleza Humana","autor":"Robert Greene","categoria":"Psicología","minutos":19},{"titulo":"Leads de $100M","autor":"Alex Hormozi","categoria":"Marketing y ventas","minutos":23},{"titulo":"Leonardo da Vinci","autor":"Walter Isaacson","categoria":"Biografías","minutos":19},{"titulo":"Levantarse","autor":"Brené Brown","categoria":"Desarrollo personal","minutos":19},{"titulo":"Libertad Financiera","autor":"Grant Sabatier","categoria":"Finanzas","minutos":19},{"titulo":"Lifespan: Por Qué Envejecemos y Por Qué No Tenemos Por Qué","autor":"David A. Sinclair","categoria":"Salud y bienestar","minutos":18},{"titulo":"Lo Difícil de las Cosas Difíciles","autor":"Ben Horowitz","categoria":"Negocios","minutos":20},{"titulo":"Lo Inevitable","autor":"Kevin Kelly","categoria":"Filosofía","minutos":22},{"titulo":"Long Walk to Freedom","autor":"Nelson Mandela","categoria":"Biografías","minutos":22},{"titulo":"Los 10X","autor":"Grant Cardone","categoria":"Desarrollo personal","minutos":19},{"titulo":"Los 5 Lenguajes del Amor","autor":"Gary Chapman","categoria":"Relaciones","minutos":23},{"titulo":"Los 7 Hábitos de la Gente Altamente Efectiva","autor":"Stephen R. Covey","categoria":"Desarrollo personal","minutos":23},{"titulo":"Los Cuatro Acuerdos","autor":"Miguel Ruiz","categoria":"Desarrollo personal","minutos":22},{"titulo":"Los Dones de la Imperfección","autor":"Brené Brown","categoria":"Desarrollo personal","minutos":18},{"titulo":"Los Hombres son de Marte, las Mujeres son de Venus","autor":"John Gray","categoria":"Relaciones","minutos":21},{"titulo":"Los Líderes Comen al Final","autor":"Simon Sinek","categoria":"Negocios","minutos":21},{"titulo":"Los Secretos de la Mente Millonaria","autor":"T. Harv Eker","categoria":"Finanzas","minutos":18},{"titulo":"Los Secretos para Hablar en Público","autor":"Dale Carnegie","categoria":"Desarrollo personal","minutos":15},{"titulo":"Marketing de Contenidos","autor":"Joe Pulizzi","categoria":"Marketing y ventas","minutos":19},{"titulo":"Martes con mi Viejo Profesor","autor":"Mitch Albom","categoria":"Desarrollo personal","minutos":21},{"titulo":"Más Allá del Bien y del Mal","autor":"Friedrich Nietzsche","categoria":"Filosofía","minutos":22},{"titulo":"Más Allá del Bien y del Mal en la Pareja","autor":"Joan Garriga","categoria":"Relaciones","minutos":23},{"titulo":"Mastery","autor":"Robert Greene","categoria":"Desarrollo personal","minutos":19},{"titulo":"Meditaciones","autor":"Marco Aurelio","categoria":"Filosofía","minutos":19},{"titulo":"Mindset","autor":"Carol S. Dweck","categoria":"Desarrollo personal","minutos":19},{"titulo":"Minimalismo","autor":"Joshua Fields Millburn","categoria":"Desarrollo personal","minutos":22},{"titulo":"Money: Master the Game","autor":"Tony Robbins","categoria":"Finanzas","minutos":23},{"titulo":"Morir Con Cero","autor":"Bill Perkins","categoria":"Finanzas","minutos":24},{"titulo":"Mujeres y Poder","autor":"Mary Beard","categoria":"Filosofía","minutos":15},{"titulo":"Multiplicadores","autor":"Liz Wiseman","categoria":"Negocios","minutos":19},{"titulo":"No Puedes Herirme","autor":"David Goggins","categoria":"Desarrollo personal","minutos":20},{"titulo":"Nunca Comas Solo","autor":"Keith Ferrazzi","categoria":"Desarrollo personal","minutos":21},{"titulo":"Nunca Dividas la Diferencia","autor":"Chris Voss","categoria":"Negocios","minutos":22},{"titulo":"Ofertas de $100M","autor":"Alex Hormozi","categoria":"Negocios","minutos":24},{"titulo":"Opción B","autor":"Adam Grant","categoria":"Desarrollo personal","minutos":20},{"titulo":"Organízate con Eficacia","autor":"David Allen","categoria":"Productividad","minutos":24},{"titulo":"Originales","autor":"Adam Grant","categoria":"Desarrollo personal","minutos":19},{"titulo":"Outliers: Fuera de Serie","autor":"Malcolm Gladwell","categoria":"Psicología","minutos":22},{"titulo":"Outlive: La Ciencia y el Arte de la Longevidad","autor":"Peter Attia","categoria":"Salud y bienestar","minutos":19},{"titulo":"Padre Rico Padre Pobre","autor":"Robert Kiyosaki","categoria":"Finanzas","minutos":22},{"titulo":"Pensamiento Lateral","autor":"Edward de Bono","categoria":"Desarrollo personal","minutos":23},{"titulo":"Pensar Rápido, Pensar Despacio","autor":"Daniel Kahneman","categoria":"Psicología","minutos":19},{"titulo":"Pequeño Cerdo Capitalista","autor":"Sofía Macías","categoria":"Finanzas","minutos":22},{"titulo":"Piensa como un Monje","autor":"Jay Shetty","categoria":"Desarrollo personal","minutos":15},{"titulo":"Piénsalo de Nuevo","autor":"Adam Grant","categoria":"Desarrollo personal","minutos":18},{"titulo":"Piense y Hágase Rico","autor":"Napoleon Hill","categoria":"Desarrollo personal","minutos":18},{"titulo":"Por Qué Dormimos","autor":"Matthew Walker","categoria":"Salud y bienestar","minutos":19},{"titulo":"Posicionamiento","autor":"Al Ries","categoria":"Marketing y ventas","minutos":23},{"titulo":"Potencial Oculto","autor":"Adam Grant","categoria":"Desarrollo personal","minutos":18},{"titulo":"Pre-Suasión","autor":"Robert B. Cialdini","categoria":"Marketing y ventas","minutos":20},{"titulo":"Predeciblemente Irracional","autor":"Dan Ariely","categoria":"Psicología","minutos":22},{"titulo":"Principios","autor":"Ray Dalio","categoria":"Negocios","minutos":18},{"titulo":"Quiero Cambiar","autor":"Bernardo Stamateas","categoria":"Desarrollo personal","minutos":18},{"titulo":"Quiet: El Poder de los Introvertidos","autor":"Susan Cain","categoria":"Psicología","minutos":23},{"titulo":"Quizás Deberías Hablar con Alguien","autor":"Lori Gottlieb","categoria":"Psicología","minutos":20},{"titulo":"Rango","autor":"David Epstein","categoria":"Desarrollo personal","minutos":22},{"titulo":"Recupera tu Mente, Reconquista tu Vida","autor":"Marian Rojas Estapé","categoria":"Psicología","minutos":19},{"titulo":"Redefine Imposible","autor":"Jonathan Benito","categoria":"Desarrollo personal","minutos":15},{"titulo":"Relaciones Conscientes","autor":"Anamar Orihuela","categoria":"Relaciones","minutos":23},{"titulo":"Respira","autor":"James Nestor","categoria":"Salud y bienestar","minutos":19},{"titulo":"Responsabilidad Extrema","autor":"Jocko Willink","categoria":"Desarrollo personal","minutos":19},{"titulo":"Rework","autor":"Jason Fried","categoria":"Negocios","minutos":20},{"titulo":"Roba como un Artista","autor":"Austin Kleon","categoria":"Desarrollo personal","minutos":18},{"titulo":"Sapiens: De Animales a Dioses","autor":"Yuval Noah Harari","categoria":"Filosofía","minutos":21},{"titulo":"Sé Imparable","autor":"Ben Angel","categoria":"Desarrollo personal","minutos":23},{"titulo":"Seis Sombreros para Pensar","autor":"Edward de Bono","categoria":"Desarrollo personal","minutos":19},{"titulo":"Ser Mortal","autor":"Atul Gawande","categoria":"Salud y bienestar","minutos":20},{"titulo":"Sexo, Amor y Cerebro","autor":"Louann Brizendine","categoria":"Psicología","minutos":21},{"titulo":"Shoe Dog","autor":"Phil Knight","categoria":"Biografías","minutos":18},{"titulo":"Sobre la Brevedad de la Vida","autor":"Séneca","categoria":"Filosofía","minutos":23},{"titulo":"Sobrenatural","autor":"Joe Dispenza","categoria":"Desarrollo personal","minutos":23},{"titulo":"Sprint","autor":"Jake Knapp","categoria":"Productividad","minutos":20},{"titulo":"Steve Jobs","autor":"Walter Isaacson","categoria":"Biografías","minutos":18},{"titulo":"Stillness is the Key","autor":"Ryan Holiday","categoria":"Desarrollo personal","minutos":24},{"titulo":"Supercerebro","autor":"Deepak Chopra","categoria":"Desarrollo personal","minutos":23},{"titulo":"Superprevisores","autor":"Philip Tetlock","categoria":"Negocios","minutos":18},{"titulo":"Te Amarás sobre Todas las Cosas","autor":"Mónica Esgueva","categoria":"Desarrollo personal","minutos":21},{"titulo":"Te Enseñaré a ser Rico","autor":"Ramit Sethi","categoria":"Finanzas","minutos":20},{"titulo":"Thinking in Bets","autor":"Annie Duke","categoria":"Desarrollo personal","minutos":19},{"titulo":"Tiende tu Cama","autor":"William H. McRaven","categoria":"Desarrollo personal","minutos":22},{"titulo":"Todo Está J*dido","autor":"Mark Manson","categoria":"Desarrollo personal","minutos":22},{"titulo":"Trabajo Profundo","autor":"Cal Newport","categoria":"Productividad","minutos":19},{"titulo":"Tribus","autor":"Seth Godin","categoria":"Marketing y ventas","minutos":19},{"titulo":"Tu Cerebro Manda","autor":"John Medina","categoria":"Psicología","minutos":22},{"titulo":"Tu Dinero o Tu Vida","autor":"Vicki Robin","categoria":"Finanzas","minutos":23},{"titulo":"Tu Mejor Versión","autor":"Bernardo Stamateas","categoria":"Desarrollo personal","minutos":15},{"titulo":"Tus Zonas Erróneas","autor":"Wayne W. Dyer","categoria":"Desarrollo personal","minutos":19},{"titulo":"Un Nuevo Mundo, Ahora","autor":"Eckhart Tolle","categoria":"Desarrollo personal","minutos":23},{"titulo":"Un Paso por Delante de Wall Street","autor":"Peter Lynch","categoria":"Finanzas","minutos":18},{"titulo":"Una Breve Historia de Casi Todo","autor":"Bill Bryson","categoria":"Filosofía","minutos":19},{"titulo":"Una Breve Historia del Tiempo","autor":"Stephen Hawking","categoria":"Filosofía","minutos":22},{"titulo":"Una Mente para los Números","autor":"Barbara Oakley","categoria":"Desarrollo personal","minutos":23},{"titulo":"Vayamos Adelante","autor":"Sheryl Sandberg","categoria":"Desarrollo personal","minutos":19},{"titulo":"Véndele a la Mente, no a la Gente","autor":"Jürgen Klaric","categoria":"Marketing y ventas","minutos":23},{"titulo":"Vender es Humano","autor":"Daniel H. Pink","categoria":"Marketing y ventas","minutos":19},{"titulo":"Ya No Seas Codependiente","autor":"Melody Beattie","categoria":"Relaciones","minutos":22}]</script>
+<script src="assets/js/site.js" defer></script>
+</body>
+</html>

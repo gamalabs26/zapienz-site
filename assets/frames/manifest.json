@@ -1,0 +1,30 @@
+{
+  "total": 90,
+  "patron": "frame-%d.webp",
+  "fuente": {
+    "desktop": "hero-169 (Higgsfield kling3_0, upscale 1920x1080, corregido en color)",
+    "mobile": "hero-916 (Higgsfield kling3_0, upscale 1080x1920, corregido en color)",
+    "fps_origen": 24,
+    "cuadros_origen": 117
+  },
+  "desktop": {
+    "resolucion": "1600x900",
+    "cuadros": 90,
+    "bytes": 4018916,
+    "mb": 3.83,
+    "promedio_kb": 43.6
+  },
+  "mobile": {
+    "resolucion": "540x960",
+    "cuadros": 90,
+    "bytes": 1410594,
+    "mb": 1.35,
+    "promedio_kb": 15.3
+  },
+  "calidad_webp": {
+    "desktop": 72,
+    "mobile": 70
+  },
+  "alto_scroll_recomendado": "300vh",
+  "creado": "2026-09-11"
+}

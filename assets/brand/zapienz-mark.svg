@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img"
+     aria-label="Zapienz: una Z formada por barras de ecualizador">
+  <title>Zapienz</title>
+  <!-- Retrazado del icono de App Store (Icon-App-1024x1024@1x.png), medido con Pillow sin
+       reescalar: #0E2453 ocupa el 71.04 por ciento de los pixeles y #4AB472 es el verde
+       exacto mas frecuente. Es una Z construida CON barras de ecualizador: la marca de
+       tienda no lleva libro. Cada tramo es un <rect> propio y lleva data-col, para animar
+       las 7 columnas por separado sin tocar la geometria.
+       Ancho de barra 10, separacion 6 -> proporcion 1:0.6, como el icono. -->
+  <g fill="currentColor">
+    <rect class="zbar" data-col="0" x="7" y="10" width="10" height="18" rx="5"/>
+    <rect class="zbar" data-col="0" x="7" y="92" width="10" height="18" rx="5"/>
+    <rect class="zbar" data-col="1" x="23" y="10" width="10" height="18" rx="5"/>
+    <rect class="zbar" data-col="1" x="23" y="78.33" width="10" height="31.67" rx="5"/>
+    <rect class="zbar" data-col="2" x="39" y="10" width="10" height="18" rx="5"/>
+    <rect class="zbar" data-col="2" x="39" y="64.67" width="10" height="18" rx="5"/>
+    <rect class="zbar" data-col="2" x="39" y="92" width="10" height="18" rx="5"/>
+    <rect class="zbar" data-col="3" x="55" y="10" width="10" height="18" rx="5"/>
+    <rect class="zbar" data-col="3" x="55" y="51" width="10" height="18" rx="5"/>
+    <rect class="zbar" data-col="3" x="55" y="92" width="10" height="18" rx="5"/>
+    <rect class="zbar" data-col="4" x="71" y="10" width="10" height="18" rx="5"/>
+    <rect class="zbar" data-col="4" x="71" y="37.33" width="10" height="18" rx="5"/>
+    <rect class="zbar" data-col="4" x="71" y="92" width="10" height="18" rx="5"/>
+    <rect class="zbar" data-col="5" x="87" y="10" width="10" height="31.67" rx="5"/>
+    <rect class="zbar" data-col="5" x="87" y="92" width="10" height="18" rx="5"/>
+    <rect class="zbar" data-col="6" x="103" y="10" width="10" height="18" rx="5"/>
+    <rect class="zbar" data-col="6" x="103" y="92" width="10" height="18" rx="5"/>
+  </g>
+</svg>
