@@ -96,6 +96,33 @@ button{ font:inherit; color:inherit; background:none; border:0; cursor:pointer; 
   position:relative; z-index:1;
 }
 .envoltura{ max-width:1200px; margin-inline:auto; }
+
+/* ---------- 2b. COSTURA ENTRE SUPERFICIES -------------------------------- */
+/* El defecto que Gus nombro primero: «cada que bajo se cambia la pagina con un
+   efecto que tapa y aparece la nueva seccion». Medido en captura, cada cambio de
+   superficie (noche <-> papel) era una LINEA RECTA de 1440 px, sin gradiente, sin
+   traslape, sin sombra: el corte de una diapositiva. Se repetia seis veces.
+   Ahora la seccion que estrena superficie SUBE sobre la anterior como una hoja:
+   esquinas redondeadas, sombra que la despega, y un tirador verde de 48 px que es
+   la misma barra de sonido del resto del sitio. Es el idioma de Linear y Arc, y
+   no necesita ningun JS ni tapar nada. */
+.seccion[data-costura="si"]{
+  --costura: clamp(18px,2.6vw,34px);
+  border-radius:var(--costura) var(--costura) 0 0;
+  margin-top:calc(-1 * var(--costura));
+  box-shadow:0 -26px 64px rgba(4,14,38,.30);
+}
+/* El tirador: 48x3, centrado sobre el borde superior. Marca la juntura sin
+   dibujar una linea de 1440 px, que es justo lo que se veia a diapositiva. */
+.seccion[data-costura="si"]::before{
+  content:""; position:absolute; z-index:3; left:50%; top:calc(var(--costura) / 2 - 1.5px);
+  translate:-50% 0; width:48px; height:3px; border-radius:3px;
+  background:color-mix(in srgb,var(--verde) 78%,transparent);
+  pointer-events:none;
+}
+/* El hero no lleva costura arriba (no hay nada encima) pero si tiene que dejar
+   pasar la hoja siguiente: sin esto su `overflow:clip` recortaria la sombra. */
+.hero{ border-bottom-left-radius:0; border-bottom-right-radius:0; }
 .mono{ font-family:var(--mono); font-size:.78rem; letter-spacing:.10em;
        text-transform:uppercase; color:var(--texto2); }
 .serif{ font-family:var(--display); font-weight:400; }
@@ -120,9 +147,14 @@ button{ font:inherit; color:inherit; background:none; border:0; cursor:pointer; 
   backdrop-filter:blur(18px) saturate(150%);
   -webkit-backdrop-filter:blur(18px) saturate(150%);
   transition:height var(--dur-panel) var(--ease-out),
-             background var(--dur-panel) var(--ease-out);
+             background var(--dur-panel) var(--ease-out),
+             translate var(--dur-panel) var(--ease-out),
+             opacity var(--dur-panel) var(--ease-out);
 }
 .nav[data-encogido="si"]{ height:52px; background:rgba(7,28,71,.72); }
+/* Se va hacia arriba, no se desvanece: un nav que se apaga en su sitio deja un
+   hueco raro sobre el contenido. `translate` y opacidad, nada de layout. */
+.nav[data-oculto="si"]{ translate:-50% -140%; opacity:0; pointer-events:none; }
 [data-tema="papel"] .nav{
   background:rgba(246,247,251,.62); border-color:rgba(24,24,27,.10); color:var(--tinta);
 }
@@ -150,9 +182,20 @@ button{ font:inherit; color:inherit; background:none; border:0; cursor:pointer; 
   will-change:transform;
 }
 .cta:active{ transform:scale(.97); }
+/* El borde era `--linea` (#E8E8F0 sobre papel #F6F7FB): 1.08:1, o sea invisible.
+   El boton se leia como texto suelto flotando debajo de las resenas, y por eso
+   chocaba con el CTA verde en vez de acompanarlo. Ahora el borde es tinta al 34%
+   y al pasar el cursor se llena, que es como se comporta un secundario de verdad. */
 .cta--fantasma{
-  background:transparent; color:var(--texto);
-  border:1px solid var(--linea); font-weight:500;
+  background:transparent; color:var(--texto); font-weight:500;
+  border:1px solid color-mix(in srgb,var(--texto) 34%,transparent);
+  transition:transform var(--dur-ui) var(--ease-out),
+             background var(--dur-ui) var(--ease-out),
+             border-color var(--dur-ui) var(--ease-out);
+}
+.cta--fantasma:hover{
+  background:color-mix(in srgb,var(--texto) 6%,transparent);
+  border-color:var(--verde);
 }
 .cta--ancho{ width:100%; }
 .cta-appstore{ display:inline-block; }
@@ -251,18 +294,37 @@ button{ font:inherit; color:inherit; background:none; border:0; cursor:pointer; 
 .muro__fila--a{ top:-2%; --deriva:132s; }
 .muro__fila--b{ top:30%; --deriva:104s; animation-name:deriva-inv; }
 .muro__fila--c{ top:62%; --deriva:88s; }
-.muro__fila--a img{ height:clamp(96px,12vw,150px);  filter:saturate(.5) brightness(.6); }
-.muro__fila--b img{ height:clamp(120px,15vw,196px); filter:saturate(.65) brightness(.75); }
-.muro__fila--c img{ height:clamp(140px,18vw,240px); filter:saturate(.8)  brightness(.9); }
+/* Se subio el brillo de las tres profundidades: con el velo ya abierto en los
+   margenes, a .6 de brillo las portadas seguian leyendose como siluetas grises. */
+/* El desenfoque es lo que de verdad arregla el defecto que el verificador siguio
+   encontrando: subir el velo al 96.5% todavia dejaba leer «REDEFINE», «IMPOSIBLE»
+   y «MINIMALISMO» entre las dos tarjetas de precio, porque esas portadas llevan
+   texto blanco sobre fondo oscuro y sobreviven a casi cualquier alfa. Fuera de
+   foco, la ilustracion se sigue reconociendo -- forma y color, que es lo que
+   tiene que aportar un fondo -- y la palabra deja de existir. Mas lejos, mas
+   desenfoque, que ademas es como se comporta la profundidad de campo. */
+.muro__fila--a img{ height:clamp(96px,12vw,150px);
+                    filter:saturate(.62) brightness(.74) blur(4.5px); }
+.muro__fila--b img{ height:clamp(120px,15vw,196px);
+                    filter:saturate(.78) brightness(.86) blur(3.4px); }
+.muro__fila--c img{ height:clamp(140px,18vw,240px);
+                    filter:saturate(.92) brightness(.98) blur(2.6px); }
 /* Aqui el velo tapa MUCHO mas que en el hero: debajo hay dos tarjetas de precio con
    listas, y un precio que se lee mal es un precio que no se paga. */
+/* El velo estaba AL REVES: el gradiente horizontal iba de .5 en los bordes a .12
+   en el centro, o sea abria justo donde vive el texto y cerraba donde no hay nada.
+   Sumado al 180deg al .86-.9, las 28 portadas quedaban como manchas fantasma con
+   palabras sueltas asomando -- medido en captura: se leian «REDEFINE», «IMPOSIBLE»,
+   «MINIMALISMO» flotando sin contexto, que es peor que no poner nada. Invertido:
+   la banda central protege las dos tarjetas de precio, y en los margenes el muro
+   se ve como lo que es, portadas del catalogo. */
 .muro__velo{
   position:absolute; inset:0; z-index:1; pointer-events:none;
   background:
-    linear-gradient(180deg, var(--noche) 0 6%, rgba(14,36,83,.86) 24%,
-                    rgba(14,36,83,.9) 76%, var(--noche) 100%),
-    linear-gradient(90deg, rgba(14,36,83,.5) 0, rgba(14,36,83,.12) 50%,
-                    rgba(14,36,83,.5) 100%);
+    linear-gradient(180deg, var(--noche) 0 4%, rgba(14,36,83,.52) 18%,
+                    rgba(14,36,83,.52) 82%, var(--noche) 100%),
+    linear-gradient(90deg, rgba(14,36,83,.06) 0, rgba(14,36,83,.965) 24%,
+                    rgba(14,36,83,.965) 76%, rgba(14,36,83,.06) 100%);
 }
 .seccion--muro > .envoltura{ position:relative; z-index:2; }
 
@@ -541,6 +603,17 @@ button{ font:inherit; color:inherit; background:none; border:0; cursor:pointer; 
                   min-height:min(46vh,360px); display:grid; align-content:center; }
 .linterna__pista{ position:absolute; right:16px; bottom:14px; z-index:3;
                   pointer-events:none; }
+/* En telefono la tarjeta mide ~350x360 y la cita la llena entera: un haz de 130 px
+   en reposo se comia el ultimo renglon («conservarlo cuando ya lo tienes»). Medido
+   en captura de 390x844. Mas chico y mas metido en la esquina de la pista. */
+@media (max-width:600px){
+  .linterna__onda{
+    -webkit-mask-image:radial-gradient(circle var(--r,74px) at var(--mx,89%) var(--my,89%),
+                       #000 54%, rgba(0,0,0,.32) 76%, transparent 100%);
+            mask-image:radial-gradient(circle var(--r,74px) at var(--mx,89%) var(--my,89%),
+                       #000 54%, rgba(0,0,0,.32) 76%, transparent 100%);
+  }
+}
 
 /* ---------- 13. CIFRAS --------------------------------------------------- */
 .cifras{ display:grid; gap:20px; margin-top:48px;
@@ -652,26 +725,32 @@ button{ font:inherit; color:inherit; background:none; border:0; cursor:pointer; 
 /* La banda a sangre NO recorta una foto vertical a 16:9: es una franja noche con
    las dos pantallas REALES de la app encima. Recortar un screenshot de telefono a
    panoramico deja fuera justo lo que hay que ver. */
-.bento .sangra--app{
-  background:var(--noche); display:grid; grid-auto-flow:column;
-  /* `justify-content:center` y no el reparto por defecto: con el reparto, las dos
-     columnas implicitas se estiran hasta llenar la banda y el `gap` deja de valer
-     nada -- las pantallas quedaban a 340 px una de otra. Centradas, la separacion
-     es la del token. */
-  place-items:center; justify-content:center;
-  gap:clamp(14px,4vw,40px); padding:26px 16px;
-}
+/* La banda dejo de ser dos telefonos miniatura. Es una VENTANA al arranque de la
+   pantalla de inicio: la imagen se tiende a todo el ancho de la banda anclada
+   arriba, asi que se ve a ~93% de su escala nativa y la interfaz se lee. Medido:
+   antes cada pantalla salia a 149 px de ancho y su texto a ~4 px de alto. */
+/* La imagen va ABSOLUTA. Con `aspect-ratio:auto` y la imagen en flujo, sus 752x1311
+   nativos mandaban la altura de la fila: medido, la banda salio de 714x1245 px y
+   reventaba la rejilla. Fuera de flujo, la altura la pone la fila del bento y la
+   imagen solo la rellena. */
+.bento .sangra--app{ background:var(--noche); display:block; padding:0;
+                     position:relative; overflow:hidden; aspect-ratio:16/9; }
 .bento .sangra--app img{
-  height:clamp(150px,26vw,260px); width:auto;
-  border-radius:14px; border:1px solid rgba(255,255,255,.16);
+  position:absolute; inset:0;
+  width:100%; height:100%; object-fit:cover; object-position:top center;
+  aspect-ratio:auto; border:0; border-radius:0;
 }
-/* La proporcion va POR IMAGEN y con las medidas reales del archivo. Con
-   `aspect-ratio:auto` se descarta la razon que dan los atributos width/height, y
-   una imagen `loading="lazy"` que todavia no carga se queda sin ancho intrinseco:
-   `width:auto` colapsaba a 0 y las dos pantallas median 2 px (los bordes). Con la
-   razon declarada, el ancho existe desde el primer cuadro y no hay salto. */
-.bento .sangra--app img:nth-of-type(1){ aspect-ratio:752/1311; }
-.bento .sangra--app img:nth-of-type(2){ aspect-ratio:646/1255; }
+/* El degradado de abajo existe para que el recorte no termine en un tajo seco y
+   para que el rotulo tenga sobre que apoyarse. */
+.bento .sangra--app::after{
+  content:""; position:absolute; inset:auto 0 0 0; height:38%; pointer-events:none;
+  background:linear-gradient(180deg,transparent,rgba(7,28,71,.86) 62%,var(--noche-hondo));
+}
+.sangra__pie{
+  position:absolute; left:22px; bottom:18px; z-index:2;
+  font-family:var(--mono); font-size:.72rem; letter-spacing:.1em;
+  text-transform:uppercase; color:var(--noche-texto2);
+}
 
 /* ---------- video-loop-seamless: ambiente de fondo ------------------------
    Corre detras del cierre, atenuado, sin competir con el texto. El ping-pong lo

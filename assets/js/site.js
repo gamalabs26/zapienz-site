@@ -78,11 +78,34 @@ window.addEventListener('pagehide', () => loops.forEach(r => { cancelAnimationFr
 }
 
 /* ---------- NAV ---------------------------------------------------------- */
+/* La pildora se ESCONDE al bajar y vuelve al subir. En un iPhone de 844 px de
+   alto, 64 px de nav mas sus 14 px de margen son el 9% de la pantalla comidos
+   todo el rato: medido en capturas de 390x844, el nav tapaba la cifra de una
+   tarjeta de estante, el nombre de otra categoria entera y una pregunta del
+   acordeon. Al bajar nadie necesita el menu; al subir, si. El umbral de 6 px
+   evita que el rebote del scroll la haga parpadear. */
 {
   const nav = $('.nav');
-  if (nav) addEventListener('scroll', () => {
-    nav.dataset.encogido = scrollY > 80 ? 'si' : 'no';
-  }, { passive: true });
+  if (nav){
+    let ultimo = scrollY, acumulado = 0;
+    addEventListener('scroll', () => {
+      const y = scrollY;
+      const paso = y - ultimo;
+      nav.dataset.encogido = y > 80 ? 'si' : 'no';
+
+      if (Math.sign(paso) !== Math.sign(acumulado)) acumulado = 0;
+      acumulado += paso;
+
+      if (y < 120){ nav.dataset.oculto = 'no'; }
+      else if (acumulado > 6)  nav.dataset.oculto = 'si';
+      else if (acumulado < -6) nav.dataset.oculto = 'no';
+      ultimo = y;
+    }, { passive: true });
+
+    /* Con teclado la pildora tiene que reaparecer: si el foco entra en un enlace
+       escondido, nadie ve donde esta parado. */
+    nav.addEventListener('focusin', () => { nav.dataset.oculto = 'no'; });
+  }
 }
 
 /* =========================================================================
@@ -421,9 +444,13 @@ window.addEventListener('pagehide', () => loops.forEach(r => { cancelAnimationFr
     };
     foco.addEventListener('pointerdown', e => { foco.setPointerCapture(e.pointerId); mover(e); });
     foco.addEventListener('pointermove', mover);
+    /* Al salir se BORRAN las variables, no se ponen al centro. Ponerlas al 50/50
+       devolvia el haz justo encima de la cita y tapaba renglones enteros, que es
+       lo que el CSS ya habia corregido con su reposo abajo a la derecha: el JS lo
+       estaba deshaciendo en cuanto el cursor abandonaba la tarjeta. */
     foco.addEventListener('pointerleave', () => {
-      foco.style.setProperty('--mx', '50%');
-      foco.style.setProperty('--my', '50%');
+      foco.style.removeProperty('--mx');
+      foco.style.removeProperty('--my');
       if (pista) pista.style.opacity = '';
     });
     // La pista dice lo que el aparato de verdad hace.

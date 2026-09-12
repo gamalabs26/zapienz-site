@@ -166,7 +166,7 @@
 </section>
 
 <!-- ============ §2 El libro que no terminaste ============ -->
-<section class="seccion" data-superficie="papel">
+<section class="seccion" data-costura="si" data-superficie="papel">
   <div class="envoltura">
     <h2 class="serif rev" style="font-size:clamp(2rem,5vw,3.4rem);line-height:1.1;max-width:18ch">
       Compraste el libro. Lo empezaste. Está en el buró.</h2>
@@ -175,8 +175,13 @@
       te faltó interés: te faltaron veinte minutos seguidos. Un Zap te da lo que te ibas a llevar de
       ese libro —sus ideas clave, con sus ejemplos y un ejercicio para aplicarlas— en el tiempo que
       dura un trayecto. Y si te quedas a la mitad, la app retoma donde lo dejaste.</p>
-    <p class="rev" data-stagger="2" style="margin-top:22px;color:var(--texto2)">Lo que te faltó fue
-      <span class="subrayado">veinte minutos seguidos</span>.</p>
+    <!-- Esta linea repetia palabra por palabra el arranque del parrafo de arriba
+         («te faltaron veinte minutos seguidos») y se leia como copy sin limpiar. La
+         cifra que la sustituye sale del catalogo real: 303 registros en
+         assets/data/catalogo.json, minutos de 14 a 24, promedio 20.5. -->
+    <p class="rev" data-stagger="2" style="margin-top:22px;color:var(--texto2)">El Zap más largo
+      del catálogo dura <span class="subrayado">veinticuatro minutos</span>. El promedio, veinte y
+      medio.</p>
 
     <!-- Las tres tarjetas llevan la cifra REAL de lo que cuentan: dos formas de
          consumirlo, seis secciones por Zap, un credito por Zap. Antes eran tres
@@ -284,7 +289,7 @@
 </section>
 
 <!-- ============ §4 Todo con audio — spotlight-reveal ============ -->
-<section class="seccion" data-superficie="noche" data-cortina="si">
+<section class="seccion" data-costura="si" data-superficie="noche" data-cortina="si">
   <div class="envoltura">
     <h2 class="rev" style="font-weight:600;font-size:clamp(1.9rem,4.6vw,3.1rem);letter-spacing:-.02em;max-width:20ch">
       Lo que hay dentro, contado con números de verdad.</h2>
@@ -319,7 +324,7 @@
 </section>
 
 <!-- ============ §5 Diez estantes — catalog-waveform ============ -->
-<section class="seccion" data-superficie="papel" id="catalogo-sec">
+<section class="seccion" data-costura="si" data-superficie="papel" id="catalogo-sec">
   <div class="envoltura">
     <h2 class="serif rev" style="font-size:clamp(2rem,5vw,3.2rem);max-width:16ch">Diez estantes.</h2>
     <p class="rev" data-stagger="1" style="margin-top:14px;color:var(--texto2);max-width:var(--medida)">
@@ -352,9 +357,16 @@
       <figure><img src="assets/portadas/08.webp" srcset="assets/portadas/08-200.webp 200w, assets/portadas/08.webp 400w" sizes="(max-width:600px) 44vw, (max-width:860px) 30vw, 22vw" alt="Ilustración de Zapienz para El Poder de los 5 Segundos" width="400" height="600" loading="lazy" decoding="async"></figure>
       <figure><img src="assets/portadas/17.webp" srcset="assets/portadas/17-200.webp 200w, assets/portadas/17.webp 400w" sizes="(max-width:600px) 44vw, (max-width:860px) 30vw, 22vw" alt="Ilustración de Zapienz para Pensamiento Lateral" width="400" height="600" loading="lazy" decoding="async"></figure>
       <figure><img src="assets/portadas/18.webp" srcset="assets/portadas/18-200.webp 200w, assets/portadas/18.webp 400w" sizes="(max-width:600px) 44vw, (max-width:860px) 30vw, 22vw" alt="Ilustración de Zapienz para 12 Reglas para Vivir" width="400" height="600" loading="lazy" decoding="async"></figure>
+      <!-- Eran DOS telefonos completos a 149 px de ancho: la interfaz real quedaba a
+           4 px de alto y no se leia una palabra. Un screenshot de telefono entero a
+           tamano de miniatura nunca va a ser legible, asi que en vez de encogerlo se
+           RECORTA: la banda ensena el arranque de la pantalla de inicio a ~93% de su
+           escala nativa, con las filas «Continuar» y «Populares» que se leen de
+           verdad. La pantalla de lectura salio de aqui porque §3 ya la muestra
+           completa y a tamano util. -->
       <figure class="sangra sangra--app">
-        <img src="assets/app/home.webp" srcset="assets/app/home-376.webp 376w, assets/app/home.webp 752w" sizes="(max-width:600px) 40vw, 260px" alt="Pantalla de inicio de la app Zapienz con las filas Continuar y Populares" width="752" height="1311" loading="lazy" decoding="async">
-        <img src="assets/app/lectura.webp" srcset="assets/app/lectura-323.webp 323w, assets/app/lectura.webp 646w" sizes="(max-width:600px) 40vw, 260px" alt="Pantalla de lectura de un Zap, con el texto de la seccion y su reproductor de audio" width="646" height="1255" loading="lazy" decoding="async">
+        <img src="assets/app/home.webp" srcset="assets/app/home-376.webp 376w, assets/app/home.webp 752w" sizes="(max-width:600px) 92vw, 700px" alt="Pantalla de inicio de la app Zapienz con las filas Continuar y Populares" width="752" height="1311" loading="lazy" decoding="async">
+        <figcaption class="sangra__pie">La pantalla de inicio, tal cual</figcaption>
       </figure>
     </div>
 
@@ -419,7 +431,7 @@
 </section>
 
 <!-- ============ §6 Cómo se paga ============ -->
-<section class="seccion seccion--muro" data-superficie="noche" id="precios">
+<section class="seccion seccion--muro" data-costura="si" data-superficie="noche" id="precios">
   <!-- El muro: las 28 ilustraciones REALES del catalogo, en tres profundidades que
        derivan a distinta velocidad. Vivia en el hero y ahi tapaba el clip de la
        libreria, que es la mecanica protagonista del PRD. Su sitio es este: cuando
@@ -478,7 +490,7 @@
      que de verdad importa (esto NO es el libro), y la derecha es un indice numerado
      01-06 donde la pregunta abierta se vuelve tarjeta con riel verde. La primera
      abre sola: una seccion que arranca toda cerrada no tiene nada que mirar. -->
-<section class="seccion seccion--faq" data-superficie="papel">
+<section class="seccion seccion--faq" data-costura="si" data-superficie="papel">
   <div class="envoltura faq__rejilla">
     <aside class="faq__lado">
       <p class="mono">Antes de pagar</p>
@@ -550,7 +562,7 @@
 </section>
 
 <!-- ============ §8 Cierre ============ -->
-<section class="seccion seccion--ambiente" data-superficie="noche">
+<section class="seccion seccion--ambiente" data-costura="si" data-superficie="noche">
   <!-- El loop de ambiente: polvo suspendido en un haz de luz, al 18 % de opacidad
        detras del cierre. Ping-pong en ffmpeg para que el bucle no de tirones. -->
   <div class="ambiente" aria-hidden="true">
