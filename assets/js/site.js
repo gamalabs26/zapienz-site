@@ -531,7 +531,8 @@ window.addEventListener('pagehide', () => loops.forEach(r => { cancelAnimationFr
 
 /* =========================================================================
    MECANICA — catalog-waveform  (PROTAGONISTA de §5)
-   289 barras: una por Zap con audio publicado. Altura = minutos, normalizados del rango
+   289 barras en telefono y en escritorio: una por Zap con audio publicado, que es lo
+   que dice la linea de arriba. Altura = minutos, normalizados del rango
    REAL 14-24 al rango visual 14%-86%. Mapear linealmente al alto daria un
    ecualizador casi plano, porque el dato es angosto. Color = categoria.
    Bajo el puntero (o el dedo) la barra mas cercana se levanta y se identifica.
@@ -545,8 +546,18 @@ window.addEventListener('pagehide', () => loops.forEach(r => { cancelAnimationFr
   if (cv && crudo){
     const catalogo = JSON.parse(crudo.textContent);
     const ctx = cv.getContext('2d');
-    const MIN = 14, MAX = 24;                       // medidos sobre catalogo.json
+    const MIN = 14, MAX = 24;                       // rango GLOBAL, solo para normalizar el alto
     const cats = [...new Set(catalogo.map(z => z.categoria))];
+    /* El rango de CADA estante, calculado del mismo dato que dibuja las barras.
+       Antes el rotulo del movil imprimia MIN-MAX, o sea 14-24, para los diez
+       estantes -- y ninguno de los diez tiene ese rango: Relaciones va de 19 a 23
+       y Biografias de 14 a 22. Era una cifra inventada, y encima se contradecia
+       con la pagina del estante, que si publica el rango real. */
+    const porEstante = {};
+    cats.forEach(c => {
+      const g = catalogo.filter(z => z.categoria === c).map(z => z.minutos);
+      porEstante[c] = { n: g.length, min: Math.min(...g), max: Math.max(...g) };
+    });
     const mezcla = (t) => {
       const a = [0x4A, 0xB4, 0x72], b = [0x38, 0xEB, 0x6B];   // --verde -> --verde-brillo
       return `rgb(${a.map((v, i) => Math.round(v + (b[i] - v) * t)).join(',')})`;
@@ -565,15 +576,16 @@ window.addEventListener('pagehide', () => loops.forEach(r => { cancelAnimationFr
       // mas ancho que el elemento, que comprime el dibujo entero.
       cv.width = Math.round(cv.clientWidth * dpr);
       cv.height = Math.round(cv.clientHeight * dpr);
-      const grupos = esMovil ? cats.length * 3 : orden.length;
-      const fuente = esMovil ? cats.flatMap(c => {
-        const g = orden.filter(z => z.categoria === c);
-        return [g[0], g[(g.length / 2) | 0], g[g.length - 1]].filter(Boolean);
-      }) : orden;
+      /* En telefono dibujaba TRES barras por estante -- 30 en total -- debajo de una
+         linea que dice que cada barra es un Zap publicado. Era falso justo en el
+         aparato del que viene el trafico de una app de iPhone. Ahora son las 289
+         en los dos tamanos; lo que se encoge es el hueco entre estantes, de tres
+         anchos de barra a uno, para que a 390 px la silueta siga leyendose. */
+      const salto = esMovil ? 1 : 3;
       const huecos = cats.length - 1;
-      const ancho = cv.width / (grupos + huecos * 3);
-      barras = fuente.map((z, i) => {
-        const saltos = cats.indexOf(z.categoria) * 3;
+      const ancho = cv.width / (orden.length + huecos * salto);
+      barras = orden.map((z, i) => {
+        const saltos = cats.indexOf(z.categoria) * salto;
         const norm = (clamp(z.minutos, MIN, MAX) - MIN) / (MAX - MIN);
         return {
           z, x: (i + saltos) * ancho, w: ancho * 0.72,
@@ -621,12 +633,21 @@ window.addEventListener('pagehide', () => loops.forEach(r => { cancelAnimationFr
       const b = barras.reduce((mej, c) =>
         Math.abs(c.x - px) < Math.abs(mej.x - px) ? c : mej, barras[0]);
       if (b && tip){
+        const r0 = porEstante[b.z.categoria];
         tip.textContent = esMovil
-          ? `${b.z.categoria} · ${catalogo.filter(z => z.categoria === b.z.categoria).length} libros · ${MIN}-${MAX} min`
+          ? `${b.z.categoria} · ${r0.n} libros · ${r0.min}-${r0.max} min`
           : `${b.z.titulo} · ${b.z.autor} · ${b.z.minutos} min · ${b.z.categoria}`;
         tip.dataset.ver = 'si';
+        /* El ancho se MIDE. Estaba clavado en 190 px y un rotulo como
+           Finanzas 26 libros 18-24 min mide mas, asi que en telefono se salia de
+           la placa y se leia cortado a media cifra. Se mide solo al cambiar. */
+        if (tip.dataset.txt !== tip.textContent){
+          tip.dataset.txt = tip.textContent;
+          tip.dataset.w = tip.offsetWidth || 190;
+        }
+        const w = +tip.dataset.w;
         tip.style.transform =
-          `translate3d(${clamp(e.clientX - rc.left - 90, 4, Math.max(4, rc.width - 190))}px, ${clamp(e.clientY - rc.top - 52, 4, rc.height - 10)}px, 0)`;
+          `translate3d(${clamp(e.clientX - rc.left - w / 2, 4, Math.max(4, rc.width - w - 4))}px, ${clamp(e.clientY - rc.top - 52, 4, rc.height - 10)}px, 0)`;
       }
     };
     cv.addEventListener('pointerdown', e => { cv.setPointerCapture(e.pointerId); puntero(e); });
@@ -862,8 +883,14 @@ if (!finoPuntero) document.body.addEventListener('touchstart', () => {}, { passi
       if (au.paused){
         if (audioCtx && audioCtx.state === 'suspended') audioCtx.resume();
         const p = au.play();
-        if (p && p.catch) p.catch(() => {
-          if (pie) pie.textContent = 'El navegador bloqueó la reproducción. Vuelve a tocar el botón.';
+        /* play() rechaza por DOS motivos distintos y antes los dos decian que el
+           navegador habia bloqueado la reproduccion. Si el archivo no carga,
+           culpar al navegador manda a la persona a tocar otra vez un boton que
+           nunca va a sonar. Solo NotAllowedError es un bloqueo de verdad. */
+        if (p && p.catch) p.catch(err => {
+          if (pie) pie.textContent = (err && err.name === 'NotAllowedError')
+            ? 'El navegador bloqueó la reproducción. Vuelve a tocar el botón.'
+            : 'No se pudo cargar el audio de la cortinilla.';
           btn.dataset.sonando = 'no';
           if (rotulo) rotulo.textContent = ROTULO;
         });

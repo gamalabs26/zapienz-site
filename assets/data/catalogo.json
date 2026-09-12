@@ -1,2123 +1,2025 @@
 [
-  {
-    "titulo": "¿Por Qué Amamos?",
-    "autor": "Helen Fisher",
-    "categoria": "Psicología",
-    "secciones": 6,
-    "minutos": 22
-  },
-  {
-    "titulo": "¿Por Qué Nadie me Dijo Esto Antes?",
-    "autor": "Julie Smith",
-    "categoria": "Psicología",
-    "secciones": 6,
-    "minutos": 19
-  },
-  {
-    "titulo": "¿Quién se ha Llevado mi Queso?",
-    "autor": "Spencer Johnson",
-    "categoria": "Desarrollo personal",
-    "secciones": 6,
-    "minutos": 24
-  },
-  {
-    "titulo": "10x es más Fácil que 2x",
-    "autor": "Dan Sullivan",
-    "categoria": "Desarrollo personal",
-    "secciones": 6,
-    "minutos": 23
-  },
-  {
-    "titulo": "12 Reglas para Vivir",
-    "autor": "Jordan B. Peterson",
-    "categoria": "Desarrollo personal",
-    "secciones": 6,
-    "minutos": 22
-  },
-  {
-    "titulo": "21 Lecciones para el Siglo XXI",
-    "autor": "Yuval Noah Harari",
-    "categoria": "Filosofía",
-    "secciones": 6,
-    "minutos": 21
-  },
-  {
-    "titulo": "Abundancia",
-    "autor": "Peter Diamandis",
-    "categoria": "Negocios",
-    "secciones": 6,
-    "minutos": 23
-  },
-  {
-    "titulo": "Agotamiento",
-    "autor": "Emily Nagoski",
-    "categoria": "Salud y bienestar",
-    "secciones": 6,
-    "minutos": 22
-  },
-  {
-    "titulo": "Amar o Depender",
-    "autor": "Walter Riso",
-    "categoria": "Relaciones",
-    "secciones": 6,
-    "minutos": 19
-  },
-  {
-    "titulo": "Ámate a Ti Mismo como si tu Vida Dependiera de Ello",
-    "autor": "Kamal Ravikant",
-    "categoria": "Desarrollo personal",
-    "secciones": 6,
-    "minutos": 23
-  },
-  {
-    "titulo": "Ansiedad",
-    "autor": "Enric Corbera",
-    "categoria": "Salud y bienestar",
-    "secciones": 6,
-    "minutos": 22
-  },
-  {
-    "titulo": "Antifrágil",
-    "autor": "Nassim Nicholas Taleb",
-    "categoria": "Filosofía",
-    "secciones": 6,
-    "minutos": 22
-  },
-  {
-    "titulo": "Apegos y Cómo Sanarlos",
-    "autor": "Milan Yerkovich",
-    "categoria": "Psicología",
-    "secciones": 6,
-    "minutos": 22
-  },
-  {
-    "titulo": "Aprende más Rápido",
-    "autor": "Ulrich Boser",
-    "categoria": "Desarrollo personal",
-    "secciones": 0,
-    "minutos": 15
-  },
-  {
-    "titulo": "Aprendiendo a Quererse a Sí Mismo",
-    "autor": "Walter Riso",
-    "categoria": "Desarrollo personal",
-    "secciones": 6,
-    "minutos": 20
-  },
-  {
-    "titulo": "Así Habló Zaratustra",
-    "autor": "Friedrich Nietzsche",
-    "categoria": "Filosofía",
-    "secciones": 6,
-    "minutos": 22
-  },
-  {
-    "titulo": "Atreverse a la Grandeza",
-    "autor": "Brené Brown",
-    "categoria": "Desarrollo personal",
-    "secciones": 6,
-    "minutos": 19
-  },
-  {
-    "titulo": "Atrévete a Liderar",
-    "autor": "Brené Brown",
-    "categoria": "Desarrollo personal",
-    "secciones": 6,
-    "minutos": 23
-  },
-  {
-    "titulo": "Atrévete a No Gustar",
-    "autor": "Ichiro Kishimi",
-    "categoria": "Desarrollo personal",
-    "secciones": 6,
-    "minutos": 21
-  },
-  {
-    "titulo": "Attached: Los Estilos de Apego en el Amor",
-    "autor": "Amir Levine",
-    "categoria": "Psicología",
-    "secciones": 6,
-    "minutos": 22
-  },
-  {
-    "titulo": "Ayuno Intermitente",
-    "autor": "Jason Fung",
-    "categoria": "Salud y bienestar",
-    "secciones": 6,
-    "minutos": 18
-  },
-  {
-    "titulo": "Benjamin Franklin: Una Vida Americana",
-    "autor": "Walter Isaacson",
-    "categoria": "Biografías",
-    "secciones": 6,
-    "minutos": 18
-  },
-  {
-    "titulo": "Blink",
-    "autor": "Malcolm Gladwell",
-    "categoria": "Psicología",
-    "secciones": 6,
-    "minutos": 22
-  },
-  {
-    "titulo": "Bola de Nieve: Warren Buffett y el Negocio de la Vida",
-    "autor": "Alice Schroeder",
-    "categoria": "Biografías",
-    "secciones": 6,
-    "minutos": 20
-  },
-  {
-    "titulo": "Bullshit Jobs",
-    "autor": "David Graeber",
-    "categoria": "Filosofía",
-    "secciones": 6,
-    "minutos": 22
-  },
-  {
-    "titulo": "Buyology",
-    "autor": "Martin Lindstrom",
-    "categoria": "Marketing y ventas",
-    "secciones": 6,
-    "minutos": 23
-  },
-  {
-    "titulo": "Cartas a Lucilio",
-    "autor": "Séneca",
-    "categoria": "Filosofía",
-    "secciones": 6,
-    "minutos": 17
-  },
-  {
-    "titulo": "Come, Reza, Ama",
-    "autor": "Elizabeth Gilbert",
-    "categoria": "Desarrollo personal",
-    "secciones": 6,
-    "minutos": 21
-  },
-  {
-    "titulo": "Cómo Ganar Amigos e Influir sobre las Personas",
-    "autor": "Dale Carnegie",
-    "categoria": "Desarrollo personal",
-    "secciones": 6,
-    "minutos": 19
-  },
-  {
-    "titulo": "Cómo Hablar para que los Niños Escuchen y Escuchar para que los Niños Hablen",
-    "autor": "Adele Faber",
-    "categoria": "Relaciones",
-    "secciones": 6,
-    "minutos": 21
-  },
-  {
-    "titulo": "Cómo Hacer que te Pasen Cosas Buenas",
-    "autor": "Marian Rojas Estapé",
-    "categoria": "Desarrollo personal",
-    "secciones": 6,
-    "minutos": 18
-  },
-  {
-    "titulo": "Cómo Mandar a la Mierda de Forma Educada",
-    "autor": "Alba Cardalda",
-    "categoria": "Desarrollo personal",
-    "secciones": 6,
-    "minutos": 23
-  },
-  {
-    "titulo": "Cómo Ser un Estoico",
-    "autor": "Massimo Pigliucci",
-    "categoria": "Filosofía",
-    "secciones": 6,
-    "minutos": 19
-  },
-  {
-    "titulo": "Comunicación No Violenta",
-    "autor": "Marshall B. Rosenberg",
-    "categoria": "Relaciones",
-    "secciones": 6,
-    "minutos": 20
-  },
-  {
-    "titulo": "Contagioso",
-    "autor": "Jonah Berger",
-    "categoria": "Marketing y ventas",
-    "secciones": 6,
-    "minutos": 23
-  },
-  {
-    "titulo": "Conversaciones Cruciales",
-    "autor": "Kerry Patterson",
-    "categoria": "Relaciones",
-    "secciones": 6,
-    "minutos": 19
-  },
-  {
-    "titulo": "Cosmos",
-    "autor": "Carl Sagan",
-    "categoria": "Filosofía",
-    "secciones": 6,
-    "minutos": 24
-  },
-  {
-    "titulo": "Creatividad S.A.",
-    "autor": "Ed Catmull",
-    "categoria": "Negocios",
-    "secciones": 6,
-    "minutos": 21
-  },
-  {
-    "titulo": "Cree en Ti",
-    "autor": "Rut Nieves",
-    "categoria": "Desarrollo personal",
-    "secciones": 6,
-    "minutos": 22
-  },
-  {
-    "titulo": "Cuando el Cuerpo Dice No",
-    "autor": "Gabor Maté",
-    "categoria": "Salud y bienestar",
-    "secciones": 6,
-    "minutos": 23
-  },
-  {
-    "titulo": "Cuatro Mil Semanas",
-    "autor": "Oliver Burkeman",
-    "categoria": "Desarrollo personal",
-    "secciones": 6,
-    "minutos": 18
-  },
-  {
-    "titulo": "Dar y Recibir",
-    "autor": "Adam Grant",
-    "categoria": "Negocios",
-    "secciones": 6,
-    "minutos": 20
-  },
-  {
-    "titulo": "David y Goliat",
-    "autor": "Malcolm Gladwell",
-    "categoria": "Psicología",
-    "secciones": 6,
-    "minutos": 24
-  },
-  {
-    "titulo": "De Bueno a Excelente",
-    "autor": "Jim Collins",
-    "categoria": "Negocios",
-    "secciones": 6,
-    "minutos": 20
-  },
-  {
-    "titulo": "De Cero a Uno",
-    "autor": "Peter Thiel",
-    "categoria": "Negocios",
-    "secciones": 6,
-    "minutos": 23
-  },
-  {
-    "titulo": "Deja de Ser Tú",
-    "autor": "Joe Dispenza",
-    "categoria": "Desarrollo personal",
-    "secciones": 6,
-    "minutos": 22
-  },
-  {
-    "titulo": "Dejar Ir",
-    "autor": "David R. Hawkins",
-    "categoria": "Desarrollo personal",
-    "secciones": 6,
-    "minutos": 22
-  },
-  {
-    "titulo": "Dejar Ir el Apego",
-    "autor": "Deepak Chopra",
-    "categoria": "Desarrollo personal",
-    "secciones": 6,
-    "minutos": 23
-  },
-  {
-    "titulo": "Delivering Happiness",
-    "autor": "Tony Hsieh",
-    "categoria": "Negocios",
-    "secciones": 6,
-    "minutos": 21
-  },
-  {
-    "titulo": "Despertando al Gigante Interior",
-    "autor": "Anthony Robbins",
-    "categoria": "Desarrollo personal",
-    "secciones": 6,
-    "minutos": 22
-  },
-  {
-    "titulo": "Despierta tu Héroe Interior",
-    "autor": "Victor Hugo Manzanilla",
-    "categoria": "Desarrollo personal",
-    "secciones": 6,
-    "minutos": 23
-  },
-  {
-    "titulo": "Diario de una Joven",
-    "autor": "Ana Frank",
-    "categoria": "Biografías",
-    "secciones": 6,
-    "minutos": 14
-  },
-  {
-    "titulo": "Digital Minimalism",
-    "autor": "Cal Newport",
-    "categoria": "Productividad",
-    "secciones": 6,
-    "minutos": 23
-  },
-  {
-    "titulo": "Dinero Feliz",
-    "autor": "Ken Honda",
-    "categoria": "Finanzas",
-    "secciones": 6,
-    "minutos": 23
-  },
-  {
-    "titulo": "Dinero: Domina el Juego",
-    "autor": "Tony Robbins",
-    "categoria": "Finanzas",
-    "secciones": 6,
-    "minutos": 20
-  },
-  {
-    "titulo": "Dopamina Detox",
-    "autor": "Thibaut Meurisse",
-    "categoria": "Desarrollo personal",
-    "secciones": 6,
-    "minutos": 23
-  },
-  {
-    "titulo": "Drive: La Sorprendente Verdad sobre lo que nos Motiva",
-    "autor": "Daniel H. Pink",
-    "categoria": "Desarrollo personal",
-    "secciones": 6,
-    "minutos": 19
-  },
-  {
-    "titulo": "Eat That Frog",
-    "autor": "Brian Tracy",
-    "categoria": "Productividad",
-    "secciones": 6,
-    "minutos": 21
-  },
-  {
-    "titulo": "Economía en una Lección",
-    "autor": "Henry Hazlitt",
-    "categoria": "Finanzas",
-    "secciones": 6,
-    "minutos": 19
-  },
-  {
-    "titulo": "Ego es el Enemigo",
-    "autor": "Ryan Holiday",
-    "categoria": "Desarrollo personal",
-    "secciones": 6,
-    "minutos": 22
-  },
-  {
-    "titulo": "Einstein: Su Vida y Su Universo",
-    "autor": "Walter Isaacson",
-    "categoria": "Biografías",
-    "secciones": 6,
-    "minutos": 22
-  },
-  {
-    "titulo": "El Alquimista",
-    "autor": "Paulo Coelho",
-    "categoria": "Filosofía",
-    "secciones": 6,
-    "minutos": 18
-  },
-  {
-    "titulo": "El Arte de Amar",
-    "autor": "Erich Fromm",
-    "categoria": "Psicología",
-    "secciones": 6,
-    "minutos": 23
-  },
-  {
-    "titulo": "El Arte de la Buena Vida",
-    "autor": "Rolf Dobelli",
-    "categoria": "Desarrollo personal",
-    "secciones": 6,
-    "minutos": 23
-  },
-  {
-    "titulo": "El Arte de la Felicidad",
-    "autor": "Dalai Lama",
-    "categoria": "Salud y bienestar",
-    "secciones": 6,
-    "minutos": 21
-  },
-  {
-    "titulo": "El Arte de la Guerra",
-    "autor": "Sun Tzu",
-    "categoria": "Filosofía",
-    "secciones": 6,
-    "minutos": 18
-  },
-  {
-    "titulo": "El Arte de Pensar Claramente",
-    "autor": "Rolf Dobelli",
-    "categoria": "Desarrollo personal",
-    "secciones": 6,
-    "minutos": 22
-  },
-  {
-    "titulo": "El Caballero de la Armadura Oxidada",
-    "autor": "Robert Fisher",
-    "categoria": "Desarrollo personal",
-    "secciones": 6,
-    "minutos": 22
-  },
-  {
-    "titulo": "El Camino a la Libertad",
-    "autor": "Nelson Mandela",
-    "categoria": "Biografías",
-    "secciones": 6,
-    "minutos": 18
-  },
-  {
-    "titulo": "El Camino del Artista",
-    "autor": "Julia Cameron",
-    "categoria": "Desarrollo personal",
-    "secciones": 6,
-    "minutos": 23
-  },
-  {
-    "titulo": "El Camino del Hombre Superior",
-    "autor": "David Deida",
-    "categoria": "Desarrollo personal",
-    "secciones": 6,
-    "minutos": 21
-  },
-  {
-    "titulo": "El Cerebro de Buda",
-    "autor": "Rick Hanson",
-    "categoria": "Psicología",
-    "secciones": 0,
-    "minutos": 15
-  },
-  {
-    "titulo": "El Cerebro del Niño",
-    "autor": "Daniel J. Siegel",
-    "categoria": "Psicología",
-    "secciones": 6,
-    "minutos": 19
-  },
-  {
-    "titulo": "El Cerebro Emocional",
-    "autor": "Joseph LeDoux",
-    "categoria": "Psicología",
-    "secciones": 6,
-    "minutos": 22
-  },
-  {
-    "titulo": "El Cerebro en Forma",
-    "autor": "John J. Ratey",
-    "categoria": "Salud y bienestar",
-    "secciones": 6,
-    "minutos": 19
-  },
-  {
-    "titulo": "El Cisne Negro",
-    "autor": "Nassim Nicholas Taleb",
-    "categoria": "Filosofía",
-    "secciones": 6,
-    "minutos": 21
-  },
-  {
-    "titulo": "El Club de las 5 AM",
-    "autor": "Robin Sharma",
-    "categoria": "Desarrollo personal",
-    "secciones": 6,
-    "minutos": 24
-  },
-  {
-    "titulo": "El Código de la Longevidad",
-    "autor": "Valter Longo",
-    "categoria": "Salud y bienestar",
-    "secciones": 6,
-    "minutos": 23
-  },
-  {
-    "titulo": "El Código de la Obesidad",
-    "autor": "Jason Fung",
-    "categoria": "Salud y bienestar",
-    "secciones": 6,
-    "minutos": 19
-  },
-  {
-    "titulo": "El Código del Dinero",
-    "autor": "Raimon Samsó",
-    "categoria": "Finanzas",
-    "secciones": 6,
-    "minutos": 24
-  },
-  {
-    "titulo": "El Código del Talento",
-    "autor": "Daniel Coyle",
-    "categoria": "Desarrollo personal",
-    "secciones": 6,
-    "minutos": 21
-  },
-  {
-    "titulo": "El Cuadrante del Flujo de Dinero",
-    "autor": "Robert T. Kiyosaki",
-    "categoria": "Finanzas",
-    "secciones": 6,
-    "minutos": 18
-  },
-  {
-    "titulo": "El Cuerpo Lleva la Cuenta",
-    "autor": "Bessel van der Kolk",
-    "categoria": "Psicología",
-    "secciones": 6,
-    "minutos": 18
-  },
-  {
-    "titulo": "El Curso Fénix",
-    "autor": "Brian Tracy",
-    "categoria": "Desarrollo personal",
-    "secciones": 0,
-    "minutos": 15
-  },
-  {
-    "titulo": "El Derecho a Decir No",
-    "autor": "Walter Riso",
-    "categoria": "Desarrollo personal",
-    "secciones": 6,
-    "minutos": 18
-  },
-  {
-    "titulo": "El Dilema del Innovador",
-    "autor": "Clayton M. Christensen",
-    "categoria": "Negocios",
-    "secciones": 6,
-    "minutos": 19
-  },
-  {
-    "titulo": "El Efecto Compuesto",
-    "autor": "Darren Hardy",
-    "categoria": "Desarrollo personal",
-    "secciones": 6,
-    "minutos": 23
-  },
-  {
-    "titulo": "El Ejecutivo al Minuto",
-    "autor": "Ken Blanchard",
-    "categoria": "Negocios",
-    "secciones": 6,
-    "minutos": 24
-  },
-  {
-    "titulo": "El Error de Descartes",
-    "autor": "Antonio Damasio",
-    "categoria": "Psicología",
-    "secciones": 6,
-    "minutos": 22
-  },
-  {
-    "titulo": "El Extranjero",
-    "autor": "Albert Camus",
-    "categoria": "Filosofía",
-    "secciones": 6,
-    "minutos": 23
-  },
-  {
-    "titulo": "El Futuro es más Rápido de lo que Piensas",
-    "autor": "Peter Diamandis",
-    "categoria": "Negocios",
-    "secciones": 6,
-    "minutos": 22
-  },
-  {
-    "titulo": "El Gen Egoísta",
-    "autor": "Richard Dawkins",
-    "categoria": "Filosofía",
-    "secciones": 6,
-    "minutos": 20
-  },
-  {
-    "titulo": "El Gran Diseño",
-    "autor": "Stephen Hawking",
-    "categoria": "Filosofía",
-    "secciones": 6,
-    "minutos": 23
-  },
-  {
-    "titulo": "El Guerrero Pacífico",
-    "autor": "Dan Millman",
-    "categoria": "Desarrollo personal",
-    "secciones": 6,
-    "minutos": 22
-  },
-  {
-    "titulo": "El Hombre en Busca de Sentido",
-    "autor": "Viktor Frankl",
-    "categoria": "Psicología",
-    "secciones": 6,
-    "minutos": 19
-  },
-  {
-    "titulo": "El Hombre más Rico de Babilonia",
-    "autor": "George S. Clason",
-    "categoria": "Finanzas",
-    "secciones": 6,
-    "minutos": 24
-  },
-  {
-    "titulo": "El Inversor Inteligente",
-    "autor": "Benjamin Graham",
-    "categoria": "Finanzas",
-    "secciones": 6,
-    "minutos": 19
-  },
-  {
-    "titulo": "El Juego Infinito",
-    "autor": "Simon Sinek",
-    "categoria": "Negocios",
-    "secciones": 6,
-    "minutos": 18
-  },
-  {
-    "titulo": "El Lenguaje del Cuerpo",
-    "autor": "Allan Pease",
-    "categoria": "Psicología",
-    "secciones": 6,
-    "minutos": 22
-  },
-  {
-    "titulo": "El Método Lean Startup",
-    "autor": "Eric Ries",
-    "categoria": "Negocios",
-    "secciones": 6,
-    "minutos": 19
-  },
-  {
-    "titulo": "El Milagro de la Atención Plena",
-    "autor": "Thich Nhat Hanh",
-    "categoria": "Salud y bienestar",
-    "secciones": 6,
-    "minutos": 24
-  },
-  {
-    "titulo": "El Milagro de las Mañanas",
-    "autor": "Hal Elrod",
-    "categoria": "Desarrollo personal",
-    "secciones": 6,
-    "minutos": 22
-  },
-  {
-    "titulo": "El Millonario Automático",
-    "autor": "David Bach",
-    "categoria": "Finanzas",
-    "secciones": 6,
-    "minutos": 22
-  },
-  {
-    "titulo": "El Millonario de la Puerta de al Lado",
-    "autor": "Thomas J. Stanley",
-    "categoria": "Finanzas",
-    "secciones": 6,
-    "minutos": 19
-  },
-  {
-    "titulo": "El Mito de Sísifo",
-    "autor": "Albert Camus",
-    "categoria": "Filosofía",
-    "secciones": 6,
-    "minutos": 22
-  },
-  {
-    "titulo": "El Mito del Emprendedor",
-    "autor": "Michael E. Gerber",
-    "categoria": "Negocios",
-    "secciones": 6,
-    "minutos": 22
-  },
-  {
-    "titulo": "El Monje que Vendió su Ferrari",
-    "autor": "Robin Sharma",
-    "categoria": "Desarrollo personal",
-    "secciones": 6,
-    "minutos": 23
-  },
-  {
-    "titulo": "El Mundo de Sofía",
-    "autor": "Jostein Gaarder",
-    "categoria": "Filosofía",
-    "secciones": 6,
-    "minutos": 22
-  },
-  {
-    "titulo": "El Obstáculo es el Camino",
-    "autor": "Ryan Holiday",
-    "categoria": "Desarrollo personal",
-    "secciones": 6,
-    "minutos": 23
-  },
-  {
-    "titulo": "El Pequeño Libro del Talento",
-    "autor": "Daniel Coyle",
-    "categoria": "Desarrollo personal",
-    "secciones": 6,
-    "minutos": 21
-  },
-  {
-    "titulo": "El Placebo Eres Tú",
-    "autor": "Joe Dispenza",
-    "categoria": "Salud y bienestar",
-    "secciones": 6,
-    "minutos": 23
-  },
-  {
-    "titulo": "El Poder de la Autodisciplina",
-    "autor": "Brian Tracy",
-    "categoria": "Desarrollo personal",
-    "secciones": 6,
-    "minutos": 18
-  },
-  {
-    "titulo": "El Poder de la Intención",
-    "autor": "Wayne W. Dyer",
-    "categoria": "Desarrollo personal",
-    "secciones": 6,
-    "minutos": 18
-  },
-  {
-    "titulo": "El Poder de la Mente Subconsciente",
-    "autor": "Joseph Murphy",
-    "categoria": "Desarrollo personal",
-    "secciones": 6,
-    "minutos": 24
-  },
-  {
-    "titulo": "El Poder de la Resiliencia",
-    "autor": "Robert Brooks",
-    "categoria": "Desarrollo personal",
-    "secciones": 6,
-    "minutos": 22
-  },
-  {
-    "titulo": "El Poder de la Vulnerabilidad",
-    "autor": "Brené Brown",
-    "categoria": "Desarrollo personal",
-    "secciones": 0,
-    "minutos": 15
-  },
-  {
-    "titulo": "El Poder de los 5 Segundos",
-    "autor": "Mel Robbins",
-    "categoria": "Desarrollo personal",
-    "secciones": 6,
-    "minutos": 22
-  },
-  {
-    "titulo": "El Poder de los Hábitos",
-    "autor": "Charles Duhigg",
-    "categoria": "Desarrollo personal",
-    "secciones": 6,
-    "minutos": 19
-  },
-  {
-    "titulo": "El Poder del Ahora",
-    "autor": "Eckhart Tolle",
-    "categoria": "Desarrollo personal",
-    "secciones": 6,
-    "minutos": 18
-  },
-  {
-    "titulo": "El Poder del Apego",
-    "autor": "Diane Poole Heller",
-    "categoria": "Psicología",
-    "secciones": 6,
-    "minutos": 21
-  },
-  {
-    "titulo": "El Poder del Hábito",
-    "autor": "Charles Duhigg",
-    "categoria": "Desarrollo personal",
-    "secciones": 6,
-    "minutos": 23
-  },
-  {
-    "titulo": "El Principio 80/20",
-    "autor": "Richard Koch",
-    "categoria": "Productividad",
-    "secciones": 6,
-    "minutos": 22
-  },
-  {
-    "titulo": "El Principito",
-    "autor": "Antoine de Saint-Exupéry",
-    "categoria": "Filosofía",
-    "secciones": 6,
-    "minutos": 23
-  },
-  {
-    "titulo": "El Punto Clave",
-    "autor": "Malcolm Gladwell",
-    "categoria": "Negocios",
-    "secciones": 6,
-    "minutos": 23
-  },
-  {
-    "titulo": "El Secreto",
-    "autor": "Rhonda Byrne",
-    "categoria": "Desarrollo personal",
-    "secciones": 6,
-    "minutos": 23
-  },
-  {
-    "titulo": "El Sutil Arte de que (casi todo) te Importe una Mierda",
-    "autor": "Mark Manson",
-    "categoria": "Desarrollo personal",
-    "secciones": 6,
-    "minutos": 18
-  },
-  {
-    "titulo": "El Trauma y el Cuerpo",
-    "autor": "Pat Ogden",
-    "categoria": "Psicología",
-    "secciones": 0,
-    "minutos": 15
-  },
-  {
-    "titulo": "El Universo en una Cáscara de Nuez",
-    "autor": "Stephen Hawking",
-    "categoria": "Filosofía",
-    "secciones": 6,
-    "minutos": 20
-  },
-  {
-    "titulo": "El Vendedor más Grande del Mundo",
-    "autor": "Og Mandino",
-    "categoria": "Marketing y ventas",
-    "secciones": 6,
-    "minutos": 23
-  },
-  {
-    "titulo": "Elon Musk",
-    "autor": "Walter Isaacson",
-    "categoria": "Biografías",
-    "secciones": 6,
-    "minutos": 19
-  },
-  {
-    "titulo": "Emociones Tóxicas",
-    "autor": "Bernardo Stamateas",
-    "categoria": "Desarrollo personal",
-    "secciones": 6,
-    "minutos": 20
-  },
-  {
-    "titulo": "Empieza con el Porqué",
-    "autor": "Simon Sinek",
-    "categoria": "Negocios",
-    "secciones": 6,
-    "minutos": 19
-  },
-  {
-    "titulo": "Empresa de Uno",
-    "autor": "Paul Jarvis",
-    "categoria": "Negocios",
-    "secciones": 6,
-    "minutos": 18
-  },
-  {
-    "titulo": "Enamórate de Ti",
-    "autor": "Walter Riso",
-    "categoria": "Desarrollo personal",
-    "secciones": 6,
-    "minutos": 20
-  },
-  {
-    "titulo": "Encuentra tu Persona Vitamina",
-    "autor": "Marian Rojas Estapé",
-    "categoria": "Relaciones",
-    "secciones": 6,
-    "minutos": 19
-  },
-  {
-    "titulo": "Enganchado",
-    "autor": "Nir Eyal",
-    "categoria": "Marketing y ventas",
-    "secciones": 6,
-    "minutos": 20
-  },
-  {
-    "titulo": "Eres un Chingón",
-    "autor": "Jen Sincero",
-    "categoria": "Desarrollo personal",
-    "secciones": 6,
-    "minutos": 18
-  },
-  {
-    "titulo": "Eres un Chingón en Hacer Dinero",
-    "autor": "Jen Sincero",
-    "categoria": "Finanzas",
-    "secciones": 6,
-    "minutos": 19
-  },
-  {
-    "titulo": "Esencialismo",
-    "autor": "Greg McKeown",
-    "categoria": "Desarrollo personal",
-    "secciones": 6,
-    "minutos": 20
-  },
-  {
-    "titulo": "Estás Hecho para Amar",
-    "autor": "Marcela Lechuga",
-    "categoria": "Relaciones",
-    "secciones": 6,
-    "minutos": 22
-  },
-  {
-    "titulo": "Este Dolor no es Mío",
-    "autor": "Mark Wolynn",
-    "categoria": "Psicología",
-    "secciones": 6,
-    "minutos": 19
-  },
-  {
-    "titulo": "Esto es Marketing",
-    "autor": "Seth Godin",
-    "categoria": "Marketing y ventas",
-    "secciones": 6,
-    "minutos": 20
-  },
-  {
-    "titulo": "Factfulness",
-    "autor": "Hans Rosling",
-    "categoria": "Desarrollo personal",
-    "secciones": 6,
-    "minutos": 22
-  },
-  {
-    "titulo": "Fluir",
-    "autor": "Mihaly Csikszentmihalyi",
-    "categoria": "Psicología",
-    "secciones": 6,
-    "minutos": 19
-  },
-  {
-    "titulo": "Freakonomics",
-    "autor": "Steven D. Levitt",
-    "categoria": "Negocios",
-    "secciones": 6,
-    "minutos": 19
-  },
-  {
-    "titulo": "Gente Tóxica",
-    "autor": "Bernardo Stamateas",
-    "categoria": "Relaciones",
-    "secciones": 6,
-    "minutos": 19
-  },
-  {
-    "titulo": "Good to Great",
-    "autor": "Jim Collins",
-    "categoria": "Negocios",
-    "secciones": 6,
-    "minutos": 22
-  },
-  {
-    "titulo": "Grit: El Poder de la Pasión y la Perseverancia",
-    "autor": "Angela Duckworth",
-    "categoria": "Desarrollo personal",
-    "secciones": 6,
-    "minutos": 23
-  },
-  {
-    "titulo": "Gung Ho",
-    "autor": "Ken Blanchard",
-    "categoria": "Negocios",
-    "secciones": 6,
-    "minutos": 18
-  },
-  {
-    "titulo": "Hábitos Atómicos",
-    "autor": "James Clear",
-    "categoria": "Desarrollo personal",
-    "secciones": 6,
-    "minutos": 23
-  },
-  {
-    "titulo": "Háblame Bonito",
-    "autor": "Vanessa Van Edwards",
-    "categoria": "Relaciones",
-    "secciones": 6,
-    "minutos": 22
-  },
-  {
-    "titulo": "Hacking Growth",
-    "autor": "Sean Ellis",
-    "categoria": "Marketing y ventas",
-    "secciones": 6,
-    "minutos": 20
-  },
-  {
-    "titulo": "Haz Tiempo",
-    "autor": "Jake Knapp",
-    "categoria": "Productividad",
-    "secciones": 6,
-    "minutos": 16
-  },
-  {
-    "titulo": "Hazlo Ahora",
-    "autor": "Brian Tracy",
-    "categoria": "Productividad",
-    "secciones": 6,
-    "minutos": 23
-  },
-  {
-    "titulo": "Hombres son de Marte, Mujeres son de Venus",
-    "autor": "John Gray",
-    "categoria": "Relaciones",
-    "secciones": 6,
-    "minutos": 23
-  },
-  {
-    "titulo": "Homo Deus",
-    "autor": "Yuval Noah Harari",
-    "categoria": "Filosofía",
-    "secciones": 6,
-    "minutos": 22
-  },
-  {
-    "titulo": "Ikigai",
-    "autor": "Héctor García",
-    "categoria": "Desarrollo personal",
-    "secciones": 6,
-    "minutos": 18
-  },
-  {
-    "titulo": "Indistractable",
-    "autor": "Nir Eyal",
-    "categoria": "Productividad",
-    "secciones": 6,
-    "minutos": 19
-  },
-  {
-    "titulo": "Influencia: La Psicología de la Persuasión",
-    "autor": "Robert B. Cialdini",
-    "categoria": "Psicología",
-    "secciones": 6,
-    "minutos": 23
-  },
-  {
-    "titulo": "Inner Excellence",
-    "autor": "Jim Afremow",
-    "categoria": "Desarrollo personal",
-    "secciones": 0,
-    "minutos": 15
-  },
-  {
-    "titulo": "Innovación Abierta",
-    "autor": "Henry Chesbrough",
-    "categoria": "Negocios",
-    "secciones": 6,
-    "minutos": 21
-  },
-  {
-    "titulo": "Inspired",
-    "autor": "Marty Cagan",
-    "categoria": "Negocios",
-    "secciones": 6,
-    "minutos": 24
-  },
-  {
-    "titulo": "Inteligencia Emocional",
-    "autor": "Daniel Goleman",
-    "categoria": "Psicología",
-    "secciones": 6,
-    "minutos": 18
-  },
-  {
-    "titulo": "Inteligencia Social",
-    "autor": "Daniel Goleman",
-    "categoria": "Psicología",
-    "secciones": 6,
-    "minutos": 18
-  },
-  {
-    "titulo": "Inversión Inteligente para Principiantes",
-    "autor": "Samuel Rees",
-    "categoria": "Finanzas",
-    "secciones": 6,
-    "minutos": 22
-  },
-  {
-    "titulo": "La Biología de la Creencia",
-    "autor": "Bruce H. Lipton",
-    "categoria": "Desarrollo personal",
-    "secciones": 6,
-    "minutos": 22
-  },
-  {
-    "titulo": "La Bolsa o la Vida",
-    "autor": "Joe Domínguez",
-    "categoria": "Finanzas",
-    "secciones": 6,
-    "minutos": 24
-  },
-  {
-    "titulo": "La Buena Economía",
-    "autor": "Abhijit V. Banerjee",
-    "categoria": "Finanzas",
-    "secciones": 6,
-    "minutos": 19
-  },
-  {
-    "titulo": "La Buena Suerte",
-    "autor": "Alex Rovira",
-    "categoria": "Desarrollo personal",
-    "secciones": 0,
-    "minutos": 15
-  },
-  {
-    "titulo": "La Ciencia de Hacerse Rico",
-    "autor": "Wallace D. Wattles",
-    "categoria": "Finanzas",
-    "secciones": 6,
-    "minutos": 23
-  },
-  {
-    "titulo": "La Empresa Consciente",
-    "autor": "Fred Kofman",
-    "categoria": "Negocios",
-    "secciones": 6,
-    "minutos": 19
-  },
-  {
-    "titulo": "La Estrategia del Océano Azul",
-    "autor": "W. Chan Kim",
-    "categoria": "Negocios",
-    "secciones": 6,
-    "minutos": 21
-  },
-  {
-    "titulo": "La Filosofía como Forma de Vida",
-    "autor": "Pierre Hadot",
-    "categoria": "Filosofía",
-    "secciones": 6,
-    "minutos": 23
-  },
-  {
-    "titulo": "La Fórmula de Lanzamiento",
-    "autor": "Jeff Walker",
-    "categoria": "Marketing y ventas",
-    "secciones": 6,
-    "minutos": 22
-  },
-  {
-    "titulo": "La Ganancia es Primero",
-    "autor": "Mike Michalowicz",
-    "categoria": "Finanzas",
-    "secciones": 6,
-    "minutos": 22
-  },
-  {
-    "titulo": "La Generación Ansiosa",
-    "autor": "Jonathan Haidt",
-    "categoria": "Psicología",
-    "secciones": 6,
-    "minutos": 19
-  },
-  {
-    "titulo": "La Guerra del Arte",
-    "autor": "Steven Pressfield",
-    "categoria": "Desarrollo personal",
-    "secciones": 6,
-    "minutos": 17
-  },
-  {
-    "titulo": "La Historia de mis Experimentos con la Verdad",
-    "autor": "Mahatma Gandhi",
-    "categoria": "Biografías",
-    "secciones": 6,
-    "minutos": 18
-  },
-  {
-    "titulo": "La Maestría del Amor",
-    "autor": "Miguel Ruiz",
-    "categoria": "Relaciones",
-    "secciones": 6,
-    "minutos": 22
-  },
-  {
-    "titulo": "La Magia del Orden",
-    "autor": "Marie Kondo",
-    "categoria": "Desarrollo personal",
-    "secciones": 6,
-    "minutos": 17
-  },
-  {
-    "titulo": "La Meta",
-    "autor": "Eliyahu M. Goldratt",
-    "categoria": "Negocios",
-    "secciones": 6,
-    "minutos": 19
-  },
-  {
-    "titulo": "La Montaña Eres Tú",
-    "autor": "Brianna Wiest",
-    "categoria": "Desarrollo personal",
-    "secciones": 6,
-    "minutos": 17
-  },
-  {
-    "titulo": "La Nación de la Dopamina",
-    "autor": "Anna Lembke",
-    "categoria": "Psicología",
-    "secciones": 6,
-    "minutos": 20
-  },
-  {
-    "titulo": "La Psicología de las Ventas",
-    "autor": "Brian Tracy",
-    "categoria": "Marketing y ventas",
-    "secciones": 6,
-    "minutos": 21
-  },
-  {
-    "titulo": "La Psicología del Dinero",
-    "autor": "Morgan Housel",
-    "categoria": "Finanzas",
-    "secciones": 6,
-    "minutos": 19
-  },
-  {
-    "titulo": "La Riqueza de las Naciones",
-    "autor": "Adam Smith",
-    "categoria": "Filosofía",
-    "secciones": 6,
-    "minutos": 18
-  },
-  {
-    "titulo": "La Sabiduría de la Inseguridad",
-    "autor": "Alan Watts",
-    "categoria": "Filosofía",
-    "secciones": 6,
-    "minutos": 22
-  },
-  {
-    "titulo": "La Sabiduría del Enneagrama",
-    "autor": "Don Richard Riso",
-    "categoria": "Psicología",
-    "secciones": 6,
-    "minutos": 23
-  },
-  {
-    "titulo": "La Sanación de las 5 Heridas",
-    "autor": "Lise Bourbeau",
-    "categoria": "Desarrollo personal",
-    "secciones": 6,
-    "minutos": 23
-  },
-  {
-    "titulo": "La Semana Laboral de 4 Horas",
-    "autor": "Timothy Ferriss",
-    "categoria": "Desarrollo personal",
-    "secciones": 6,
-    "minutos": 22
-  },
-  {
-    "titulo": "La Singularidad está Cerca",
-    "autor": "Ray Kurzweil",
-    "categoria": "Filosofía",
-    "secciones": 6,
-    "minutos": 24
-  },
-  {
-    "titulo": "La Sociedad del Cansancio",
-    "autor": "Byung-Chul Han",
-    "categoria": "Filosofía",
-    "secciones": 6,
-    "minutos": 21
-  },
-  {
-    "titulo": "La Solución del Azúcar en la Sangre",
-    "autor": "Mark Hyman",
-    "categoria": "Salud y bienestar",
-    "secciones": 6,
-    "minutos": 21
-  },
-  {
-    "titulo": "La Solución Mindfulness",
-    "autor": "Ronald Siegel",
-    "categoria": "Salud y bienestar",
-    "secciones": 6,
-    "minutos": 22
-  },
-  {
-    "titulo": "La Startup de 100 Dólares",
-    "autor": "Chris Guillebeau",
-    "categoria": "Negocios",
-    "secciones": 6,
-    "minutos": 19
-  },
-  {
-    "titulo": "La Teoría Let Them",
-    "autor": "Mel Robbins",
-    "categoria": "Desarrollo personal",
-    "secciones": 6,
-    "minutos": 21
-  },
-  {
-    "titulo": "La Tercera Ola",
-    "autor": "Steve Case",
-    "categoria": "Negocios",
-    "secciones": 0,
-    "minutos": 15
-  },
-  {
-    "titulo": "La Trampa de la Felicidad",
-    "autor": "Russ Harris",
-    "categoria": "Desarrollo personal",
-    "secciones": 6,
-    "minutos": 23
-  },
-  {
-    "titulo": "La Trampa del Perfeccionismo",
-    "autor": "Tal Ben-Shahar",
-    "categoria": "Desarrollo personal",
-    "secciones": 6,
-    "minutos": 18
-  },
-  {
-    "titulo": "La Transformación Total de su Dinero",
-    "autor": "Dave Ramsey",
-    "categoria": "Finanzas",
-    "secciones": 6,
-    "minutos": 22
-  },
-  {
-    "titulo": "La Única Cosa",
-    "autor": "Gary Keller",
-    "categoria": "Productividad",
-    "secciones": 6,
-    "minutos": 19
-  },
-  {
-    "titulo": "La Vaca Púrpura",
-    "autor": "Seth Godin",
-    "categoria": "Marketing y ventas",
-    "secciones": 6,
-    "minutos": 19
-  },
-  {
-    "titulo": "La Venta Challenger",
-    "autor": "Matthew Dixon",
-    "categoria": "Marketing y ventas",
-    "secciones": 6,
-    "minutos": 20
-  },
-  {
-    "titulo": "La Ventaja de la Felicidad",
-    "autor": "Shawn Achor",
-    "categoria": "Desarrollo personal",
-    "secciones": 6,
-    "minutos": 19
-  },
-  {
-    "titulo": "Las 21 Leyes Irrefutables del Liderazgo",
-    "autor": "John C. Maxwell",
-    "categoria": "Desarrollo personal",
-    "secciones": 6,
-    "minutos": 19
-  },
-  {
-    "titulo": "Las 48 Leyes del Poder",
-    "autor": "Robert Greene",
-    "categoria": "Negocios",
-    "secciones": 6,
-    "minutos": 18
-  },
-  {
-    "titulo": "Las 5 Heridas que Impiden ser Uno Mismo",
-    "autor": "Lise Bourbeau",
-    "categoria": "Desarrollo personal",
-    "secciones": 0,
-    "minutos": 15
-  },
-  {
-    "titulo": "Las Leyes de la Naturaleza Humana",
-    "autor": "Robert Greene",
-    "categoria": "Psicología",
-    "secciones": 6,
-    "minutos": 19
-  },
-  {
-    "titulo": "Leads de $100M",
-    "autor": "Alex Hormozi",
-    "categoria": "Marketing y ventas",
-    "secciones": 6,
-    "minutos": 23
-  },
-  {
-    "titulo": "Leonardo da Vinci",
-    "autor": "Walter Isaacson",
-    "categoria": "Biografías",
-    "secciones": 6,
-    "minutos": 19
-  },
-  {
-    "titulo": "Levantarse",
-    "autor": "Brené Brown",
-    "categoria": "Desarrollo personal",
-    "secciones": 6,
-    "minutos": 19
-  },
-  {
-    "titulo": "Libertad Financiera",
-    "autor": "Grant Sabatier",
-    "categoria": "Finanzas",
-    "secciones": 6,
-    "minutos": 19
-  },
-  {
-    "titulo": "Lifespan: Por Qué Envejecemos y Por Qué No Tenemos Por Qué",
-    "autor": "David A. Sinclair",
-    "categoria": "Salud y bienestar",
-    "secciones": 6,
-    "minutos": 18
-  },
-  {
-    "titulo": "Lo Difícil de las Cosas Difíciles",
-    "autor": "Ben Horowitz",
-    "categoria": "Negocios",
-    "secciones": 6,
-    "minutos": 20
-  },
-  {
-    "titulo": "Lo Inevitable",
-    "autor": "Kevin Kelly",
-    "categoria": "Filosofía",
-    "secciones": 6,
-    "minutos": 22
-  },
-  {
-    "titulo": "Long Walk to Freedom",
-    "autor": "Nelson Mandela",
-    "categoria": "Biografías",
-    "secciones": 6,
-    "minutos": 22
-  },
-  {
-    "titulo": "Los 10X",
-    "autor": "Grant Cardone",
-    "categoria": "Desarrollo personal",
-    "secciones": 6,
-    "minutos": 19
-  },
-  {
-    "titulo": "Los 5 Lenguajes del Amor",
-    "autor": "Gary Chapman",
-    "categoria": "Relaciones",
-    "secciones": 6,
-    "minutos": 23
-  },
-  {
-    "titulo": "Los 7 Hábitos de la Gente Altamente Efectiva",
-    "autor": "Stephen R. Covey",
-    "categoria": "Desarrollo personal",
-    "secciones": 6,
-    "minutos": 23
-  },
-  {
-    "titulo": "Los Cuatro Acuerdos",
-    "autor": "Miguel Ruiz",
-    "categoria": "Desarrollo personal",
-    "secciones": 6,
-    "minutos": 22
-  },
-  {
-    "titulo": "Los Dones de la Imperfección",
-    "autor": "Brené Brown",
-    "categoria": "Desarrollo personal",
-    "secciones": 6,
-    "minutos": 18
-  },
-  {
-    "titulo": "Los Hombres son de Marte, las Mujeres son de Venus",
-    "autor": "John Gray",
-    "categoria": "Relaciones",
-    "secciones": 6,
-    "minutos": 21
-  },
-  {
-    "titulo": "Los Líderes Comen al Final",
-    "autor": "Simon Sinek",
-    "categoria": "Negocios",
-    "secciones": 6,
-    "minutos": 21
-  },
-  {
-    "titulo": "Los Secretos de la Mente Millonaria",
-    "autor": "T. Harv Eker",
-    "categoria": "Finanzas",
-    "secciones": 6,
-    "minutos": 18
-  },
-  {
-    "titulo": "Los Secretos para Hablar en Público",
-    "autor": "Dale Carnegie",
-    "categoria": "Desarrollo personal",
-    "secciones": 0,
-    "minutos": 15
-  },
-  {
-    "titulo": "Marketing de Contenidos",
-    "autor": "Joe Pulizzi",
-    "categoria": "Marketing y ventas",
-    "secciones": 6,
-    "minutos": 19
-  },
-  {
-    "titulo": "Martes con mi Viejo Profesor",
-    "autor": "Mitch Albom",
-    "categoria": "Desarrollo personal",
-    "secciones": 6,
-    "minutos": 21
-  },
-  {
-    "titulo": "Más Allá del Bien y del Mal",
-    "autor": "Friedrich Nietzsche",
-    "categoria": "Filosofía",
-    "secciones": 6,
-    "minutos": 22
-  },
-  {
-    "titulo": "Más Allá del Bien y del Mal en la Pareja",
-    "autor": "Joan Garriga",
-    "categoria": "Relaciones",
-    "secciones": 6,
-    "minutos": 23
-  },
-  {
-    "titulo": "Mastery",
-    "autor": "Robert Greene",
-    "categoria": "Desarrollo personal",
-    "secciones": 6,
-    "minutos": 19
-  },
-  {
-    "titulo": "Meditaciones",
-    "autor": "Marco Aurelio",
-    "categoria": "Filosofía",
-    "secciones": 6,
-    "minutos": 19
-  },
-  {
-    "titulo": "Mindset",
-    "autor": "Carol S. Dweck",
-    "categoria": "Desarrollo personal",
-    "secciones": 6,
-    "minutos": 19
-  },
-  {
-    "titulo": "Minimalismo",
-    "autor": "Joshua Fields Millburn",
-    "categoria": "Desarrollo personal",
-    "secciones": 6,
-    "minutos": 22
-  },
-  {
-    "titulo": "Money: Master the Game",
-    "autor": "Tony Robbins",
-    "categoria": "Finanzas",
-    "secciones": 6,
-    "minutos": 23
-  },
-  {
-    "titulo": "Morir Con Cero",
-    "autor": "Bill Perkins",
-    "categoria": "Finanzas",
-    "secciones": 6,
-    "minutos": 24
-  },
-  {
-    "titulo": "Mujeres y Poder",
-    "autor": "Mary Beard",
-    "categoria": "Filosofía",
-    "secciones": 0,
-    "minutos": 15
-  },
-  {
-    "titulo": "Multiplicadores",
-    "autor": "Liz Wiseman",
-    "categoria": "Negocios",
-    "secciones": 6,
-    "minutos": 19
-  },
-  {
-    "titulo": "No Puedes Herirme",
-    "autor": "David Goggins",
-    "categoria": "Desarrollo personal",
-    "secciones": 6,
-    "minutos": 20
-  },
-  {
-    "titulo": "Nunca Comas Solo",
-    "autor": "Keith Ferrazzi",
-    "categoria": "Desarrollo personal",
-    "secciones": 6,
-    "minutos": 21
-  },
-  {
-    "titulo": "Nunca Dividas la Diferencia",
-    "autor": "Chris Voss",
-    "categoria": "Negocios",
-    "secciones": 6,
-    "minutos": 22
-  },
-  {
-    "titulo": "Ofertas de $100M",
-    "autor": "Alex Hormozi",
-    "categoria": "Negocios",
-    "secciones": 6,
-    "minutos": 24
-  },
-  {
-    "titulo": "Opción B",
-    "autor": "Adam Grant",
-    "categoria": "Desarrollo personal",
-    "secciones": 6,
-    "minutos": 20
-  },
-  {
-    "titulo": "Organízate con Eficacia",
-    "autor": "David Allen",
-    "categoria": "Productividad",
-    "secciones": 6,
-    "minutos": 24
-  },
-  {
-    "titulo": "Originales",
-    "autor": "Adam Grant",
-    "categoria": "Desarrollo personal",
-    "secciones": 6,
-    "minutos": 19
-  },
-  {
-    "titulo": "Outliers: Fuera de Serie",
-    "autor": "Malcolm Gladwell",
-    "categoria": "Psicología",
-    "secciones": 6,
-    "minutos": 22
-  },
-  {
-    "titulo": "Outlive: La Ciencia y el Arte de la Longevidad",
-    "autor": "Peter Attia",
-    "categoria": "Salud y bienestar",
-    "secciones": 6,
-    "minutos": 19
-  },
-  {
-    "titulo": "Padre Rico Padre Pobre",
-    "autor": "Robert Kiyosaki",
-    "categoria": "Finanzas",
-    "secciones": 6,
-    "minutos": 22
-  },
-  {
-    "titulo": "Pensamiento Lateral",
-    "autor": "Edward de Bono",
-    "categoria": "Desarrollo personal",
-    "secciones": 6,
-    "minutos": 23
-  },
-  {
-    "titulo": "Pensar Rápido, Pensar Despacio",
-    "autor": "Daniel Kahneman",
-    "categoria": "Psicología",
-    "secciones": 6,
-    "minutos": 19
-  },
-  {
-    "titulo": "Pequeño Cerdo Capitalista",
-    "autor": "Sofía Macías",
-    "categoria": "Finanzas",
-    "secciones": 6,
-    "minutos": 22
-  },
-  {
-    "titulo": "Piensa como un Monje",
-    "autor": "Jay Shetty",
-    "categoria": "Desarrollo personal",
-    "secciones": 0,
-    "minutos": 15
-  },
-  {
-    "titulo": "Piénsalo de Nuevo",
-    "autor": "Adam Grant",
-    "categoria": "Desarrollo personal",
-    "secciones": 6,
-    "minutos": 18
-  },
-  {
-    "titulo": "Piense y Hágase Rico",
-    "autor": "Napoleon Hill",
-    "categoria": "Desarrollo personal",
-    "secciones": 6,
-    "minutos": 18
-  },
-  {
-    "titulo": "Por Qué Dormimos",
-    "autor": "Matthew Walker",
-    "categoria": "Salud y bienestar",
-    "secciones": 6,
-    "minutos": 19
-  },
-  {
-    "titulo": "Posicionamiento",
-    "autor": "Al Ries",
-    "categoria": "Marketing y ventas",
-    "secciones": 6,
-    "minutos": 23
-  },
-  {
-    "titulo": "Potencial Oculto",
-    "autor": "Adam Grant",
-    "categoria": "Desarrollo personal",
-    "secciones": 6,
-    "minutos": 18
-  },
-  {
-    "titulo": "Pre-Suasión",
-    "autor": "Robert B. Cialdini",
-    "categoria": "Marketing y ventas",
-    "secciones": 6,
-    "minutos": 20
-  },
-  {
-    "titulo": "Predeciblemente Irracional",
-    "autor": "Dan Ariely",
-    "categoria": "Psicología",
-    "secciones": 6,
-    "minutos": 22
-  },
-  {
-    "titulo": "Principios",
-    "autor": "Ray Dalio",
-    "categoria": "Negocios",
-    "secciones": 6,
-    "minutos": 18
-  },
-  {
-    "titulo": "Quiero Cambiar",
-    "autor": "Bernardo Stamateas",
-    "categoria": "Desarrollo personal",
-    "secciones": 6,
-    "minutos": 18
-  },
-  {
-    "titulo": "Quiet: El Poder de los Introvertidos",
-    "autor": "Susan Cain",
-    "categoria": "Psicología",
-    "secciones": 6,
-    "minutos": 23
-  },
-  {
-    "titulo": "Quizás Deberías Hablar con Alguien",
-    "autor": "Lori Gottlieb",
-    "categoria": "Psicología",
-    "secciones": 6,
-    "minutos": 20
-  },
-  {
-    "titulo": "Rango",
-    "autor": "David Epstein",
-    "categoria": "Desarrollo personal",
-    "secciones": 6,
-    "minutos": 22
-  },
-  {
-    "titulo": "Recupera tu Mente, Reconquista tu Vida",
-    "autor": "Marian Rojas Estapé",
-    "categoria": "Psicología",
-    "secciones": 6,
-    "minutos": 19
-  },
-  {
-    "titulo": "Redefine Imposible",
-    "autor": "Jonathan Benito",
-    "categoria": "Desarrollo personal",
-    "secciones": 0,
-    "minutos": 15
-  },
-  {
-    "titulo": "Relaciones Conscientes",
-    "autor": "Anamar Orihuela",
-    "categoria": "Relaciones",
-    "secciones": 6,
-    "minutos": 23
-  },
-  {
-    "titulo": "Respira",
-    "autor": "James Nestor",
-    "categoria": "Salud y bienestar",
-    "secciones": 6,
-    "minutos": 19
-  },
-  {
-    "titulo": "Responsabilidad Extrema",
-    "autor": "Jocko Willink",
-    "categoria": "Desarrollo personal",
-    "secciones": 6,
-    "minutos": 19
-  },
-  {
-    "titulo": "Rework",
-    "autor": "Jason Fried",
-    "categoria": "Negocios",
-    "secciones": 6,
-    "minutos": 20
-  },
-  {
-    "titulo": "Roba como un Artista",
-    "autor": "Austin Kleon",
-    "categoria": "Desarrollo personal",
-    "secciones": 6,
-    "minutos": 18
-  },
-  {
-    "titulo": "Sapiens: De Animales a Dioses",
-    "autor": "Yuval Noah Harari",
-    "categoria": "Filosofía",
-    "secciones": 6,
-    "minutos": 21
-  },
-  {
-    "titulo": "Sé Imparable",
-    "autor": "Ben Angel",
-    "categoria": "Desarrollo personal",
-    "secciones": 6,
-    "minutos": 23
-  },
-  {
-    "titulo": "Seis Sombreros para Pensar",
-    "autor": "Edward de Bono",
-    "categoria": "Desarrollo personal",
-    "secciones": 6,
-    "minutos": 19
-  },
-  {
-    "titulo": "Ser Mortal",
-    "autor": "Atul Gawande",
-    "categoria": "Salud y bienestar",
-    "secciones": 6,
-    "minutos": 20
-  },
-  {
-    "titulo": "Sexo, Amor y Cerebro",
-    "autor": "Louann Brizendine",
-    "categoria": "Psicología",
-    "secciones": 6,
-    "minutos": 21
-  },
-  {
-    "titulo": "Shoe Dog",
-    "autor": "Phil Knight",
-    "categoria": "Biografías",
-    "secciones": 6,
-    "minutos": 18
-  },
-  {
-    "titulo": "Sobre la Brevedad de la Vida",
-    "autor": "Séneca",
-    "categoria": "Filosofía",
-    "secciones": 6,
-    "minutos": 23
-  },
-  {
-    "titulo": "Sobrenatural",
-    "autor": "Joe Dispenza",
-    "categoria": "Desarrollo personal",
-    "secciones": 6,
-    "minutos": 23
-  },
-  {
-    "titulo": "Sprint",
-    "autor": "Jake Knapp",
-    "categoria": "Productividad",
-    "secciones": 6,
-    "minutos": 20
-  },
-  {
-    "titulo": "Steve Jobs",
-    "autor": "Walter Isaacson",
-    "categoria": "Biografías",
-    "secciones": 6,
-    "minutos": 18
-  },
-  {
-    "titulo": "Stillness is the Key",
-    "autor": "Ryan Holiday",
-    "categoria": "Desarrollo personal",
-    "secciones": 6,
-    "minutos": 24
-  },
-  {
-    "titulo": "Supercerebro",
-    "autor": "Deepak Chopra",
-    "categoria": "Desarrollo personal",
-    "secciones": 6,
-    "minutos": 23
-  },
-  {
-    "titulo": "Superprevisores",
-    "autor": "Philip Tetlock",
-    "categoria": "Negocios",
-    "secciones": 6,
-    "minutos": 18
-  },
-  {
-    "titulo": "Te Amarás sobre Todas las Cosas",
-    "autor": "Mónica Esgueva",
-    "categoria": "Desarrollo personal",
-    "secciones": 6,
-    "minutos": 21
-  },
-  {
-    "titulo": "Te Enseñaré a ser Rico",
-    "autor": "Ramit Sethi",
-    "categoria": "Finanzas",
-    "secciones": 6,
-    "minutos": 20
-  },
-  {
-    "titulo": "Thinking in Bets",
-    "autor": "Annie Duke",
-    "categoria": "Desarrollo personal",
-    "secciones": 6,
-    "minutos": 19
-  },
-  {
-    "titulo": "Tiende tu Cama",
-    "autor": "William H. McRaven",
-    "categoria": "Desarrollo personal",
-    "secciones": 6,
-    "minutos": 22
-  },
-  {
-    "titulo": "Todo Está J*dido",
-    "autor": "Mark Manson",
-    "categoria": "Desarrollo personal",
-    "secciones": 6,
-    "minutos": 22
-  },
-  {
-    "titulo": "Trabajo Profundo",
-    "autor": "Cal Newport",
-    "categoria": "Productividad",
-    "secciones": 6,
-    "minutos": 19
-  },
-  {
-    "titulo": "Tribus",
-    "autor": "Seth Godin",
-    "categoria": "Marketing y ventas",
-    "secciones": 6,
-    "minutos": 19
-  },
-  {
-    "titulo": "Tu Cerebro Manda",
-    "autor": "John Medina",
-    "categoria": "Psicología",
-    "secciones": 6,
-    "minutos": 22
-  },
-  {
-    "titulo": "Tu Dinero o Tu Vida",
-    "autor": "Vicki Robin",
-    "categoria": "Finanzas",
-    "secciones": 6,
-    "minutos": 23
-  },
-  {
-    "titulo": "Tu Mejor Versión",
-    "autor": "Bernardo Stamateas",
-    "categoria": "Desarrollo personal",
-    "secciones": 0,
-    "minutos": 15
-  },
-  {
-    "titulo": "Tus Zonas Erróneas",
-    "autor": "Wayne W. Dyer",
-    "categoria": "Desarrollo personal",
-    "secciones": 6,
-    "minutos": 19
-  },
-  {
-    "titulo": "Un Nuevo Mundo, Ahora",
-    "autor": "Eckhart Tolle",
-    "categoria": "Desarrollo personal",
-    "secciones": 6,
-    "minutos": 23
-  },
-  {
-    "titulo": "Un Paso por Delante de Wall Street",
-    "autor": "Peter Lynch",
-    "categoria": "Finanzas",
-    "secciones": 6,
-    "minutos": 18
-  },
-  {
-    "titulo": "Una Breve Historia de Casi Todo",
-    "autor": "Bill Bryson",
-    "categoria": "Filosofía",
-    "secciones": 6,
-    "minutos": 19
-  },
-  {
-    "titulo": "Una Breve Historia del Tiempo",
-    "autor": "Stephen Hawking",
-    "categoria": "Filosofía",
-    "secciones": 6,
-    "minutos": 22
-  },
-  {
-    "titulo": "Una Mente para los Números",
-    "autor": "Barbara Oakley",
-    "categoria": "Desarrollo personal",
-    "secciones": 6,
-    "minutos": 23
-  },
-  {
-    "titulo": "Vayamos Adelante",
-    "autor": "Sheryl Sandberg",
-    "categoria": "Desarrollo personal",
-    "secciones": 6,
-    "minutos": 19
-  },
-  {
-    "titulo": "Véndele a la Mente, no a la Gente",
-    "autor": "Jürgen Klaric",
-    "categoria": "Marketing y ventas",
-    "secciones": 6,
-    "minutos": 23
-  },
-  {
-    "titulo": "Vender es Humano",
-    "autor": "Daniel H. Pink",
-    "categoria": "Marketing y ventas",
-    "secciones": 6,
-    "minutos": 19
-  },
-  {
-    "titulo": "Ya No Seas Codependiente",
-    "autor": "Melody Beattie",
-    "categoria": "Relaciones",
-    "secciones": 6,
-    "minutos": 22
-  }
+ {
+  "titulo": "¿Por Qué Amamos?",
+  "autor": "Helen Fisher",
+  "categoria": "Psicología",
+  "secciones": 6,
+  "minutos": 22
+ },
+ {
+  "titulo": "¿Por Qué Nadie me Dijo Esto Antes?",
+  "autor": "Julie Smith",
+  "categoria": "Psicología",
+  "secciones": 6,
+  "minutos": 19
+ },
+ {
+  "titulo": "¿Quién se ha Llevado mi Queso?",
+  "autor": "Spencer Johnson",
+  "categoria": "Desarrollo personal",
+  "secciones": 6,
+  "minutos": 24
+ },
+ {
+  "titulo": "10x es más Fácil que 2x",
+  "autor": "Dan Sullivan",
+  "categoria": "Desarrollo personal",
+  "secciones": 6,
+  "minutos": 23
+ },
+ {
+  "titulo": "12 Reglas para Vivir",
+  "autor": "Jordan B. Peterson",
+  "categoria": "Desarrollo personal",
+  "secciones": 6,
+  "minutos": 22
+ },
+ {
+  "titulo": "21 Lecciones para el Siglo XXI",
+  "autor": "Yuval Noah Harari",
+  "categoria": "Filosofía",
+  "secciones": 6,
+  "minutos": 21
+ },
+ {
+  "titulo": "Abundancia",
+  "autor": "Peter Diamandis",
+  "categoria": "Negocios",
+  "secciones": 6,
+  "minutos": 23
+ },
+ {
+  "titulo": "Agotamiento",
+  "autor": "Emily Nagoski",
+  "categoria": "Salud y bienestar",
+  "secciones": 6,
+  "minutos": 22
+ },
+ {
+  "titulo": "Amar o Depender",
+  "autor": "Walter Riso",
+  "categoria": "Relaciones",
+  "secciones": 6,
+  "minutos": 19
+ },
+ {
+  "titulo": "Ámate a Ti Mismo como si tu Vida Dependiera de Ello",
+  "autor": "Kamal Ravikant",
+  "categoria": "Desarrollo personal",
+  "secciones": 6,
+  "minutos": 23
+ },
+ {
+  "titulo": "Ansiedad",
+  "autor": "Enric Corbera",
+  "categoria": "Salud y bienestar",
+  "secciones": 6,
+  "minutos": 22
+ },
+ {
+  "titulo": "Antifrágil",
+  "autor": "Nassim Nicholas Taleb",
+  "categoria": "Filosofía",
+  "secciones": 6,
+  "minutos": 22
+ },
+ {
+  "titulo": "Apegos y Cómo Sanarlos",
+  "autor": "Milan Yerkovich",
+  "categoria": "Psicología",
+  "secciones": 6,
+  "minutos": 22
+ },
+ {
+  "titulo": "Aprendiendo a Quererse a Sí Mismo",
+  "autor": "Walter Riso",
+  "categoria": "Desarrollo personal",
+  "secciones": 6,
+  "minutos": 20
+ },
+ {
+  "titulo": "Así Habló Zaratustra",
+  "autor": "Friedrich Nietzsche",
+  "categoria": "Filosofía",
+  "secciones": 6,
+  "minutos": 22
+ },
+ {
+  "titulo": "Atreverse a la Grandeza",
+  "autor": "Brené Brown",
+  "categoria": "Desarrollo personal",
+  "secciones": 6,
+  "minutos": 19
+ },
+ {
+  "titulo": "Atrévete a Liderar",
+  "autor": "Brené Brown",
+  "categoria": "Desarrollo personal",
+  "secciones": 6,
+  "minutos": 23
+ },
+ {
+  "titulo": "Atrévete a No Gustar",
+  "autor": "Ichiro Kishimi",
+  "categoria": "Desarrollo personal",
+  "secciones": 6,
+  "minutos": 21
+ },
+ {
+  "titulo": "Attached: Los Estilos de Apego en el Amor",
+  "autor": "Amir Levine",
+  "categoria": "Psicología",
+  "secciones": 6,
+  "minutos": 22
+ },
+ {
+  "titulo": "Ayuno Intermitente",
+  "autor": "Jason Fung",
+  "categoria": "Salud y bienestar",
+  "secciones": 6,
+  "minutos": 18
+ },
+ {
+  "titulo": "Benjamin Franklin: Una Vida Americana",
+  "autor": "Walter Isaacson",
+  "categoria": "Biografías",
+  "secciones": 6,
+  "minutos": 18
+ },
+ {
+  "titulo": "Blink",
+  "autor": "Malcolm Gladwell",
+  "categoria": "Psicología",
+  "secciones": 6,
+  "minutos": 22
+ },
+ {
+  "titulo": "Bola de Nieve: Warren Buffett y el Negocio de la Vida",
+  "autor": "Alice Schroeder",
+  "categoria": "Biografías",
+  "secciones": 6,
+  "minutos": 20
+ },
+ {
+  "titulo": "Bullshit Jobs",
+  "autor": "David Graeber",
+  "categoria": "Filosofía",
+  "secciones": 6,
+  "minutos": 22
+ },
+ {
+  "titulo": "Buyology",
+  "autor": "Martin Lindstrom",
+  "categoria": "Marketing y ventas",
+  "secciones": 6,
+  "minutos": 23
+ },
+ {
+  "titulo": "Cartas a Lucilio",
+  "autor": "Séneca",
+  "categoria": "Filosofía",
+  "secciones": 6,
+  "minutos": 17
+ },
+ {
+  "titulo": "Come, Reza, Ama",
+  "autor": "Elizabeth Gilbert",
+  "categoria": "Desarrollo personal",
+  "secciones": 6,
+  "minutos": 21
+ },
+ {
+  "titulo": "Cómo Ganar Amigos e Influir sobre las Personas",
+  "autor": "Dale Carnegie",
+  "categoria": "Desarrollo personal",
+  "secciones": 6,
+  "minutos": 19
+ },
+ {
+  "titulo": "Cómo Hablar para que los Niños Escuchen y Escuchar para que los Niños Hablen",
+  "autor": "Adele Faber",
+  "categoria": "Relaciones",
+  "secciones": 6,
+  "minutos": 21
+ },
+ {
+  "titulo": "Cómo Hacer que te Pasen Cosas Buenas",
+  "autor": "Marian Rojas Estapé",
+  "categoria": "Desarrollo personal",
+  "secciones": 6,
+  "minutos": 18
+ },
+ {
+  "titulo": "Cómo Mandar a la Mierda de Forma Educada",
+  "autor": "Alba Cardalda",
+  "categoria": "Desarrollo personal",
+  "secciones": 6,
+  "minutos": 23
+ },
+ {
+  "titulo": "Cómo Ser un Estoico",
+  "autor": "Massimo Pigliucci",
+  "categoria": "Filosofía",
+  "secciones": 6,
+  "minutos": 19
+ },
+ {
+  "titulo": "Comunicación No Violenta",
+  "autor": "Marshall B. Rosenberg",
+  "categoria": "Relaciones",
+  "secciones": 6,
+  "minutos": 20
+ },
+ {
+  "titulo": "Contagioso",
+  "autor": "Jonah Berger",
+  "categoria": "Marketing y ventas",
+  "secciones": 6,
+  "minutos": 23
+ },
+ {
+  "titulo": "Conversaciones Cruciales",
+  "autor": "Kerry Patterson",
+  "categoria": "Relaciones",
+  "secciones": 6,
+  "minutos": 19
+ },
+ {
+  "titulo": "Cosmos",
+  "autor": "Carl Sagan",
+  "categoria": "Filosofía",
+  "secciones": 6,
+  "minutos": 24
+ },
+ {
+  "titulo": "Creatividad S.A.",
+  "autor": "Ed Catmull",
+  "categoria": "Negocios",
+  "secciones": 6,
+  "minutos": 21
+ },
+ {
+  "titulo": "Cree en Ti",
+  "autor": "Rut Nieves",
+  "categoria": "Desarrollo personal",
+  "secciones": 6,
+  "minutos": 22
+ },
+ {
+  "titulo": "Cuando el Cuerpo Dice No",
+  "autor": "Gabor Maté",
+  "categoria": "Salud y bienestar",
+  "secciones": 6,
+  "minutos": 23
+ },
+ {
+  "titulo": "Cuatro Mil Semanas",
+  "autor": "Oliver Burkeman",
+  "categoria": "Desarrollo personal",
+  "secciones": 6,
+  "minutos": 18
+ },
+ {
+  "titulo": "Dar y Recibir",
+  "autor": "Adam Grant",
+  "categoria": "Negocios",
+  "secciones": 6,
+  "minutos": 20
+ },
+ {
+  "titulo": "David y Goliat",
+  "autor": "Malcolm Gladwell",
+  "categoria": "Psicología",
+  "secciones": 6,
+  "minutos": 24
+ },
+ {
+  "titulo": "De Bueno a Excelente",
+  "autor": "Jim Collins",
+  "categoria": "Negocios",
+  "secciones": 6,
+  "minutos": 20
+ },
+ {
+  "titulo": "De Cero a Uno",
+  "autor": "Peter Thiel",
+  "categoria": "Negocios",
+  "secciones": 6,
+  "minutos": 23
+ },
+ {
+  "titulo": "Deja de Ser Tú",
+  "autor": "Joe Dispenza",
+  "categoria": "Desarrollo personal",
+  "secciones": 6,
+  "minutos": 22
+ },
+ {
+  "titulo": "Dejar Ir",
+  "autor": "David R. Hawkins",
+  "categoria": "Desarrollo personal",
+  "secciones": 6,
+  "minutos": 22
+ },
+ {
+  "titulo": "Dejar Ir el Apego",
+  "autor": "Deepak Chopra",
+  "categoria": "Desarrollo personal",
+  "secciones": 6,
+  "minutos": 23
+ },
+ {
+  "titulo": "Delivering Happiness",
+  "autor": "Tony Hsieh",
+  "categoria": "Negocios",
+  "secciones": 6,
+  "minutos": 21
+ },
+ {
+  "titulo": "Despertando al Gigante Interior",
+  "autor": "Anthony Robbins",
+  "categoria": "Desarrollo personal",
+  "secciones": 6,
+  "minutos": 22
+ },
+ {
+  "titulo": "Despierta tu Héroe Interior",
+  "autor": "Victor Hugo Manzanilla",
+  "categoria": "Desarrollo personal",
+  "secciones": 6,
+  "minutos": 23
+ },
+ {
+  "titulo": "Diario de una Joven",
+  "autor": "Ana Frank",
+  "categoria": "Biografías",
+  "secciones": 6,
+  "minutos": 14
+ },
+ {
+  "titulo": "Digital Minimalism",
+  "autor": "Cal Newport",
+  "categoria": "Productividad",
+  "secciones": 6,
+  "minutos": 23
+ },
+ {
+  "titulo": "Dinero Feliz",
+  "autor": "Ken Honda",
+  "categoria": "Finanzas",
+  "secciones": 6,
+  "minutos": 23
+ },
+ {
+  "titulo": "Dinero: Domina el Juego",
+  "autor": "Tony Robbins",
+  "categoria": "Finanzas",
+  "secciones": 6,
+  "minutos": 20
+ },
+ {
+  "titulo": "Dopamina Detox",
+  "autor": "Thibaut Meurisse",
+  "categoria": "Desarrollo personal",
+  "secciones": 6,
+  "minutos": 23
+ },
+ {
+  "titulo": "Drive: La Sorprendente Verdad sobre lo que nos Motiva",
+  "autor": "Daniel H. Pink",
+  "categoria": "Desarrollo personal",
+  "secciones": 6,
+  "minutos": 19
+ },
+ {
+  "titulo": "Eat That Frog",
+  "autor": "Brian Tracy",
+  "categoria": "Productividad",
+  "secciones": 6,
+  "minutos": 21
+ },
+ {
+  "titulo": "Economía en una Lección",
+  "autor": "Henry Hazlitt",
+  "categoria": "Finanzas",
+  "secciones": 6,
+  "minutos": 19
+ },
+ {
+  "titulo": "Ego es el Enemigo",
+  "autor": "Ryan Holiday",
+  "categoria": "Desarrollo personal",
+  "secciones": 6,
+  "minutos": 22
+ },
+ {
+  "titulo": "Einstein: Su Vida y Su Universo",
+  "autor": "Walter Isaacson",
+  "categoria": "Biografías",
+  "secciones": 6,
+  "minutos": 22
+ },
+ {
+  "titulo": "El Alquimista",
+  "autor": "Paulo Coelho",
+  "categoria": "Filosofía",
+  "secciones": 6,
+  "minutos": 18
+ },
+ {
+  "titulo": "El Arte de Amar",
+  "autor": "Erich Fromm",
+  "categoria": "Psicología",
+  "secciones": 6,
+  "minutos": 23
+ },
+ {
+  "titulo": "El Arte de la Buena Vida",
+  "autor": "Rolf Dobelli",
+  "categoria": "Desarrollo personal",
+  "secciones": 6,
+  "minutos": 23
+ },
+ {
+  "titulo": "El Arte de la Felicidad",
+  "autor": "Dalai Lama",
+  "categoria": "Salud y bienestar",
+  "secciones": 6,
+  "minutos": 21
+ },
+ {
+  "titulo": "El Arte de la Guerra",
+  "autor": "Sun Tzu",
+  "categoria": "Filosofía",
+  "secciones": 6,
+  "minutos": 18
+ },
+ {
+  "titulo": "El Arte de Pensar Claramente",
+  "autor": "Rolf Dobelli",
+  "categoria": "Desarrollo personal",
+  "secciones": 6,
+  "minutos": 22
+ },
+ {
+  "titulo": "El Caballero de la Armadura Oxidada",
+  "autor": "Robert Fisher",
+  "categoria": "Desarrollo personal",
+  "secciones": 6,
+  "minutos": 22
+ },
+ {
+  "titulo": "El Camino a la Libertad",
+  "autor": "Nelson Mandela",
+  "categoria": "Biografías",
+  "secciones": 6,
+  "minutos": 18
+ },
+ {
+  "titulo": "El Camino del Artista",
+  "autor": "Julia Cameron",
+  "categoria": "Desarrollo personal",
+  "secciones": 6,
+  "minutos": 23
+ },
+ {
+  "titulo": "El Camino del Hombre Superior",
+  "autor": "David Deida",
+  "categoria": "Desarrollo personal",
+  "secciones": 6,
+  "minutos": 21
+ },
+ {
+  "titulo": "El Cerebro del Niño",
+  "autor": "Daniel J. Siegel",
+  "categoria": "Psicología",
+  "secciones": 6,
+  "minutos": 19
+ },
+ {
+  "titulo": "El Cerebro Emocional",
+  "autor": "Joseph LeDoux",
+  "categoria": "Psicología",
+  "secciones": 6,
+  "minutos": 22
+ },
+ {
+  "titulo": "El Cerebro en Forma",
+  "autor": "John J. Ratey",
+  "categoria": "Salud y bienestar",
+  "secciones": 6,
+  "minutos": 19
+ },
+ {
+  "titulo": "El Cisne Negro",
+  "autor": "Nassim Nicholas Taleb",
+  "categoria": "Filosofía",
+  "secciones": 6,
+  "minutos": 21
+ },
+ {
+  "titulo": "El Club de las 5 AM",
+  "autor": "Robin Sharma",
+  "categoria": "Desarrollo personal",
+  "secciones": 6,
+  "minutos": 24
+ },
+ {
+  "titulo": "El Código de la Longevidad",
+  "autor": "Valter Longo",
+  "categoria": "Salud y bienestar",
+  "secciones": 6,
+  "minutos": 23
+ },
+ {
+  "titulo": "El Código de la Obesidad",
+  "autor": "Jason Fung",
+  "categoria": "Salud y bienestar",
+  "secciones": 6,
+  "minutos": 19
+ },
+ {
+  "titulo": "El Código del Dinero",
+  "autor": "Raimon Samsó",
+  "categoria": "Finanzas",
+  "secciones": 6,
+  "minutos": 24
+ },
+ {
+  "titulo": "El Código del Talento",
+  "autor": "Daniel Coyle",
+  "categoria": "Desarrollo personal",
+  "secciones": 6,
+  "minutos": 21
+ },
+ {
+  "titulo": "El Cuadrante del Flujo de Dinero",
+  "autor": "Robert T. Kiyosaki",
+  "categoria": "Finanzas",
+  "secciones": 6,
+  "minutos": 18
+ },
+ {
+  "titulo": "El Cuerpo Lleva la Cuenta",
+  "autor": "Bessel van der Kolk",
+  "categoria": "Psicología",
+  "secciones": 6,
+  "minutos": 18
+ },
+ {
+  "titulo": "El Derecho a Decir No",
+  "autor": "Walter Riso",
+  "categoria": "Desarrollo personal",
+  "secciones": 6,
+  "minutos": 18
+ },
+ {
+  "titulo": "El Dilema del Innovador",
+  "autor": "Clayton M. Christensen",
+  "categoria": "Negocios",
+  "secciones": 6,
+  "minutos": 19
+ },
+ {
+  "titulo": "El Efecto Compuesto",
+  "autor": "Darren Hardy",
+  "categoria": "Desarrollo personal",
+  "secciones": 6,
+  "minutos": 23
+ },
+ {
+  "titulo": "El Ejecutivo al Minuto",
+  "autor": "Ken Blanchard",
+  "categoria": "Negocios",
+  "secciones": 6,
+  "minutos": 24
+ },
+ {
+  "titulo": "El Error de Descartes",
+  "autor": "Antonio Damasio",
+  "categoria": "Psicología",
+  "secciones": 6,
+  "minutos": 22
+ },
+ {
+  "titulo": "El Extranjero",
+  "autor": "Albert Camus",
+  "categoria": "Filosofía",
+  "secciones": 6,
+  "minutos": 23
+ },
+ {
+  "titulo": "El Futuro es más Rápido de lo que Piensas",
+  "autor": "Peter Diamandis",
+  "categoria": "Negocios",
+  "secciones": 6,
+  "minutos": 22
+ },
+ {
+  "titulo": "El Gen Egoísta",
+  "autor": "Richard Dawkins",
+  "categoria": "Filosofía",
+  "secciones": 6,
+  "minutos": 20
+ },
+ {
+  "titulo": "El Gran Diseño",
+  "autor": "Stephen Hawking",
+  "categoria": "Filosofía",
+  "secciones": 6,
+  "minutos": 23
+ },
+ {
+  "titulo": "El Guerrero Pacífico",
+  "autor": "Dan Millman",
+  "categoria": "Desarrollo personal",
+  "secciones": 6,
+  "minutos": 22
+ },
+ {
+  "titulo": "El Hombre en Busca de Sentido",
+  "autor": "Viktor Frankl",
+  "categoria": "Psicología",
+  "secciones": 6,
+  "minutos": 19
+ },
+ {
+  "titulo": "El Hombre más Rico de Babilonia",
+  "autor": "George S. Clason",
+  "categoria": "Finanzas",
+  "secciones": 6,
+  "minutos": 24
+ },
+ {
+  "titulo": "El Inversor Inteligente",
+  "autor": "Benjamin Graham",
+  "categoria": "Finanzas",
+  "secciones": 6,
+  "minutos": 19
+ },
+ {
+  "titulo": "El Juego Infinito",
+  "autor": "Simon Sinek",
+  "categoria": "Negocios",
+  "secciones": 6,
+  "minutos": 18
+ },
+ {
+  "titulo": "El Lenguaje del Cuerpo",
+  "autor": "Allan Pease",
+  "categoria": "Psicología",
+  "secciones": 6,
+  "minutos": 22
+ },
+ {
+  "titulo": "El Método Lean Startup",
+  "autor": "Eric Ries",
+  "categoria": "Negocios",
+  "secciones": 6,
+  "minutos": 19
+ },
+ {
+  "titulo": "El Milagro de la Atención Plena",
+  "autor": "Thich Nhat Hanh",
+  "categoria": "Salud y bienestar",
+  "secciones": 6,
+  "minutos": 24
+ },
+ {
+  "titulo": "El Milagro de las Mañanas",
+  "autor": "Hal Elrod",
+  "categoria": "Desarrollo personal",
+  "secciones": 6,
+  "minutos": 22
+ },
+ {
+  "titulo": "El Millonario Automático",
+  "autor": "David Bach",
+  "categoria": "Finanzas",
+  "secciones": 6,
+  "minutos": 22
+ },
+ {
+  "titulo": "El Millonario de la Puerta de al Lado",
+  "autor": "Thomas J. Stanley",
+  "categoria": "Finanzas",
+  "secciones": 6,
+  "minutos": 19
+ },
+ {
+  "titulo": "El Mito de Sísifo",
+  "autor": "Albert Camus",
+  "categoria": "Filosofía",
+  "secciones": 6,
+  "minutos": 22
+ },
+ {
+  "titulo": "El Mito del Emprendedor",
+  "autor": "Michael E. Gerber",
+  "categoria": "Negocios",
+  "secciones": 6,
+  "minutos": 22
+ },
+ {
+  "titulo": "El Monje que Vendió su Ferrari",
+  "autor": "Robin Sharma",
+  "categoria": "Desarrollo personal",
+  "secciones": 6,
+  "minutos": 23
+ },
+ {
+  "titulo": "El Mundo de Sofía",
+  "autor": "Jostein Gaarder",
+  "categoria": "Filosofía",
+  "secciones": 6,
+  "minutos": 22
+ },
+ {
+  "titulo": "El Obstáculo es el Camino",
+  "autor": "Ryan Holiday",
+  "categoria": "Desarrollo personal",
+  "secciones": 6,
+  "minutos": 23
+ },
+ {
+  "titulo": "El Pequeño Libro del Talento",
+  "autor": "Daniel Coyle",
+  "categoria": "Desarrollo personal",
+  "secciones": 6,
+  "minutos": 21
+ },
+ {
+  "titulo": "El Placebo Eres Tú",
+  "autor": "Joe Dispenza",
+  "categoria": "Salud y bienestar",
+  "secciones": 6,
+  "minutos": 23
+ },
+ {
+  "titulo": "El Poder de la Autodisciplina",
+  "autor": "Brian Tracy",
+  "categoria": "Desarrollo personal",
+  "secciones": 6,
+  "minutos": 18
+ },
+ {
+  "titulo": "El Poder de la Intención",
+  "autor": "Wayne W. Dyer",
+  "categoria": "Desarrollo personal",
+  "secciones": 6,
+  "minutos": 18
+ },
+ {
+  "titulo": "El Poder de la Mente Subconsciente",
+  "autor": "Joseph Murphy",
+  "categoria": "Desarrollo personal",
+  "secciones": 6,
+  "minutos": 24
+ },
+ {
+  "titulo": "El Poder de la Resiliencia",
+  "autor": "Robert Brooks",
+  "categoria": "Desarrollo personal",
+  "secciones": 6,
+  "minutos": 22
+ },
+ {
+  "titulo": "El Poder de los 5 Segundos",
+  "autor": "Mel Robbins",
+  "categoria": "Desarrollo personal",
+  "secciones": 6,
+  "minutos": 22
+ },
+ {
+  "titulo": "El Poder de los Hábitos",
+  "autor": "Charles Duhigg",
+  "categoria": "Desarrollo personal",
+  "secciones": 6,
+  "minutos": 19
+ },
+ {
+  "titulo": "El Poder del Ahora",
+  "autor": "Eckhart Tolle",
+  "categoria": "Desarrollo personal",
+  "secciones": 6,
+  "minutos": 18
+ },
+ {
+  "titulo": "El Poder del Apego",
+  "autor": "Diane Poole Heller",
+  "categoria": "Psicología",
+  "secciones": 6,
+  "minutos": 21
+ },
+ {
+  "titulo": "El Poder del Hábito",
+  "autor": "Charles Duhigg",
+  "categoria": "Desarrollo personal",
+  "secciones": 6,
+  "minutos": 23
+ },
+ {
+  "titulo": "El Principio 80/20",
+  "autor": "Richard Koch",
+  "categoria": "Productividad",
+  "secciones": 6,
+  "minutos": 22
+ },
+ {
+  "titulo": "El Principito",
+  "autor": "Antoine de Saint-Exupéry",
+  "categoria": "Filosofía",
+  "secciones": 6,
+  "minutos": 23
+ },
+ {
+  "titulo": "El Punto Clave",
+  "autor": "Malcolm Gladwell",
+  "categoria": "Negocios",
+  "secciones": 6,
+  "minutos": 23
+ },
+ {
+  "titulo": "El Secreto",
+  "autor": "Rhonda Byrne",
+  "categoria": "Desarrollo personal",
+  "secciones": 6,
+  "minutos": 23
+ },
+ {
+  "titulo": "El Sutil Arte de que (casi todo) te Importe una Mierda",
+  "autor": "Mark Manson",
+  "categoria": "Desarrollo personal",
+  "secciones": 6,
+  "minutos": 18
+ },
+ {
+  "titulo": "El Universo en una Cáscara de Nuez",
+  "autor": "Stephen Hawking",
+  "categoria": "Filosofía",
+  "secciones": 6,
+  "minutos": 20
+ },
+ {
+  "titulo": "El Vendedor más Grande del Mundo",
+  "autor": "Og Mandino",
+  "categoria": "Marketing y ventas",
+  "secciones": 6,
+  "minutos": 23
+ },
+ {
+  "titulo": "Elon Musk",
+  "autor": "Walter Isaacson",
+  "categoria": "Biografías",
+  "secciones": 6,
+  "minutos": 19
+ },
+ {
+  "titulo": "Emociones Tóxicas",
+  "autor": "Bernardo Stamateas",
+  "categoria": "Desarrollo personal",
+  "secciones": 6,
+  "minutos": 20
+ },
+ {
+  "titulo": "Empieza con el Porqué",
+  "autor": "Simon Sinek",
+  "categoria": "Negocios",
+  "secciones": 6,
+  "minutos": 19
+ },
+ {
+  "titulo": "Empresa de Uno",
+  "autor": "Paul Jarvis",
+  "categoria": "Negocios",
+  "secciones": 6,
+  "minutos": 18
+ },
+ {
+  "titulo": "Enamórate de Ti",
+  "autor": "Walter Riso",
+  "categoria": "Desarrollo personal",
+  "secciones": 6,
+  "minutos": 20
+ },
+ {
+  "titulo": "Encuentra tu Persona Vitamina",
+  "autor": "Marian Rojas Estapé",
+  "categoria": "Relaciones",
+  "secciones": 6,
+  "minutos": 19
+ },
+ {
+  "titulo": "Enganchado",
+  "autor": "Nir Eyal",
+  "categoria": "Marketing y ventas",
+  "secciones": 6,
+  "minutos": 20
+ },
+ {
+  "titulo": "Eres un Chingón",
+  "autor": "Jen Sincero",
+  "categoria": "Desarrollo personal",
+  "secciones": 6,
+  "minutos": 18
+ },
+ {
+  "titulo": "Eres un Chingón en Hacer Dinero",
+  "autor": "Jen Sincero",
+  "categoria": "Finanzas",
+  "secciones": 6,
+  "minutos": 19
+ },
+ {
+  "titulo": "Esencialismo",
+  "autor": "Greg McKeown",
+  "categoria": "Desarrollo personal",
+  "secciones": 6,
+  "minutos": 20
+ },
+ {
+  "titulo": "Estás Hecho para Amar",
+  "autor": "Marcela Lechuga",
+  "categoria": "Relaciones",
+  "secciones": 6,
+  "minutos": 22
+ },
+ {
+  "titulo": "Este Dolor no es Mío",
+  "autor": "Mark Wolynn",
+  "categoria": "Psicología",
+  "secciones": 6,
+  "minutos": 19
+ },
+ {
+  "titulo": "Esto es Marketing",
+  "autor": "Seth Godin",
+  "categoria": "Marketing y ventas",
+  "secciones": 6,
+  "minutos": 20
+ },
+ {
+  "titulo": "Factfulness",
+  "autor": "Hans Rosling",
+  "categoria": "Desarrollo personal",
+  "secciones": 6,
+  "minutos": 22
+ },
+ {
+  "titulo": "Fluir",
+  "autor": "Mihaly Csikszentmihalyi",
+  "categoria": "Psicología",
+  "secciones": 6,
+  "minutos": 19
+ },
+ {
+  "titulo": "Freakonomics",
+  "autor": "Steven D. Levitt",
+  "categoria": "Negocios",
+  "secciones": 6,
+  "minutos": 19
+ },
+ {
+  "titulo": "Gente Tóxica",
+  "autor": "Bernardo Stamateas",
+  "categoria": "Relaciones",
+  "secciones": 6,
+  "minutos": 19
+ },
+ {
+  "titulo": "Good to Great",
+  "autor": "Jim Collins",
+  "categoria": "Negocios",
+  "secciones": 6,
+  "minutos": 22
+ },
+ {
+  "titulo": "Grit: El Poder de la Pasión y la Perseverancia",
+  "autor": "Angela Duckworth",
+  "categoria": "Desarrollo personal",
+  "secciones": 6,
+  "minutos": 23
+ },
+ {
+  "titulo": "Gung Ho",
+  "autor": "Ken Blanchard",
+  "categoria": "Negocios",
+  "secciones": 6,
+  "minutos": 18
+ },
+ {
+  "titulo": "Hábitos Atómicos",
+  "autor": "James Clear",
+  "categoria": "Desarrollo personal",
+  "secciones": 6,
+  "minutos": 23
+ },
+ {
+  "titulo": "Háblame Bonito",
+  "autor": "Vanessa Van Edwards",
+  "categoria": "Relaciones",
+  "secciones": 6,
+  "minutos": 22
+ },
+ {
+  "titulo": "Hacking Growth",
+  "autor": "Sean Ellis",
+  "categoria": "Marketing y ventas",
+  "secciones": 6,
+  "minutos": 20
+ },
+ {
+  "titulo": "Haz Tiempo",
+  "autor": "Jake Knapp",
+  "categoria": "Productividad",
+  "secciones": 6,
+  "minutos": 16
+ },
+ {
+  "titulo": "Hazlo Ahora",
+  "autor": "Brian Tracy",
+  "categoria": "Productividad",
+  "secciones": 6,
+  "minutos": 23
+ },
+ {
+  "titulo": "Hombres son de Marte, Mujeres son de Venus",
+  "autor": "John Gray",
+  "categoria": "Relaciones",
+  "secciones": 6,
+  "minutos": 23
+ },
+ {
+  "titulo": "Homo Deus",
+  "autor": "Yuval Noah Harari",
+  "categoria": "Filosofía",
+  "secciones": 6,
+  "minutos": 22
+ },
+ {
+  "titulo": "Ikigai",
+  "autor": "Héctor García",
+  "categoria": "Desarrollo personal",
+  "secciones": 6,
+  "minutos": 18
+ },
+ {
+  "titulo": "Indistractable",
+  "autor": "Nir Eyal",
+  "categoria": "Productividad",
+  "secciones": 6,
+  "minutos": 19
+ },
+ {
+  "titulo": "Influencia: La Psicología de la Persuasión",
+  "autor": "Robert B. Cialdini",
+  "categoria": "Psicología",
+  "secciones": 6,
+  "minutos": 23
+ },
+ {
+  "titulo": "Innovación Abierta",
+  "autor": "Henry Chesbrough",
+  "categoria": "Negocios",
+  "secciones": 6,
+  "minutos": 21
+ },
+ {
+  "titulo": "Inspired",
+  "autor": "Marty Cagan",
+  "categoria": "Negocios",
+  "secciones": 6,
+  "minutos": 24
+ },
+ {
+  "titulo": "Inteligencia Emocional",
+  "autor": "Daniel Goleman",
+  "categoria": "Psicología",
+  "secciones": 6,
+  "minutos": 18
+ },
+ {
+  "titulo": "Inteligencia Social",
+  "autor": "Daniel Goleman",
+  "categoria": "Psicología",
+  "secciones": 6,
+  "minutos": 18
+ },
+ {
+  "titulo": "Inversión Inteligente para Principiantes",
+  "autor": "Samuel Rees",
+  "categoria": "Finanzas",
+  "secciones": 6,
+  "minutos": 22
+ },
+ {
+  "titulo": "La Biología de la Creencia",
+  "autor": "Bruce H. Lipton",
+  "categoria": "Desarrollo personal",
+  "secciones": 6,
+  "minutos": 22
+ },
+ {
+  "titulo": "La Bolsa o la Vida",
+  "autor": "Joe Domínguez",
+  "categoria": "Finanzas",
+  "secciones": 6,
+  "minutos": 24
+ },
+ {
+  "titulo": "La Buena Economía",
+  "autor": "Abhijit V. Banerjee",
+  "categoria": "Finanzas",
+  "secciones": 6,
+  "minutos": 19
+ },
+ {
+  "titulo": "La Ciencia de Hacerse Rico",
+  "autor": "Wallace D. Wattles",
+  "categoria": "Finanzas",
+  "secciones": 6,
+  "minutos": 23
+ },
+ {
+  "titulo": "La Empresa Consciente",
+  "autor": "Fred Kofman",
+  "categoria": "Negocios",
+  "secciones": 6,
+  "minutos": 19
+ },
+ {
+  "titulo": "La Estrategia del Océano Azul",
+  "autor": "W. Chan Kim",
+  "categoria": "Negocios",
+  "secciones": 6,
+  "minutos": 21
+ },
+ {
+  "titulo": "La Filosofía como Forma de Vida",
+  "autor": "Pierre Hadot",
+  "categoria": "Filosofía",
+  "secciones": 6,
+  "minutos": 23
+ },
+ {
+  "titulo": "La Fórmula de Lanzamiento",
+  "autor": "Jeff Walker",
+  "categoria": "Marketing y ventas",
+  "secciones": 6,
+  "minutos": 22
+ },
+ {
+  "titulo": "La Ganancia es Primero",
+  "autor": "Mike Michalowicz",
+  "categoria": "Finanzas",
+  "secciones": 6,
+  "minutos": 22
+ },
+ {
+  "titulo": "La Generación Ansiosa",
+  "autor": "Jonathan Haidt",
+  "categoria": "Psicología",
+  "secciones": 6,
+  "minutos": 19
+ },
+ {
+  "titulo": "La Guerra del Arte",
+  "autor": "Steven Pressfield",
+  "categoria": "Desarrollo personal",
+  "secciones": 6,
+  "minutos": 17
+ },
+ {
+  "titulo": "La Historia de mis Experimentos con la Verdad",
+  "autor": "Mahatma Gandhi",
+  "categoria": "Biografías",
+  "secciones": 6,
+  "minutos": 18
+ },
+ {
+  "titulo": "La Maestría del Amor",
+  "autor": "Miguel Ruiz",
+  "categoria": "Relaciones",
+  "secciones": 6,
+  "minutos": 22
+ },
+ {
+  "titulo": "La Magia del Orden",
+  "autor": "Marie Kondo",
+  "categoria": "Desarrollo personal",
+  "secciones": 6,
+  "minutos": 17
+ },
+ {
+  "titulo": "La Meta",
+  "autor": "Eliyahu M. Goldratt",
+  "categoria": "Negocios",
+  "secciones": 6,
+  "minutos": 19
+ },
+ {
+  "titulo": "La Montaña Eres Tú",
+  "autor": "Brianna Wiest",
+  "categoria": "Desarrollo personal",
+  "secciones": 6,
+  "minutos": 17
+ },
+ {
+  "titulo": "La Nación de la Dopamina",
+  "autor": "Anna Lembke",
+  "categoria": "Psicología",
+  "secciones": 6,
+  "minutos": 20
+ },
+ {
+  "titulo": "La Psicología de las Ventas",
+  "autor": "Brian Tracy",
+  "categoria": "Marketing y ventas",
+  "secciones": 6,
+  "minutos": 21
+ },
+ {
+  "titulo": "La Psicología del Dinero",
+  "autor": "Morgan Housel",
+  "categoria": "Finanzas",
+  "secciones": 6,
+  "minutos": 19
+ },
+ {
+  "titulo": "La Riqueza de las Naciones",
+  "autor": "Adam Smith",
+  "categoria": "Filosofía",
+  "secciones": 6,
+  "minutos": 18
+ },
+ {
+  "titulo": "La Sabiduría de la Inseguridad",
+  "autor": "Alan Watts",
+  "categoria": "Filosofía",
+  "secciones": 6,
+  "minutos": 22
+ },
+ {
+  "titulo": "La Sabiduría del Enneagrama",
+  "autor": "Don Richard Riso",
+  "categoria": "Psicología",
+  "secciones": 6,
+  "minutos": 23
+ },
+ {
+  "titulo": "La Sanación de las 5 Heridas",
+  "autor": "Lise Bourbeau",
+  "categoria": "Desarrollo personal",
+  "secciones": 6,
+  "minutos": 23
+ },
+ {
+  "titulo": "La Semana Laboral de 4 Horas",
+  "autor": "Timothy Ferriss",
+  "categoria": "Desarrollo personal",
+  "secciones": 6,
+  "minutos": 22
+ },
+ {
+  "titulo": "La Singularidad está Cerca",
+  "autor": "Ray Kurzweil",
+  "categoria": "Filosofía",
+  "secciones": 6,
+  "minutos": 24
+ },
+ {
+  "titulo": "La Sociedad del Cansancio",
+  "autor": "Byung-Chul Han",
+  "categoria": "Filosofía",
+  "secciones": 6,
+  "minutos": 21
+ },
+ {
+  "titulo": "La Solución del Azúcar en la Sangre",
+  "autor": "Mark Hyman",
+  "categoria": "Salud y bienestar",
+  "secciones": 6,
+  "minutos": 21
+ },
+ {
+  "titulo": "La Solución Mindfulness",
+  "autor": "Ronald Siegel",
+  "categoria": "Salud y bienestar",
+  "secciones": 6,
+  "minutos": 22
+ },
+ {
+  "titulo": "La Startup de 100 Dólares",
+  "autor": "Chris Guillebeau",
+  "categoria": "Negocios",
+  "secciones": 6,
+  "minutos": 19
+ },
+ {
+  "titulo": "La Teoría Let Them",
+  "autor": "Mel Robbins",
+  "categoria": "Desarrollo personal",
+  "secciones": 6,
+  "minutos": 21
+ },
+ {
+  "titulo": "La Trampa de la Felicidad",
+  "autor": "Russ Harris",
+  "categoria": "Desarrollo personal",
+  "secciones": 6,
+  "minutos": 23
+ },
+ {
+  "titulo": "La Trampa del Perfeccionismo",
+  "autor": "Tal Ben-Shahar",
+  "categoria": "Desarrollo personal",
+  "secciones": 6,
+  "minutos": 18
+ },
+ {
+  "titulo": "La Transformación Total de su Dinero",
+  "autor": "Dave Ramsey",
+  "categoria": "Finanzas",
+  "secciones": 6,
+  "minutos": 22
+ },
+ {
+  "titulo": "La Única Cosa",
+  "autor": "Gary Keller",
+  "categoria": "Productividad",
+  "secciones": 6,
+  "minutos": 19
+ },
+ {
+  "titulo": "La Vaca Púrpura",
+  "autor": "Seth Godin",
+  "categoria": "Marketing y ventas",
+  "secciones": 6,
+  "minutos": 19
+ },
+ {
+  "titulo": "La Venta Challenger",
+  "autor": "Matthew Dixon",
+  "categoria": "Marketing y ventas",
+  "secciones": 6,
+  "minutos": 20
+ },
+ {
+  "titulo": "La Ventaja de la Felicidad",
+  "autor": "Shawn Achor",
+  "categoria": "Desarrollo personal",
+  "secciones": 6,
+  "minutos": 19
+ },
+ {
+  "titulo": "Las 21 Leyes Irrefutables del Liderazgo",
+  "autor": "John C. Maxwell",
+  "categoria": "Desarrollo personal",
+  "secciones": 6,
+  "minutos": 19
+ },
+ {
+  "titulo": "Las 48 Leyes del Poder",
+  "autor": "Robert Greene",
+  "categoria": "Negocios",
+  "secciones": 6,
+  "minutos": 18
+ },
+ {
+  "titulo": "Las Leyes de la Naturaleza Humana",
+  "autor": "Robert Greene",
+  "categoria": "Psicología",
+  "secciones": 6,
+  "minutos": 19
+ },
+ {
+  "titulo": "Leads de $100M",
+  "autor": "Alex Hormozi",
+  "categoria": "Marketing y ventas",
+  "secciones": 6,
+  "minutos": 23
+ },
+ {
+  "titulo": "Leonardo da Vinci",
+  "autor": "Walter Isaacson",
+  "categoria": "Biografías",
+  "secciones": 6,
+  "minutos": 19
+ },
+ {
+  "titulo": "Levantarse",
+  "autor": "Brené Brown",
+  "categoria": "Desarrollo personal",
+  "secciones": 6,
+  "minutos": 19
+ },
+ {
+  "titulo": "Libertad Financiera",
+  "autor": "Grant Sabatier",
+  "categoria": "Finanzas",
+  "secciones": 6,
+  "minutos": 19
+ },
+ {
+  "titulo": "Lifespan: Por Qué Envejecemos y Por Qué No Tenemos Por Qué",
+  "autor": "David A. Sinclair",
+  "categoria": "Salud y bienestar",
+  "secciones": 6,
+  "minutos": 18
+ },
+ {
+  "titulo": "Lo Difícil de las Cosas Difíciles",
+  "autor": "Ben Horowitz",
+  "categoria": "Negocios",
+  "secciones": 6,
+  "minutos": 20
+ },
+ {
+  "titulo": "Lo Inevitable",
+  "autor": "Kevin Kelly",
+  "categoria": "Filosofía",
+  "secciones": 6,
+  "minutos": 22
+ },
+ {
+  "titulo": "Long Walk to Freedom",
+  "autor": "Nelson Mandela",
+  "categoria": "Biografías",
+  "secciones": 6,
+  "minutos": 22
+ },
+ {
+  "titulo": "Los 10X",
+  "autor": "Grant Cardone",
+  "categoria": "Desarrollo personal",
+  "secciones": 6,
+  "minutos": 19
+ },
+ {
+  "titulo": "Los 5 Lenguajes del Amor",
+  "autor": "Gary Chapman",
+  "categoria": "Relaciones",
+  "secciones": 6,
+  "minutos": 23
+ },
+ {
+  "titulo": "Los 7 Hábitos de la Gente Altamente Efectiva",
+  "autor": "Stephen R. Covey",
+  "categoria": "Desarrollo personal",
+  "secciones": 6,
+  "minutos": 23
+ },
+ {
+  "titulo": "Los Cuatro Acuerdos",
+  "autor": "Miguel Ruiz",
+  "categoria": "Desarrollo personal",
+  "secciones": 6,
+  "minutos": 22
+ },
+ {
+  "titulo": "Los Dones de la Imperfección",
+  "autor": "Brené Brown",
+  "categoria": "Desarrollo personal",
+  "secciones": 6,
+  "minutos": 18
+ },
+ {
+  "titulo": "Los Hombres son de Marte, las Mujeres son de Venus",
+  "autor": "John Gray",
+  "categoria": "Relaciones",
+  "secciones": 6,
+  "minutos": 21
+ },
+ {
+  "titulo": "Los Líderes Comen al Final",
+  "autor": "Simon Sinek",
+  "categoria": "Negocios",
+  "secciones": 6,
+  "minutos": 21
+ },
+ {
+  "titulo": "Los Secretos de la Mente Millonaria",
+  "autor": "T. Harv Eker",
+  "categoria": "Finanzas",
+  "secciones": 6,
+  "minutos": 18
+ },
+ {
+  "titulo": "Marketing de Contenidos",
+  "autor": "Joe Pulizzi",
+  "categoria": "Marketing y ventas",
+  "secciones": 6,
+  "minutos": 19
+ },
+ {
+  "titulo": "Martes con mi Viejo Profesor",
+  "autor": "Mitch Albom",
+  "categoria": "Desarrollo personal",
+  "secciones": 6,
+  "minutos": 21
+ },
+ {
+  "titulo": "Más Allá del Bien y del Mal",
+  "autor": "Friedrich Nietzsche",
+  "categoria": "Filosofía",
+  "secciones": 6,
+  "minutos": 22
+ },
+ {
+  "titulo": "Más Allá del Bien y del Mal en la Pareja",
+  "autor": "Joan Garriga",
+  "categoria": "Relaciones",
+  "secciones": 6,
+  "minutos": 23
+ },
+ {
+  "titulo": "Mastery",
+  "autor": "Robert Greene",
+  "categoria": "Desarrollo personal",
+  "secciones": 6,
+  "minutos": 19
+ },
+ {
+  "titulo": "Meditaciones",
+  "autor": "Marco Aurelio",
+  "categoria": "Filosofía",
+  "secciones": 6,
+  "minutos": 19
+ },
+ {
+  "titulo": "Mindset",
+  "autor": "Carol S. Dweck",
+  "categoria": "Desarrollo personal",
+  "secciones": 6,
+  "minutos": 19
+ },
+ {
+  "titulo": "Minimalismo",
+  "autor": "Joshua Fields Millburn",
+  "categoria": "Desarrollo personal",
+  "secciones": 6,
+  "minutos": 22
+ },
+ {
+  "titulo": "Money: Master the Game",
+  "autor": "Tony Robbins",
+  "categoria": "Finanzas",
+  "secciones": 6,
+  "minutos": 23
+ },
+ {
+  "titulo": "Morir Con Cero",
+  "autor": "Bill Perkins",
+  "categoria": "Finanzas",
+  "secciones": 6,
+  "minutos": 24
+ },
+ {
+  "titulo": "Multiplicadores",
+  "autor": "Liz Wiseman",
+  "categoria": "Negocios",
+  "secciones": 6,
+  "minutos": 19
+ },
+ {
+  "titulo": "No Puedes Herirme",
+  "autor": "David Goggins",
+  "categoria": "Desarrollo personal",
+  "secciones": 6,
+  "minutos": 20
+ },
+ {
+  "titulo": "Nunca Comas Solo",
+  "autor": "Keith Ferrazzi",
+  "categoria": "Desarrollo personal",
+  "secciones": 6,
+  "minutos": 21
+ },
+ {
+  "titulo": "Nunca Dividas la Diferencia",
+  "autor": "Chris Voss",
+  "categoria": "Negocios",
+  "secciones": 6,
+  "minutos": 22
+ },
+ {
+  "titulo": "Ofertas de $100M",
+  "autor": "Alex Hormozi",
+  "categoria": "Negocios",
+  "secciones": 6,
+  "minutos": 24
+ },
+ {
+  "titulo": "Opción B",
+  "autor": "Adam Grant",
+  "categoria": "Desarrollo personal",
+  "secciones": 6,
+  "minutos": 20
+ },
+ {
+  "titulo": "Organízate con Eficacia",
+  "autor": "David Allen",
+  "categoria": "Productividad",
+  "secciones": 6,
+  "minutos": 24
+ },
+ {
+  "titulo": "Originales",
+  "autor": "Adam Grant",
+  "categoria": "Desarrollo personal",
+  "secciones": 6,
+  "minutos": 19
+ },
+ {
+  "titulo": "Outliers: Fuera de Serie",
+  "autor": "Malcolm Gladwell",
+  "categoria": "Psicología",
+  "secciones": 6,
+  "minutos": 22
+ },
+ {
+  "titulo": "Outlive: La Ciencia y el Arte de la Longevidad",
+  "autor": "Peter Attia",
+  "categoria": "Salud y bienestar",
+  "secciones": 6,
+  "minutos": 19
+ },
+ {
+  "titulo": "Padre Rico Padre Pobre",
+  "autor": "Robert Kiyosaki",
+  "categoria": "Finanzas",
+  "secciones": 6,
+  "minutos": 22
+ },
+ {
+  "titulo": "Pensamiento Lateral",
+  "autor": "Edward de Bono",
+  "categoria": "Desarrollo personal",
+  "secciones": 6,
+  "minutos": 23
+ },
+ {
+  "titulo": "Pensar Rápido, Pensar Despacio",
+  "autor": "Daniel Kahneman",
+  "categoria": "Psicología",
+  "secciones": 6,
+  "minutos": 19
+ },
+ {
+  "titulo": "Pequeño Cerdo Capitalista",
+  "autor": "Sofía Macías",
+  "categoria": "Finanzas",
+  "secciones": 6,
+  "minutos": 22
+ },
+ {
+  "titulo": "Piénsalo de Nuevo",
+  "autor": "Adam Grant",
+  "categoria": "Desarrollo personal",
+  "secciones": 6,
+  "minutos": 18
+ },
+ {
+  "titulo": "Piense y Hágase Rico",
+  "autor": "Napoleon Hill",
+  "categoria": "Desarrollo personal",
+  "secciones": 6,
+  "minutos": 18
+ },
+ {
+  "titulo": "Por Qué Dormimos",
+  "autor": "Matthew Walker",
+  "categoria": "Salud y bienestar",
+  "secciones": 6,
+  "minutos": 19
+ },
+ {
+  "titulo": "Posicionamiento",
+  "autor": "Al Ries",
+  "categoria": "Marketing y ventas",
+  "secciones": 6,
+  "minutos": 23
+ },
+ {
+  "titulo": "Potencial Oculto",
+  "autor": "Adam Grant",
+  "categoria": "Desarrollo personal",
+  "secciones": 6,
+  "minutos": 18
+ },
+ {
+  "titulo": "Pre-Suasión",
+  "autor": "Robert B. Cialdini",
+  "categoria": "Marketing y ventas",
+  "secciones": 6,
+  "minutos": 20
+ },
+ {
+  "titulo": "Predeciblemente Irracional",
+  "autor": "Dan Ariely",
+  "categoria": "Psicología",
+  "secciones": 6,
+  "minutos": 22
+ },
+ {
+  "titulo": "Principios",
+  "autor": "Ray Dalio",
+  "categoria": "Negocios",
+  "secciones": 6,
+  "minutos": 18
+ },
+ {
+  "titulo": "Quiero Cambiar",
+  "autor": "Bernardo Stamateas",
+  "categoria": "Desarrollo personal",
+  "secciones": 6,
+  "minutos": 18
+ },
+ {
+  "titulo": "Quiet: El Poder de los Introvertidos",
+  "autor": "Susan Cain",
+  "categoria": "Psicología",
+  "secciones": 6,
+  "minutos": 23
+ },
+ {
+  "titulo": "Quizás Deberías Hablar con Alguien",
+  "autor": "Lori Gottlieb",
+  "categoria": "Psicología",
+  "secciones": 6,
+  "minutos": 20
+ },
+ {
+  "titulo": "Rango",
+  "autor": "David Epstein",
+  "categoria": "Desarrollo personal",
+  "secciones": 6,
+  "minutos": 22
+ },
+ {
+  "titulo": "Recupera tu Mente, Reconquista tu Vida",
+  "autor": "Marian Rojas Estapé",
+  "categoria": "Psicología",
+  "secciones": 6,
+  "minutos": 19
+ },
+ {
+  "titulo": "Relaciones Conscientes",
+  "autor": "Anamar Orihuela",
+  "categoria": "Relaciones",
+  "secciones": 6,
+  "minutos": 23
+ },
+ {
+  "titulo": "Respira",
+  "autor": "James Nestor",
+  "categoria": "Salud y bienestar",
+  "secciones": 6,
+  "minutos": 19
+ },
+ {
+  "titulo": "Responsabilidad Extrema",
+  "autor": "Jocko Willink",
+  "categoria": "Desarrollo personal",
+  "secciones": 6,
+  "minutos": 19
+ },
+ {
+  "titulo": "Rework",
+  "autor": "Jason Fried",
+  "categoria": "Negocios",
+  "secciones": 6,
+  "minutos": 20
+ },
+ {
+  "titulo": "Roba como un Artista",
+  "autor": "Austin Kleon",
+  "categoria": "Desarrollo personal",
+  "secciones": 6,
+  "minutos": 18
+ },
+ {
+  "titulo": "Sapiens: De Animales a Dioses",
+  "autor": "Yuval Noah Harari",
+  "categoria": "Filosofía",
+  "secciones": 6,
+  "minutos": 21
+ },
+ {
+  "titulo": "Sé Imparable",
+  "autor": "Ben Angel",
+  "categoria": "Desarrollo personal",
+  "secciones": 6,
+  "minutos": 23
+ },
+ {
+  "titulo": "Seis Sombreros para Pensar",
+  "autor": "Edward de Bono",
+  "categoria": "Desarrollo personal",
+  "secciones": 6,
+  "minutos": 19
+ },
+ {
+  "titulo": "Ser Mortal",
+  "autor": "Atul Gawande",
+  "categoria": "Salud y bienestar",
+  "secciones": 6,
+  "minutos": 20
+ },
+ {
+  "titulo": "Sexo, Amor y Cerebro",
+  "autor": "Louann Brizendine",
+  "categoria": "Psicología",
+  "secciones": 6,
+  "minutos": 21
+ },
+ {
+  "titulo": "Shoe Dog",
+  "autor": "Phil Knight",
+  "categoria": "Biografías",
+  "secciones": 6,
+  "minutos": 18
+ },
+ {
+  "titulo": "Sobre la Brevedad de la Vida",
+  "autor": "Séneca",
+  "categoria": "Filosofía",
+  "secciones": 6,
+  "minutos": 23
+ },
+ {
+  "titulo": "Sobrenatural",
+  "autor": "Joe Dispenza",
+  "categoria": "Desarrollo personal",
+  "secciones": 6,
+  "minutos": 23
+ },
+ {
+  "titulo": "Sprint",
+  "autor": "Jake Knapp",
+  "categoria": "Productividad",
+  "secciones": 6,
+  "minutos": 20
+ },
+ {
+  "titulo": "Steve Jobs",
+  "autor": "Walter Isaacson",
+  "categoria": "Biografías",
+  "secciones": 6,
+  "minutos": 18
+ },
+ {
+  "titulo": "Stillness is the Key",
+  "autor": "Ryan Holiday",
+  "categoria": "Desarrollo personal",
+  "secciones": 6,
+  "minutos": 24
+ },
+ {
+  "titulo": "Supercerebro",
+  "autor": "Deepak Chopra",
+  "categoria": "Desarrollo personal",
+  "secciones": 6,
+  "minutos": 23
+ },
+ {
+  "titulo": "Superprevisores",
+  "autor": "Philip Tetlock",
+  "categoria": "Negocios",
+  "secciones": 6,
+  "minutos": 18
+ },
+ {
+  "titulo": "Te Amarás sobre Todas las Cosas",
+  "autor": "Mónica Esgueva",
+  "categoria": "Desarrollo personal",
+  "secciones": 6,
+  "minutos": 21
+ },
+ {
+  "titulo": "Te Enseñaré a ser Rico",
+  "autor": "Ramit Sethi",
+  "categoria": "Finanzas",
+  "secciones": 6,
+  "minutos": 20
+ },
+ {
+  "titulo": "Thinking in Bets",
+  "autor": "Annie Duke",
+  "categoria": "Desarrollo personal",
+  "secciones": 6,
+  "minutos": 19
+ },
+ {
+  "titulo": "Tiende tu Cama",
+  "autor": "William H. McRaven",
+  "categoria": "Desarrollo personal",
+  "secciones": 6,
+  "minutos": 22
+ },
+ {
+  "titulo": "Todo Está J*dido",
+  "autor": "Mark Manson",
+  "categoria": "Desarrollo personal",
+  "secciones": 6,
+  "minutos": 22
+ },
+ {
+  "titulo": "Trabajo Profundo",
+  "autor": "Cal Newport",
+  "categoria": "Productividad",
+  "secciones": 6,
+  "minutos": 19
+ },
+ {
+  "titulo": "Tribus",
+  "autor": "Seth Godin",
+  "categoria": "Marketing y ventas",
+  "secciones": 6,
+  "minutos": 19
+ },
+ {
+  "titulo": "Tu Cerebro Manda",
+  "autor": "John Medina",
+  "categoria": "Psicología",
+  "secciones": 6,
+  "minutos": 22
+ },
+ {
+  "titulo": "Tu Dinero o Tu Vida",
+  "autor": "Vicki Robin",
+  "categoria": "Finanzas",
+  "secciones": 6,
+  "minutos": 23
+ },
+ {
+  "titulo": "Tus Zonas Erróneas",
+  "autor": "Wayne W. Dyer",
+  "categoria": "Desarrollo personal",
+  "secciones": 6,
+  "minutos": 19
+ },
+ {
+  "titulo": "Un Nuevo Mundo, Ahora",
+  "autor": "Eckhart Tolle",
+  "categoria": "Desarrollo personal",
+  "secciones": 6,
+  "minutos": 23
+ },
+ {
+  "titulo": "Un Paso por Delante de Wall Street",
+  "autor": "Peter Lynch",
+  "categoria": "Finanzas",
+  "secciones": 6,
+  "minutos": 18
+ },
+ {
+  "titulo": "Una Breve Historia de Casi Todo",
+  "autor": "Bill Bryson",
+  "categoria": "Filosofía",
+  "secciones": 6,
+  "minutos": 19
+ },
+ {
+  "titulo": "Una Breve Historia del Tiempo",
+  "autor": "Stephen Hawking",
+  "categoria": "Filosofía",
+  "secciones": 6,
+  "minutos": 22
+ },
+ {
+  "titulo": "Una Mente para los Números",
+  "autor": "Barbara Oakley",
+  "categoria": "Desarrollo personal",
+  "secciones": 6,
+  "minutos": 23
+ },
+ {
+  "titulo": "Vayamos Adelante",
+  "autor": "Sheryl Sandberg",
+  "categoria": "Desarrollo personal",
+  "secciones": 6,
+  "minutos": 19
+ },
+ {
+  "titulo": "Véndele a la Mente, no a la Gente",
+  "autor": "Jürgen Klaric",
+  "categoria": "Marketing y ventas",
+  "secciones": 6,
+  "minutos": 23
+ },
+ {
+  "titulo": "Vender es Humano",
+  "autor": "Daniel H. Pink",
+  "categoria": "Marketing y ventas",
+  "secciones": 6,
+  "minutos": 19
+ },
+ {
+  "titulo": "Ya No Seas Codependiente",
+  "autor": "Melody Beattie",
+  "categoria": "Relaciones",
+  "secciones": 6,
+  "minutos": 22
+ }
 ]
