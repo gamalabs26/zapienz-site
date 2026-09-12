@@ -1026,3 +1026,30 @@ blockquote.linterna__texto{ margin:0; }
      algo aparecio. La onda no se apaga -- es el contenido, no la decoracion. */
   .muestra{ transform:none !important; }
 }
+
+/* ---------- 24. PULSO — la pista de audio de la pagina ------------------- */
+/* heartbeat-scroll-line. El sitio tenia seis costuras que cosen una seccion con
+   la siguiente, pero nada que recorriera la pagina ENTERA. En un producto de
+   audio eso se nota: cada bloque se leia suelto. La pista vive en el canalon
+   izquierdo, que a 1440 mide 120 px libres entre el borde y la envoltura de
+   1200; a 390 se encoge a 14 px y la seccion ya reserva 20 px de padding, asi
+   que nunca pisa una letra. z-index 40: encima de las superficies (1-4) y de las
+   costuras (3), debajo de la pildora del nav (50) y del preloader (60-70). */
+.pulso{
+  position:fixed; left:0; top:0; width:34px; height:100vh;
+  z-index:40; pointer-events:none;
+}
+.pulso__lienzo{ display:block; }
+
+@media (max-width:767px){
+  /* En telefono la pista no desaparece: se afina. Sigue siendo el hilo, y a 14 px
+     cabe entera dentro del padding de 20 px de la seccion. */
+  .pulso{ width:14px; }
+}
+
+@media (prefers-reduced-motion:reduce){
+  /* Atenua, no apaga: el trazo se queda (sigue siendo la firma de un producto de
+     audio) pero pierde la cabeza de lectura y el tramo brillante, que son lo que
+     se mueve. Lo resuelve site.js; aqui solo baja el peso visual. */
+  .pulso{ opacity:.55; }
+}

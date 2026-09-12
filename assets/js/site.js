@@ -923,6 +923,104 @@ if (!finoPuntero) document.body.addEventListener('touchstart', () => {}, { passi
   }
 }
 
+/* =========================================================================
+   MECANICA — heartbeat-scroll-line  (HILO de todo el sitio)
+   Una pista de audio dibujada por el scroll, con cabeza de lectura fija a
+   media pantalla: lo que queda arriba de la cabeza ya sono y va en verde
+   brillo; lo de abajo todavia no y va en verde apagado.
+   El RITMO lo dicta la seccion, no un reloj: las superficies de sonido
+   (data-superficie="noche") laten con el doble de frecuencia y mas del doble
+   de amplitud que las de lectura, y cada seccion arranca con una espiga. Asi
+   la linea dice donde estas sin escribir una palabra.
+   Se pinta en canvas de 34x100vh (14 px en telefono), solo cuando el scroll
+   cambia y siempre dentro de un rAF, para no pintar dos veces en el mismo
+   cuadro.
+   ========================================================================= */
+{
+  const cv = $('.pulso__lienzo');
+  if (cv){
+    const ctx = cv.getContext('2d');
+    let W = 0, H = 0, tramos = [], pedido = 0;
+
+    function medir(){
+      const dpr = Math.min(devicePixelRatio || 1, 2);
+      W = cv.parentElement.clientWidth;
+      H = innerHeight;
+      cv.style.width = W + 'px'; cv.style.height = H + 'px';
+      cv.width = Math.round(W * dpr); cv.height = Math.round(H * dpr);
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      /* Las franjas se miden UNA vez por resize y no por cuadro: son 9 rects y
+         leerlos en cada scroll obligaria a un layout por cuadro. */
+      tramos = $$('main .seccion').map(s => {
+        const r = s.getBoundingClientRect();
+        return { y0: r.top + scrollY, y1: r.bottom + scrollY,
+                 fuerte: s.dataset.superficie === 'noche' };
+      });
+    }
+
+    function tramoEn(y){
+      for (let i = 0; i < tramos.length; i++) if (y < tramos[i].y1) return tramos[i];
+      return tramos[tramos.length - 1];
+    }
+
+    /* La onda: dos senos desfasados (para que no se lea como un seno de libro de
+       texto) por una envolvente que se apaga en los bordes del tramo, mas la
+       espiga de arranque. Sin la envolvente, el cambio de ritmo entre secciones
+       era un escalon feo justo encima de la costura. */
+    function onda(y){
+      const t = tramoEn(y);
+      if (!t) return 0;
+      const borde = clamp(Math.min(y - t.y0, t.y1 - y) / 140, 0, 1);
+      const amp = (t.fuerte ? 1 : 0.42) * borde;
+      const f   = t.fuerte ? 0.050 : 0.020;
+      const d   = y - t.y0 - 120;
+      return amp * (0.64 * Math.sin(y * f) + 0.36 * Math.sin(y * f * 2.7 + 1.1)
+                    + 1.9 * Math.exp(-(d * d) / 900));
+    }
+
+    const K  = () => W * 0.17;
+    const eX = (dy) => W / 2 + clamp(onda(dy), -2.6, 2.6) * K();
+
+    function trazo(hasta){
+      ctx.beginPath();
+      for (let vy = 0; vy <= hasta; vy += 2){
+        const x = eX(scrollY + vy);
+        if (vy === 0) ctx.moveTo(x, vy); else ctx.lineTo(x, vy);
+      }
+      ctx.stroke();
+    }
+
+    function pintar(){
+      pedido = 0;
+      if (!tramos.length) return;
+      ctx.clearRect(0, 0, W, H);
+      ctx.lineCap = 'round'; ctx.lineJoin = 'round';
+      /* El trazo completo primero, en verde de marca al 34%: ese valor se eligio
+         midiendo sobre las DOS superficies, porque la pista las cruza. */
+      ctx.strokeStyle = 'rgba(74,180,114,.34)'; ctx.lineWidth = 1.4;
+      trazo(H);
+      if (!suave) return;
+      /* Lo ya escuchado, encima y mas grueso. */
+      ctx.strokeStyle = 'rgba(56,235,107,.92)'; ctx.lineWidth = 1.8;
+      trazo(H / 2);
+      ctx.fillStyle = '#38EB6B';
+      ctx.beginPath(); ctx.arc(eX(scrollY + H / 2), H / 2, 2.6, 0, 6.2832); ctx.fill();
+    }
+
+    const pedir = () => { if (!pedido) pedido = requestAnimationFrame(pintar); };
+    const rehacer = () => { medir(); pintar(); };
+
+    medir(); pintar();
+    addEventListener('scroll', pedir, { passive: true });
+    addEventListener('resize', rehacer);
+    /* El alto del documento crece cuando entran las fuentes y las imagenes
+       diferidas: sin esto las franjas se quedan con las medidas del primer
+       cuadro y el ritmo se desfasa media pantalla. */
+    addEventListener('load', rehacer);
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(rehacer);
+  }
+}
+
 /* ---------- anio del pie ------------------------------------------------- */
 { const a = $('#anio'); if (a) a.textContent = new Date().getFullYear(); }
 
