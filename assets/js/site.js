@@ -331,7 +331,7 @@ window.addEventListener('pagehide', () => loops.forEach(r => { cancelAnimationFr
         `translate3d(0, ${desliz}px, 0) rotateY(${giro.toFixed(2)}deg)`;
       // Arranca en 8% y no en 0: un reproductor con la barra en cero se lee como
       // «no ha empezado», y aqui el Zap ya esta sonando.
-      if (barra) barra.style.width = (8 + avance * 92).toFixed(1) + '%';
+      if (barra) barra.style.transform = 'scaleX(' + ((8 + avance * 92) / 100).toFixed(4) + ')';
       if (n !== activo){
         activo = n;
         capitulos.forEach(c => { c.li.dataset.activo = c.i === n ? 'si' : 'no'; });
@@ -690,7 +690,14 @@ window.addEventListener('pagehide', () => loops.forEach(r => { cancelAnimationFr
         const dy = (e.clientY - (r.top + r.height / 2)) * imantado;
         btn.style.transform = `translate3d(${dx.toFixed(1)}px, ${dy.toFixed(1)}px, 0)`;
       });
-      btn.addEventListener('pointerleave', () => { btn.style.transform = ''; });
+      /* El boton sigue al cursor SIN transicion (el CSS se la quito) y solo la recupera al
+     soltar, marcandolo con data-imantando. Antes perseguia al cursor con 200 ms de
+     retraso, que es lo que lo hacia sentir pegajoso en vez de magnetico. */
+    btn.addEventListener('pointerenter', () => { btn.dataset.imantando = 'si'; });
+    btn.addEventListener('pointerleave', () => {
+      btn.dataset.imantando = 'no';
+      btn.style.transform = '';
+    });
     });
   }
 }
@@ -856,7 +863,7 @@ if (!finoPuntero) document.body.addEventListener('touchstart', () => {}, { passi
         if (audioCtx && audioCtx.state === 'suspended') audioCtx.resume();
         const p = au.play();
         if (p && p.catch) p.catch(() => {
-          if (pie) pie.textContent = 'El navegador bloqueo la reproduccion. Vuelve a tocar el boton.';
+          if (pie) pie.textContent = 'El navegador bloqueó la reproducción. Vuelve a tocar el botón.';
           btn.dataset.sonando = 'no';
           if (rotulo) rotulo.textContent = ROTULO;
         });

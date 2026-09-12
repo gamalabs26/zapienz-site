@@ -23,7 +23,12 @@
   --papel-hondo:  #F3F4F8;
   --papel-linea:  #E8E8F0;
   --tinta:        #18181B;   /* 16.5:1 sobre --papel */
-  --tinta2:       #6B7280;
+  /* Era #6B7280: medido, 4.40:1 sobre --papel-hondo (#F3F4F8) cuando AA pide 4.5, y
+     4.52:1 sobre --papel, al filo. No es un caso suelto -- es el texto secundario de
+     TODA la superficie clara: parrafos de tarjeta, cifras de estante, pies de resena y
+     las respuestas abiertas del acordeon. Se arregla en el token, no regla por regla.
+     #616875 sube a 5.10 y 5.24 sin salirse de la familia de gris azulado. */
+  --tinta2:       #616875;
 
   /* --- accion, en ambas materias --- */
   --verde:        #4AB472;   /* CTA y barras */
@@ -146,12 +151,14 @@ button{ font:inherit; color:inherit; background:none; border:0; cursor:pointer; 
   background:rgba(14,36,83,.55);
   backdrop-filter:blur(18px) saturate(150%);
   -webkit-backdrop-filter:blur(18px) saturate(150%);
-  transition:height var(--dur-panel) var(--ease-out),
-             background var(--dur-panel) var(--ease-out),
+  /* `height` es layout: animarla recalcula y repinta en cada cruce del umbral de 80 px,
+     o sea constantemente mientras alguien hace scroll. El estado «encogido» ya se lee
+     por el cambio de fondo; los 12 px de alto no los extrana nadie. */
+  transition:             background var(--dur-panel) var(--ease-out),
              translate var(--dur-panel) var(--ease-out),
              opacity var(--dur-panel) var(--ease-out);
 }
-.nav[data-encogido="si"]{ height:52px; background:rgba(7,28,71,.72); }
+.nav[data-encogido="si"]{ background:rgba(7,28,71,.72); }
 /* Se va hacia arriba, no se desvanece: un nav que se apaga en su sitio deja un
    hueco raro sobre el contenido. `translate` y opacidad, nada de layout. */
 .nav[data-oculto="si"]{ translate:-50% -140%; opacity:0; pointer-events:none; }
@@ -177,10 +184,16 @@ button{ font:inherit; color:inherit; background:none; border:0; cursor:pointer; 
   min-height:52px; padding:0 26px; border-radius:999px;
   background:var(--verde); color:var(--noche);   /* 5.8:1. Blanco daria 2.6:1 y REPRUEBA */
   font-weight:600; font-size:1rem; text-decoration:none;
-  transition:transform var(--dur-ui) var(--ease-out),
-             box-shadow var(--dur-ui) var(--ease-out);
+  /* `transform` SALE de la transicion base. Con ella puesta, cada pointermove lanzaba
+     una transicion de 200 ms hacia el nuevo destino, asi que el boton nunca seguia al
+     cursor: lo perseguia con 200 ms de retraso. Se sentia pegajoso, no magnetico, y son
+     los 7 CTA del sitio. Ahora el seguimiento es instantaneo y la transicion solo
+     aparece al soltar, que es cuando de verdad hay que regresar a su sitio. */
+  transition:box-shadow var(--dur-ui) var(--ease-out);
   will-change:transform;
 }
+.cta[data-imantando="no"]{ transition:transform var(--dur-ui) var(--ease-out),
+                            box-shadow var(--dur-ui) var(--ease-out); }
 .cta:active{ transform:scale(.97); }
 /* El borde era `--linea` (#E8E8F0 sobre papel #F6F7FB): 1.08:1, o sea invisible.
    El boton se leia como texto suelto flotando debajo de las resenas, y por eso
@@ -537,9 +550,15 @@ button{ font:inherit; color:inherit; background:none; border:0; cursor:pointer; 
                      border-bottom:7px solid transparent; }
 .fono__barrita{ flex:none; height:3px; border-radius:2px; margin-bottom:10px;
                 background:rgba(255,255,255,.12); overflow:hidden; }
-.fono__barrita i{ display:block; height:100%; width:8%; border-radius:2px;
+/* Era `width:8%` animado con transicion. El JS de la saga reescribe este valor en CADA
+   cuadro del scroll -- hasta 60 veces por segundo -- y `width` es layout: recalcula,
+   repinta y compone cada vez, encima reprogramando una transicion de 320 ms que nunca
+   alcanza a terminar. Y pasa dentro de la mecanica protagonista de la §3. Con scaleX
+   el mismo movimiento se queda en la capa de composicion. Sin transicion: el valor ya
+   viene continuo desde el scroll, una encima solo agregaria retraso. */
+.fono__barrita i{ display:block; height:100%; width:100%; border-radius:2px;
                   background:var(--verde-brillo);
-                  transition:width var(--dur-panel) var(--ease-out); }
+                  transform-origin:0 50%; transform:scaleX(.08); }
 
 /* --- La lista de las seis secciones --- */
 /* El foco NO se marca apagando el texto inactivo. Lo hacia con `opacity:.28`, que
@@ -794,7 +813,9 @@ blockquote.linterna__texto{ margin:0; }
        background:rgba(19,36,74,.5);
        backdrop-filter:blur(14px) saturate(140%);
        -webkit-backdrop-filter:blur(14px) saturate(140%);
-       display:flex; flex-direction:column; gap:14px; }
+       display:flex; flex-direction:column; gap:14px;
+       transition:transform var(--dur-ui) var(--ease-out),
+                  border-color var(--dur-panel) var(--ease-out); }
 .plan h3{ font-family:var(--sans); font-weight:600; font-size:1.3rem; }
 .plan__precio{ font-family:var(--sans); font-weight:600; font-size:2.2rem;
                letter-spacing:-.02em; color:var(--verde); }
@@ -842,8 +863,10 @@ blockquote.linterna__texto{ margin:0; }
 
 .faq__b{ width:100%; text-align:left; display:flex; gap:clamp(14px,2vw,26px);
          align-items:baseline; min-height:64px; padding:22px 20px 22px 22px;
-         transition:padding-left var(--dur-panel) var(--ease-out); }
-.faq__item:hover .faq__b{ padding-left:30px; }
+         transition:transform var(--dur-panel) var(--ease-out); }
+/* Animaba `padding-left`, que es layout, y ademas era el UNICO :hover del archivo que
+   no vivia dentro del bloque gateado a puntero fino -- en telefono se quedaba pegado
+   despues del tap. La regla se movio al bloque de la seccion 19. */
 .faq__n{ font-family:var(--mono); font-size:.74rem; letter-spacing:.12em; flex:none;
          width:2.4em; color:var(--texto2);
          transition:color var(--dur-panel) var(--ease-out); }
@@ -941,7 +964,14 @@ blockquote.linterna__texto{ margin:0; }
   .rejilla-3 > .tarjeta:nth-child(2):hover{ transform:translate3d(0,-26px,0); }
   .bento figure:hover img{ transform:scale(1.04); }
   .bento figure:hover::after{ opacity:0; }
-  .bento img{ transition:transform 420ms var(--ease-out); }
+  .bento img{ transition:transform var(--dur-reveal) var(--ease-out); }
+  /* Llego aqui desde la seccion 17: antes era `padding-left`, que es layout, y encima
+     estaba fuera de este bloque, asi que en telefono se quedaba pegado tras el tap. */
+  .faq__item:hover .faq__b{ transform:translateX(8px); }
+  /* Las tarjetas de precio eran las UNICAS del sitio que no reaccionaban al cursor,
+     justo donde se decide la compra. Mismos valores que .estanteria, que ya funciona. */
+  .plan:hover{ transform:translateY(-3px);
+               border-color:color-mix(in srgb,var(--verde) 40%,transparent); }
 }
 
 /* ---------- 22. MOVIL ---------------------------------------------------- */
