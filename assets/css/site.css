@@ -133,6 +133,14 @@ button{ font:inherit; color:inherit; background:none; border:0; cursor:pointer; 
 .serif{ font-family:var(--display); font-weight:400; }
 .sr-only{ position:absolute; width:1px; height:1px; padding:0; margin:-1px;
           overflow:hidden; clip-path:inset(50%); white-space:nowrap; }
+/* El salto al contenido existia pero seguia midiendo 1x1 al enfocarlo: quien navega
+   con teclado recibia el foco en un enlace invisible. Al enfocarse se hace boton. */
+.sr-only:focus{
+  position:fixed; top:14px; left:14px; z-index:100;
+  width:auto; height:auto; margin:0; padding:12px 20px; min-height:44px;
+  display:inline-flex; align-items:center; overflow:visible; clip-path:none;
+  background:var(--verde); color:var(--noche); border-radius:999px; font-weight:600;
+}
 
 /* ---------- 3. GRANO (mecanica: grain) ----------------------------------- */
 /* El SVG feTurbulence vive inline en el HTML; aqui solo se tiende encima. */
@@ -275,6 +283,20 @@ button{ font:inherit; color:inherit; background:none; border:0; cursor:pointer; 
                     rgba(7,28,71,.46) 84%, rgba(7,28,71,.92) 100%);
 }
 
+/* En vertical el texto ocupa TODO el ancho, asi que el velo no se puede abrir a la
+   derecha como en escritorio: ahi es justo donde el clip mete barras verdes claras
+   detras de la bajada. Medido por pixel de glifo sobre el video congelado: 1.45:1 en
+   el cuadro de t=6.5 s, con 327 pixeles de letra por debajo de AA. La banda del texto
+   se cierra; arriba el velo sigue abierto, que es donde estan los anaqueles. */
+@media (max-width:767px){
+  .hero__velo{
+    background:
+      linear-gradient(180deg, rgba(16,39,109,.62) 0 6%, rgba(14,36,83,.26) 15%,
+                      rgba(7,28,71,.81) 27%, rgba(7,28,71,.83) 84%,
+                      rgba(7,28,71,.94) 100%);
+  }
+}
+
 /* ---------- 5b. EL MURO DE PORTADAS (parallax-layers) -------------------- */
 /* Las 28 ilustraciones REALES del catalogo, en tres profundidades que derivan a
    distinta velocidad. Empezo en el hero, donde tapaba el clip de la libreria; su
@@ -350,7 +372,12 @@ button{ font:inherit; color:inherit; background:none; border:0; cursor:pointer; 
 .hero__sub{ font-family:var(--display); font-size:clamp(1.05rem,2vw,1.3rem);
             color:var(--noche-texto2); max-width:52ch; margin-bottom:30px; }
 .hero__acciones{ display:flex; flex-wrap:wrap; gap:14px; align-items:center; }
-.hero__precio{ margin-top:22px; }
+/* La linea de precio corria los 1200 px de la columna: a 12.48 px son ~150
+   caracteres de un tiron, y el final caia en la zona donde el velo se abre para
+   dejar ver el clip. Medido por pixel de glifo: 3.31:1 en el cuadro de t=4 s. Con
+   la medida acotada rompe en dos lineas y se queda dentro de la banda protegida,
+   que ademas es como se lee una linea de 12 px. */
+.hero__precio{ margin-top:22px; max-width:58ch; }
 
 /* ---------- 6b. MUESTRA DE AUDIO (AnalyserNode) --------------------------
    El CTA secundario del hero suena. En un producto de audio la muestra ES la
@@ -1053,3 +1080,17 @@ blockquote.linterna__texto{ margin:0; }
      se mueve. Lo resuelve site.js; aqui solo baja el peso visual. */
   .pulso{ opacity:.55; }
 }
+
+/* ---------- 25. OBJETIVOS TACTILES --------------------------------------
+   WCAG 2.2 AA pide 24x24 y el PRD de este sitio pide 44x44 con 8 px de aire.
+   Los enlaces sueltos (marca de la nav, correo de cierre, los tres del pie)
+   median entre 16 y 26 px de alto: se les da caja, no tamano de letra. Los
+   enlaces DENTRO de una frase quedan fuera a proposito -- la norma los
+   exceptua y agrandarlos rompe el interlineado del parrafo. */
+.nav__marca{ min-height:44px; }
+.nav__enlaces a{ display:inline-flex; align-items:center; min-height:44px; }
+.pie a,
+.seccion--ambiente .mono a{
+  display:inline-flex; align-items:center; min-height:44px;
+}
+.pie__fila{ gap:8px 30px; }

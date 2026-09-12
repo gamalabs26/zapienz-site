@@ -674,6 +674,10 @@ window.addEventListener('pagehide', () => loops.forEach(r => { cancelAnimationFr
    ========================================================================= */
 {
   $$('video[data-pingpong]').forEach(v => {
+    /* Con movimiento reducido el CSS esconde este clip. Sin este guardia el JS
+       seguia reproduciendolo y encadenando rAF para el ping-pong: gasto puro
+       para quien pidio menos movimiento. */
+    if (!suave){ v.pause(); v.removeAttribute('autoplay'); return; }
     v.playbackRate = 1;
     let atras = false;
     v.addEventListener('ended', () => { v.currentTime = 0; v.play().catch(() => {}); });
@@ -844,11 +848,18 @@ if (!finoPuntero) document.body.addEventListener('touchstart', () => {}, { passi
     }
 
     const pintar = () => {
+      /* Con la pestana escondida el audio puede seguir sonando, pero el espectro
+         no lo ve nadie: el bucle se suelta y se vuelve a armar al regresar. */
+      if (document.hidden){ raf = 0; return; }
       if (hayGrafo) analizador.getByteFrequencyData(datos);
       dibujar();
       raf = requestAnimationFrame(pintar);
     };
     const detener = () => { cancelAnimationFrame(raf); raf = 0; dibujar(); };
+    document.addEventListener('visibilitychange', () => {
+      if (document.hidden){ cancelAnimationFrame(raf); raf = 0; }
+      else if (!au.paused && !raf) raf = requestAnimationFrame(pintar);
+    });
 
     au.addEventListener('play',  () => { if (!raf) raf = requestAnimationFrame(pintar); });
     au.addEventListener('pause', detener);
