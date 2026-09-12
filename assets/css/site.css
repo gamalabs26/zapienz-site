@@ -643,7 +643,7 @@ button{ font:inherit; color:inherit; background:none; border:0; cursor:pointer; 
 .cifra__pie{ font-family:var(--mono); font-size:.72rem; color:var(--texto2); opacity:.7; }
 
 /* ---------- 14. ESTANTE + catalog-waveform ------------------------------- */
-/* La onda de 303 barras vive sobre una PLACA NOCHE, no sobre el papel. Medido en
+/* La onda de 289 barras vive sobre una PLACA NOCHE, no sobre el papel. Medido en
    captura: verde #4AB472 al 62% de alfa sobre --papel da ~1.9:1 de contraste y se
    lee como una grafica de hoja de calculo. Sobre noche es un ecualizador. La placa
    ademas mete la materia «sonido» en mitad de la seccion «libro», que es el
@@ -822,7 +822,7 @@ blockquote.linterna__texto{ margin:0; }
 .plan__lista li{ color:var(--texto2); font-size:.95rem; padding:5px 0; }
 .plan .cta{ margin-top:auto; }
 /* Las dos tarjetas eran gemelas y no decian cual es cual. El sello es un dato, no
-   una promesa de marketing: Premium abre los 303 Zaps publicados. */
+   una promesa de marketing: Premium abre los 289 Zaps escuchables. */
 .plan--todo{ border-color:color-mix(in srgb,var(--verde) 52%,transparent);
              background:rgba(19,36,74,.66);
              box-shadow:0 0 0 1px color-mix(in srgb,var(--verde) 16%,transparent),

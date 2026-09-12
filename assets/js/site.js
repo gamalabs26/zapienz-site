@@ -531,7 +531,7 @@ window.addEventListener('pagehide', () => loops.forEach(r => { cancelAnimationFr
 
 /* =========================================================================
    MECANICA — catalog-waveform  (PROTAGONISTA de §5)
-   303 barras: una por Zap publicado. Altura = minutos, normalizados del rango
+   289 barras: una por Zap con audio publicado. Altura = minutos, normalizados del rango
    REAL 14-24 al rango visual 14%-86%. Mapear linealmente al alto daria un
    ecualizador casi plano, porque el dato es angosto. Color = categoria.
    Bajo el puntero (o el dedo) la barra mas cercana se levanta y se identifica.
@@ -579,7 +579,7 @@ window.addEventListener('pagehide', () => loops.forEach(r => { cancelAnimationFr
           z, x: (i + saltos) * ancho, w: ancho * 0.72,
           // Techo 0.86 y no 0.92: con el rango real de 14-24 min la mayoria de las
           // barras cae arriba y varias tocaban el borde de la placa, que borra la
-          // silueta. Medido en captura sobre las 303.
+          // silueta. Medido en captura sobre las 289.
           alto: (0.14 + norm * 0.72) * cv.height,
           fase: Math.random() * 6.28, vel: 2.8 + Math.random() * 1.4, sube: 0
         };
@@ -899,7 +899,7 @@ if (!finoPuntero) document.body.addEventListener('touchstart', () => {}, { passi
 }
 
 /* ---------- 404: una sola barra ------------------------------------------
-   La Z incompleta. Respira con la misma ecuacion que las 303 del catalogo,
+   La Z incompleta. Respira con la misma ecuacion que las 289 del catalogo,
    para que el error se sienta parte del sitio y no de otro sitio. */
 {
   const cv = document.querySelector('.p404__barra');
