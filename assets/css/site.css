@@ -624,6 +624,10 @@ button{ font:inherit; color:inherit; background:none; border:0; cursor:pointer; 
 
 /* ---------- 11. SAGA (pinned-saga) --------------------------------------- */
 .saga{ position:relative; }
+/* El riel reserva el recorrido del pin. Vive aqui y no en el HTML porque
+   con movimiento reducido hay que apagarlo: un pin estatico con el riel
+   puesto deja dos pantallas y media de papel en blanco. */
+.saga__riel{ height:240vh; }
 /* El pin lo pone el JS (site.js), no esta hoja: sin JS la saga tiene que quedar
    como una lista apilada y legible, que es el fallback que promete el PRD. */
 .saga__pin{ position:relative; top:0; min-height:100svh; display:grid;
@@ -1189,8 +1193,10 @@ blockquote.linterna__texto{ margin:0; }
   .subrayado::after{ transform:scaleX(1) !important; transition:none; }
   .cortina{ display:none; }
   .saga__pin{ position:static; min-height:0; padding-block:40px; }
-  /* El telefono deja de inclinarse, pero sigue ahi y sigue cambiando de seccion:
-     el scrub no es decoracion, es la explicacion del producto. */
+  .saga__riel{ height:0; }
+  /* El telefono deja de inclinarse y el riel se va con el pin. Las 6 secciones
+     se muestran TODAS a la vez (site.js las marca activas): la explicacion del
+     producto se lee entera de un golpe, que es atenuar, no apagar. */
   .fono__pantalla{ transform:none !important; }
   .muro__capa{ transform:none !important; }
   /* El muro se queda QUIETO, no se apaga: sigue siendo catalogo real, no adorno. */
@@ -1246,3 +1252,7 @@ blockquote.linterna__texto{ margin:0; }
   display:inline-flex; align-items:center; min-height:44px;
 }
 .pie__fila{ gap:8px 30px; }
+/* Las migas de categoria son NAVEGACION, no un enlace dentro de una frase:
+   median 16 px de alto, por debajo hasta del minimo de 24 px de la norma. */
+.migas{ display:flex; align-items:center; min-height:44px; margin-top:-10px; }
+.migas a{ display:inline-flex; align-items:center; min-height:44px; padding-right:4px; }
